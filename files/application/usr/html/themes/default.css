@@ -1,0 +1,383 @@
+/* General Classes */
+body {
+	font: 11px verdana, arial, sans-serif; 
+	background-color: #666666;
+	background-repeat: repeat;
+	background-image: URL(bgsteel.jpg);
+}
+
+td{
+	padding: 4px;
+	color: #000044;
+}
+
+th{
+	padding: 6px;
+	font: 12px verdana, arial, sans-serif; 
+	font-weight: bold;
+	color: #333333;
+}
+
+/* Headings */
+h1   {
+	color: #222222; 
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(220, 220, 220, .8);
+}
+
+h2   {
+	color: #222222;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(220, 220, 220, .8);
+}
+
+h3   {
+	color: #222266;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(220, 220, 220, .8);
+}
+
+h4   {
+	color: #660000;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(220, 220, 220, .8);
+}
+
+h5   {
+	color: #006600;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	text-shadow: 0 1px 1px rgba(220, 220, 220, .8);
+}
+
+/* Input Fields */
+input, select, textarea {
+	color: #000022;
+	box-shadow: inset 0px 3px 3px #dddddd;
+	border-radius: 5px;
+}
+
+
+/* Image Properties */
+img{
+	margin : 2px 4px;
+	vertical-align: middle;
+	border: none;
+}
+
+img.bigbar{
+	height : 20px;
+	margin : 4px;
+	vertical-align: middle;
+	border: 1px solid #333333;
+	border-radius: 3px;
+}
+
+img.smallbar{
+	height : 8px;
+	margin : 2px;
+	vertical-align: middle;
+	border: 1px solid #333333;
+	border-radius: 2px;
+}
+
+/* Form Properties */
+:focus {background-color: #d0ddf0}
+
+/* Link Properties */
+:link {color: #0044aa;text-decoration: none;}
+:visited {color: #003399;text-decoration: none;}
+:link:focus, :visited:focus {color: #cc7700}
+:link:hover, :visited:hover {
+	transition: color 1s ease;
+	color: #ee6600;
+}
+:link:active, :visited:active {color: #0088dd}
+
+/* Login (only used in default.css)  */
+.loginbg {
+	background: -webkit-linear-gradient(#6688aa, #88aacc, #446688);
+	background: linear-gradient(#6688aa, #88aacc, #446688);
+}
+
+table.login{
+	width: 50%;
+	border-spacing: 0px;
+	background-color: #7090b0;
+	margin: 50px auto;
+	-webkit-box-shadow: 4px 4px 8px #555;
+	box-shadow: 4px 4px 8px #555;
+}
+
+/* Header table & Footer div*/
+#header{
+	width: 100%;
+	border-spacing: 0px;
+	background-color: #99aabb;
+	border-radius: 5px;
+	-webkit-box-shadow: 4px 4px 8px #555;
+	box-shadow: 4px 4px 8px #555;
+}
+
+#footer{
+	margin: 20px 2px;
+	width:98%;
+	padding: 8px;
+	border-radius: 5px;
+	text-align: right;
+	font-style: italic;
+	-webkit-box-shadow: 4px 4px 8px #555;
+	box-shadow: 4px 4px 8px #555;
+}
+
+/* Actual Module */
+table.content{
+	width: 100%;
+	empty-cells:show;
+	border-spacing: 0px;
+	border-radius: 5px;
+	background-color: #99aabb;
+	-webkit-box-shadow: 4px 4px 8px #555;
+	box-shadow: 4px 4px 8px #555;
+}
+
+/* Helper td */
+td.helper{
+	padding: 10px;
+	vertical-align: top;
+	border-radius: 5px;
+	background: -webkit-linear-gradient( rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0) );
+	background: linear-gradient( rgba(200, 200, 200, 0.5), rgba(200, 200, 200, 0) );
+}
+
+table.fixed{
+	table-layout:fixed;
+}
+
+table.full{
+	width: 100%;
+}
+
+/* Style for logs etc. */
+.textpad{
+	margin: 10px auto;
+	width: 70%;
+	padding: 10px;
+	border-spacing: 1px;
+	border: 1px solid #666;
+	-webkit-box-shadow: 4px 4px 8px #555;
+	box-shadow: 4px 4px 8px #555;
+}
+
+/* Font Properties */
+.code{
+	overflow: auto;
+	text-align: left;
+	padding: 10px;
+	font-family: monospace;
+	font: 11px Courier New, monospace;
+	white-space: pre;
+}
+
+/* Scrollable list container */
+.scroller{
+	background-color: #aaaaaa;
+	height:150px;
+	width:100%;
+	overflow: auto;
+}
+
+.red {color: red }
+.drd {color: darkred }
+.grn {color: green }
+.blu {color: blue }
+.prp {color: purple }
+.blk {color: black }
+
+.gry {color: grey }
+.dgy {color: dimgrey }
+.org {color: orange }
+.mrn {color: maroon }
+.sna {color: sienna }
+.sbu {color: steelblue }
+.olv {color: olive }
+
+/* Text Fields */
+.txta{background-color: #d0d0d0}
+.txtb{background-color: #c0c0c0}
+
+/* Image Fields */
+.imga{
+	background: -webkit-linear-gradient( #f8f8f8 25%, #eaeaea);
+	background: linear-gradient( #f8f8f8 25%, #eaeaea);
+}
+.imgb{
+	background: -webkit-linear-gradient( #d7d7d7 25%, #e6e6e6);
+	background: linear-gradient( #d7d7d7 25%, #e6e6e6);
+}
+
+/* Status Fields */
+.good{
+	background: -webkit-linear-gradient(#90f080, #70d060);
+	background: linear-gradient(#90f080, #70d060);
+	background-color: #90f080
+}
+.noti{
+	background: -webkit-linear-gradient(#8090f0, #6070d0);
+	background: linear-gradient(#8090f0, #6070d0);
+	background-color: #8090f0
+}
+.warn{
+	background: -webkit-linear-gradient(#f0f080, #d0d060);
+	background: linear-gradient(#f0f080, #d0d060);
+	background-color: #f0f080
+}
+.alrm{
+	background: -webkit-linear-gradient(#f0d080, #d0b060);
+	background: linear-gradient(#f0d080, #d0b060);
+	background-color: #f0b080
+}
+.crit{
+	background: -webkit-linear-gradient(#f09090, #d07070);
+	background: linear-gradient(#f09090, #d07070);
+	background-color: #f09090
+}
+.part{background-image:url('../img/dia.png')}
+
+/* Default Group Based Module Colors */
+.adm1, .net1, .dsk1, .mon1, .mgr1, .oth1, .usr1{
+	background: -webkit-linear-gradient(#bbccdd, #6688aa);
+	background: linear-gradient(#bbccdd, #6688aa);
+	background-color: #6688aa
+}
+.adm2, .net2, .dsk2, .mon2, .mgr2, .oth2, .usr2{
+	background: -webkit-linear-gradient(#c0d0e0, #7090b0);
+	background: linear-gradient(#c0d0e0, #7090b0);
+	background-color: #7090b0
+}
+
+/* ThemeNMenu Style Sheet */
+.ThemeNMenu,.ThemeNSubMenuTable
+{
+	cursor:		default;
+	font-family:	verdana, arial, sans-serif;
+	font-size:	13px;
+
+	padding:	2px;
+	border:		0px;
+	white-space:	nowrap;
+}
+
+.ThemeNMenu
+{
+/*	background-color:	#F7F3EF; */
+	text-shadow: 0 1px 1px rgba(220, 220, 220, .8);
+}
+
+.ThemeNSubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:	100;
+	border:		0px;
+	padding:	0px;
+	text-shadow: 0 1px 1px rgba(220, 220, 220, .8);
+
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#454545, Direction=135, Strength=4);*/
+}
+
+.ThemeNSubMenuTable
+{
+	border:      1px solid #44607b;
+	background:  -webkit-linear-gradient(#d0e0f0, #80a0c0);
+	background:  linear-gradient(#d0e0f0, #80a0c0);
+	background-color: #6688aa;
+	border-radius: 4px;
+	-webkit-box-shadow: 4px 4px 8px #555;
+	box-shadow: 4px 4px 8px #555;
+}
+
+.ThemeNSubMenuTable td
+{
+	white-space:	nowrap;
+	padding:	2px;
+}
+
+.ThemeNMainItem,.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItem,.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	padding-left:	6px;
+	padding-right:	6px;
+	white-space:	nowrap;
+}
+
+.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	border:      1px solid #44607b;
+	background-color:#7090b0;
+	border-radius: 2px;
+	box-shadow: 0 1px 0 rgba(255,255,255, 0.3), inset 0 1px 0 rgba(255,255,255, 0.3);
+}
+
+.ThemeNMenuSplit
+{
+	height:		1px;
+	margin-top:	1px;
+	margin-bottom:	1px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #adaa9c;
+}
+
+.ThemeNMenuVSplit
+{
+	width:		1px;
+	margin:		0px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-right:	1px solid #adaa9c;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ThemeNMenuItem img.seq1
+{
+	display:	inline;
+}
+
+.ThemeNMenuItemHover seq2,
+.ThemeNMenuItemActive seq2
+{
+	display:	inline;
+}
+
+.ThemeNMenuItem .seq2,
+.ThemeNMenuItemHover .seq1,
+.ThemeNMenuItemActive .seq1
+{
+	display:	none;
+}

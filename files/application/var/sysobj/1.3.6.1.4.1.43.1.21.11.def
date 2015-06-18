@@ -1,0 +1,53 @@
+# Definition for 1.3.6.1.4.1.43.1.21.11 created by Defgen 1.7 on 14.Dec 10 10:46 (admin)
+
+# General
+SNMPv	2HC
+Type	3Com-NJ2000 
+Sysdes	
+OS	other
+Icon	w2gp
+Size	1
+Bridge	normalX
+ArpND	
+Dispro	LLDPX
+Serial	
+Bimage	
+
+VLnams	
+VLnamx	
+Group	
+Mode	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFpowr	
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp	
+MemCPU		
+Custom		

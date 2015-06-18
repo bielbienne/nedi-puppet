@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Location Editor
+</div>
+<h2>Introduction</h2>
+Place your locations on the maps and add some comments if you want.
+<h4>Important!</h4>
+Only place locations in maps where it makes sense. For example, if you have a regional Map 
+of Europe place Zurich in there but don't add buildings on that level. You should place 
+buildings only in city maps and so forth...
+<p>
+Depending on whether you enabled Google Maps in User-Profile or not, this tool will act 
+very differently:
+
+<h2>Usage with Google Maps</h2>
+<ul>
+<li>Upon selecting a location a geocode lockup is performed and the found coordinates are 
+highlighted green in the NS & EW fields.
+<li>A draggable marker is placed on the map, which can be adjusted to fit your needs. 
+Enter a description and click the add button.
+<li>The marker turns into an icon reflecting the respective location level and coordinates 
+should stay black, since they're read from the DB now.
+</ul>
+
+<h2>Usage without Google Maps</h2>
+<ul>
+<li>Without Google Maps integration enabled jpeg backdrops can be edited. 
+This can be leveraged with the geo map type in Topology-Maps.
+<li>At first you'll see the top level map, which is a world map by default 
+(I'll change this as soon as we've got networks on other celestial bodies).
+<li>Select a region and click on the map to set the coordinates. You'll notice that values are being 
+populated and the 'Add' button becomes 'Update', if the location already exists.
+<li>Upload lower level maps to html/map with (System-Files for example). Let's say, your network sites 
+are located in 2 regions (USA and Europe). Just name them map-USA.jpg and map-Europe.jpg and upload them. 
+Now when you select cities in those regions, the appropriate map should be shown and you can place 
+cities accordingly.
+<li>This also works within cities (makes sense where you've got a big metropolitan network). Just upload a 
+map-Europe-Zurich.jpg to html/map and as soon as you click on buildings in Zurich you can place them 
+in that metropolitan map.
+</ul>
+<div id="footer">Remo Rickli 2013</div>
+</body>

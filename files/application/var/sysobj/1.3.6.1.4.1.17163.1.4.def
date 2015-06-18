@@ -1,0 +1,50 @@
+# Definition for 1.3.6.1.4.1.17163.1.4 created by Defgen 1.5
+
+# General
+SNMPv	2
+Type	Riverbed Steelhead Mobile Controller 8650
+OS	Linux
+Icon	w2rn
+Size	1
+Bridge	
+ArpND	
+Dispro	
+Serial	1.3.6.1.4.1.17163.1.4.1.2.0
+Bimage	
+
+VLnams	
+Group	
+Mode	
+
+# Interfaces
+IFaddr	old
+IFalia	
+IFalix	
+IFvlan	
+IFvlix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp	
+MemCPU	
+Custom		
+
+IFname	1.3.6.1.2.1.31.1.1.1.1
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19

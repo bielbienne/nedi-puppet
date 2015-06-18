@@ -1,0 +1,38 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Interface Reports
+</div>
+
+<h2>Introduction</h2>
+Interface reports provide information on the perimeter of your network, but also reveal internal problems or misconfiguration. Here you'll also find how nodes are 
+distributed across your IP ranges.
+
+<h2>Usage</h2>
+<ul>
+<li>Filter on certain values, if desired (won't be taken into account for links to other modules).
+<li>Select (hold down CTRL for multiple) reports you wish to look at.
+<li>Adjust the limit to see more or less results.
+<li>Check 'Alternative' to sort keys rather than values or absolute rather than relative values. You see the what's sorted on, on the bottom of each table.
+<li>Check 'Optimize' for total instead of last counters or specify Ethernet interfaces on some reports. You see the what's used on, on the bottom of each table.
+</ul>
+
+<h3>Reports</h3>
+<ol>
+<li>IF Active reveals whitch switches can be replaced by smaller ones or which are getting really full. 'Optimize' restricts this statistic to bridges and ethernet interfaces.
+<li>Disabled IF quickly find that interface you disabled a week ago, because some infected notebook tried to attack the rest of your network.
+<li>PoE Statistics displays top power delivery per device and interface average, based on per interface PoE information (e.g. from discovery protocol, not related to PoE budged).
+<li>Traffic, Errors, Discards and Broadcasts lists the busiest and most problematic interfaces of your network. Check 'Alternative Sort' to take IF speed into account of the traffic stats and the actual traffic for the errors. 'Optimize' uses absolute errors rather than those seen within the last discovery period.
+<li>Network Distribution Verifies all interface IPs and prefixes on devices with each other and shows a population summary.
+<li>Network Population Shows all subnets ( < /16) and maps IPs of nodes (green) and devices (blue) or both (yellow) into the address space.
+</ol>
+
+<div id="footer">Remo Rickli 2013</div>
+</body>

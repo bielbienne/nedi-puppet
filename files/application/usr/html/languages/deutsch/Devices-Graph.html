@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Geräte Graphiken
+</div>
+<h2>Einführung</h2>
+Dies ist das Kernmodul, um mit NeDi Graphiken darzustellen. Die Graphiken können dynamisch pro Gerät erzeugt werden. Somit kann z.B. die Auslastung eines Prozessors, die Arbeitsspeicherbelegung oder die Auslastung von Netzwerk-Schnittstellen graphisch dargestellt werden.
+<h4>Wichtig!</h4>
+Es ist zu beachten, dass diese Graphik Funktionen von NeDi lediglich als Zusatz und mit dem Ziel implementiert wurden, das Netzwerk möglichst geringfügig zu belasten. 
+<p>
+In welchem wiederkehrenden Zeitraum diese Daten von den Netzwerkkomponenten erhoben werden, kann konfiguriert werden und ist auch abhängig von der Grösse des Netzwerks.
+Mögliche Spitzenwerte zwischen zwei Netzwerkabfragen können somit nicht genau dargestellt werden, da ansonsten die Daten auf Kosten der Ressourcen permanent und in Echtzeit erhoben werden müssten.
+Basierend auf den sich wiederholenden Netzwerkabfragen ist es jedoch möglich, Tendenzen und Engpässe über einen längeren Zeitraum hinweg zu erkennen und graphisch darzustellen (Netzwerk Baseline).
+<h2>Benutzung</h2>
+<ul>
+<li>Im Feld mit den aufgelisteten Geräten, ist ein Gerät auszuwählen. Es werden dann im daneben liegenden Feld rechts die Schnittstellen des ausgewählten Gerätes aufgelistet. Nun eine Schnittstelle auswählen und mit dem Button "Zeigen" die Abfrage starten. 
+Es können bis zu 8 Schnittstellen gleichzeitig (Ctrl + Mausklick) ausgewählt werden, um eine kombinierte Graphik zu erzeugen. Diese Funktion ist zum Beispiel für logische Verbindungen bestehend aus mehr als einer physischen Schnittstelle, bei Cisco Etherchannel genannt, nützlich.
+<li>Systembezogene Graphen sind CPU, Speicherkapazität und Temperatur und können durch setzen des jeweiligen Häkchens ausgewählt werden.
+<li>In den beiden Drop Down Menüs linkerhand des Buttons "Zeigen" kann zusätzlich der dargestellte Zeitraum und die Grösse der Graphiken angepasst werden.
+</ul>
+<h4>Achtung!</h4>
+Die dargestellten Werte der Temperaturgraphik können "missbraucht" worden sein, um z.B. bei einem Wireless Access Point die Anzahl der verbunden Clients darzustellen (erwähnt im DefGen Mulitmedia Tutorial auf der NeDi Homepage).
+<p>
+Hinweis:
+<ul>
+<li>Wenn als Temperatur die Einheit Grad Fahrenheit zusätzlich zu Grad Celsius benötigt wird, kann dies in der Datei "...html/inc/libgraph.php" geändert werden, indem man für <i>$fahrtmp</i>  den Wert "0" auf "1" setzt.
+<li>Soll auf derselben Maschine nebst NeDi auch noch das Open Source Programm Cacti eingesetzt werden, können die Graphiken einfach durch das Entfernen des Kommentarzeichens bei der Variable <i>$cacticli</i> in der Datei "...html/inc/libmisc.php" hinzugefügt werden. 
+</ul>
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

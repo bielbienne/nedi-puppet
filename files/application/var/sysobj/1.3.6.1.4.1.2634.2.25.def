@@ -1,0 +1,51 @@
+# Definition for 1.3.6.1.4.1.2634.2.25 created by Defgen 1.8 on 24.Jun 2013 (admin)
+
+# General
+SNMPv	2
+Type	WTI TSM-24-DPS
+Typoid	
+Sysdes	
+OS	Linux
+Icon	lbyn
+Bridge	normal
+Dispro	
+Serial	.1.3.6.1.2.1.1.5.0
+Bimage	
+
+VLnams	
+VLnamx	
+VTPdom	
+VTPmod	
+
+# Interfaces
+IFname	1.3.6.1.4.1.2634.1.100.100.1.3
+IFalia	1.3.6.1.4.1.2634.1.100.100.1.2
+IFalix	
+InBcast	
+InDisc	
+OutDisc	
+IFvlan	
+IFvlix	
+IFpowr	
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	1
+Fulldp	2
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp	.1.3.6.1.4.1.2634.1.200.10.1.3.1	
+MemCPU		
+Custom		

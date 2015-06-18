@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Device Definition Generator
+</div>
+
+<h2>Introduction</h2>
+Generate those infamous .def files with the help of this module, to make them as accurate and reliable as possible. Email me the resulting .def files by clicking on <img src="../../img/16/mail.png">, if they're 100% working and I'll include them in the distribution.
+
+<h2>Usage</h2>
+<h3>Preparation</h3>
+You'd usually click on a sysobjid column of an unknown device in Devices-List or <img src="../../img/16/geom.png"> in Devices-Status. This will add an IP address and SNMP community along with the sysobjid you wish to take care of. Alternatively you can add those values manually and click on the <img src="../../img/16/brld.png"> button to update the form.
+<p>
+In case there's an existing .def file in html/log already, it's values will be filled into the form. This should make it easy for you to improve existing definitions at a later stage. This comes in handy as well, when you copy a .def file from a similar device from sysobj to html/log/ (adjusting the sysobjid) to get your usnupported unit going.
+<p>Here's some useful information on Sysobjids:<br>
+<a href="http://www.cisco.com/en/US/docs/net_mgmt/ciscoworks_resource_manager_essentials/4.1.1/device_support/table/RME411CM.htm" target="window">Cisco</a>
+<p>
+I also recommend watching the <a href="https://www.youtube.com/watch?v=bunFHB-RoUQ">DefGen Tutorial</a>!
+	
+<h3>Process</h3>
+Now you're ready to actually work in the .def file. You find templates to the right of each section, which suggest some OIDs. You can test them by clicking on the <img src="../../img/16/brgt.png"> <b>get</b> and <img src="../../img/16/walk.png"> <b>walk</b> button.
+<ul>
+<li>Hover over the input fields, to get hints on what to fill in.
+<li>Find the most official type (there's usually a sticker with a barcode somewhere).
+<li>Select the icon according to the GUI docs on the NeDi Homepage.
+<li>Contact me, if you need a new OS selection.
+<li>Some vendors use vlan community indexing to get Bridge forwarding information on the switches.
+<li>Some vendors use twice the bandwidth to indicate fullduplex. Just use 'doublespeed' as keyword for <b>IF Duplex</b>.
+<li>Only populate the Alias- Duplex- and Vlan- Index fields, if they're not the same as the interface indexes.
+<li>If MAU type (1.3.6.1.2.1.26.2.1.1.11) is used, no actual duplex values are required.
+<li>Use modifiers to multiply/divide temperature and memory if necessary. The latter also accepts % if the value reflects percentage of available memory or -% in the case of used memory.
+<li>Add an "N" to an OID, if of the last number can vary for CPU or temperature.
+</ul>
+
+<h2>Details</h2>
+<ul>
+<li>Add additional comments on top by a leading #
+<li>Once you start editing the text area, the inputs above will be locked to prevent accidental input.
+</ul>
+<div id="footer">Remo Rickli 2013</div>
+</body>

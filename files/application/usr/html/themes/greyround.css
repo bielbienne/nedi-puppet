@@ -1,0 +1,350 @@
+/* General Classes */
+body {
+	font: 10px verdana, arial, sans-serif; 
+	background-color: #444444;
+}
+
+td{
+	padding: 4px;
+	font: 11px verdana, arial, sans-serif; 
+	color: #222222;
+}
+
+th{
+	padding: 6px;
+	font: 12px verdana, arial, sans-serif; 
+	font-weight: bold;
+	color: #333333;
+	border-radius: 2em;
+	-moz-border-radius: 2em;
+	-webkit-border-radius: 2em;
+	-khtml-border-radius: 2em;
+}
+
+
+/* Headings */
+h1   {
+	color: #aaaaaa; 
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2   {
+	color: #bbbbbb;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3   {
+	color: #cccccc;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h4   {
+	color: #884400;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h5   {
+	color: #448800;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Input Fields */
+select {
+	background-color: #dddddd;
+}
+
+input {
+	background-color: #dddddd;
+	color: #333333;
+	border:2px solid;
+	border-color: #aaa #666 #666 #aaa; 
+}
+
+textarea {
+	font: 11px lucida console, fixedsys;
+	background-color: #dddddd;
+}
+
+/* Image Properties */
+img{
+	margin : 2px 3px;
+	vertical-align: middle;
+	border: none;
+}
+
+img.bigbar{
+	height : 16px;
+	margin : 2px 8px;
+	vertical-align: middle;
+	border: 1px solid #333333;
+	/* for IE */
+	filter:alpha(opacity=60);
+	/* CSS3 standard */
+	opacity:0.6;
+	/* for Mozilla */
+	-moz-opacity:0.6;
+	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+img.smallbar{
+	height : 6px;
+	margin : 2px;
+	vertical-align: middle;
+	border: 1px solid #333333;
+	/* for IE */
+	filter:alpha(opacity=60);
+	/* CSS3 standard */
+	opacity:0.6;
+	/* for Mozilla */
+	-moz-opacity:0.6;
+}
+
+/* Form Properties */
+:focus {background-color: #d0f0d0}
+
+/* Link Properties */
+:link {color: #00aa66;text-decoration: none;}
+:visited {color: #00a060;text-decoration: none;}
+:link:focus, :visited:focus {color: #00cc77}
+:link:hover, :visited:hover {color: #00cc77}
+:link:active, :visited:active {color: #00ffff}
+
+/* Header table & Footer div*/
+#header{
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #555555;
+}
+
+#footer{
+	margin: 20px auto;
+	width:50%;
+	border: 1px solid #555555;
+	padding: 8px;
+	text-align: center;
+	font: 9px verdana, arial, sans-serif;
+	color: #444444;
+}
+
+/* Actual Module */
+table.content{
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #505050;
+}
+
+/* Helper td */
+td.helper{
+	padding: 10px;
+	vertical-align: top;
+}
+
+table.fixed{
+	table-layout:fixed;
+}
+
+table.full{
+	width: 100%;
+}
+
+/* Style for logs etc. */
+.textpad{
+	margin: 10px auto;
+	width: 70%;
+	padding: 15px;
+	border-spacing: 1px;
+	border: 5px inset #cccc88;
+	border-radius: 2em;
+	-moz-border-radius: 2em;
+	-webkit-border-radius: 2em;
+	-khtml-border-radius: 2em;
+}
+
+/* Font Properties */
+.code{
+	overflow: auto;
+	text-align: left;
+	padding: 11px;
+	font-family: monospace;
+	font: 11px Courier New, monospace;
+	white-space: pre;
+}
+
+/* Scrollable list container */
+.scroller{
+	background-color: #aaaaaa;
+	height:150px;
+	width:100%;
+	overflow: auto;
+}
+
+.red {color: red }
+.drd {color: darkred }
+.grn {color: green }
+.blu {color: blue }
+.prp {color: purple }
+.blk {color: black }
+
+.gry {color: grey }
+.dgy {color: dimgrey }
+.org {color: orange }
+.mrn {color: maroon }
+.sna {color: sienna }
+.sbu {color: steelblue }
+.olv {color: olive }
+
+/* Text Fields */
+.txta{background-color: #d0d0d0}
+.txtb{background-color: #c0c0c0}
+
+/* Image Fields */
+.imga{background-color: #f0f0f0}
+.imgb{background-color: #e6e6e6}
+
+/* Status Fields */
+.good{background-color: #90f080}
+.noti{background-color: #8090f0}
+.warn{background-color: #f0f080}
+.alrm{background-color: #f0b080}
+.crit{background-color: #f09090}
+.part{background-image:url('../img/dia.png')}
+
+/* Default Group Based Module Colors */
+.adm1{background-image: URL(bgsteel.jpg)}
+.adm2{background-color: #aeaaaa}
+
+.net1{background-image: URL(bgsteel.jpg)}
+.net2{background-color: #aaaaaa}
+
+.dsk1{background-image: URL(bgsteel.jpg)}
+.dsk2{background-color: #aaaaaa}
+
+.mon1{background-image: URL(bgsteel.jpg)}
+.mon2{background-color: #aaaaaa}
+
+.mgr1{background-image: URL(bgsteel.jpg)}
+.mgr2{background-color: #aaaaaa}
+
+.oth1{background-image: URL(bgsteel.jpg)}
+.oth2{background-color: #aaaaaa}
+
+.usr1{background-image: URL(bgsteel.jpg)}
+.usr2{background-color: #aaaaaa}
+/* ThemeNMenu Style Sheet */
+
+.ThemeNMenu,.ThemeNSubMenuTable
+{
+	cursor:		default;
+	font-family:	verdana, arial, sans-serif;
+	font-size:	13px;
+
+	padding:	2px;
+	border:		0px;
+	white-space:	nowrap;
+}
+
+.ThemeNMenu
+{
+/*	background-color:	#F7F3EF; */
+}
+
+.ThemeNSubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:	100;
+	border:		0px;
+	padding:	0px;
+
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#454545, Direction=135, Strength=4);*/
+}
+
+.ThemeNSubMenuTable
+{
+	border:		1px solid #444444;
+	background-color:	#eeeeee;
+}
+
+.ThemeNSubMenuTable td
+{
+	white-space:	nowrap;
+	padding:	2px;
+}
+
+.ThemeNMainItem,.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItem,.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	padding-left:	6px;
+	padding-right:	6px;
+	white-space:	nowrap;
+}
+
+.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	color:		#888888;
+	background-color:	#ffffff;
+}
+
+.ThemeNMenuSplit
+{
+	height:		1px;
+	margin-top:	1px;
+	margin-bottom:	1px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #ADAA9C;
+}
+
+.ThemeNMenuVSplit
+{
+	width:		1px;
+	margin:		0px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-right:	1px solid #ADAA9C;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ThemeNMenuItem img.seq1
+{
+	display:	inline;
+}
+
+.ThemeNMenuItemHover seq2,
+.ThemeNMenuItemActive seq2
+{
+	display:	inline;
+}
+
+.ThemeNMenuItem .seq2,
+.ThemeNMenuItemHover .seq1,
+.ThemeNMenuItemActive .seq1
+{
+	display:	none;
+}

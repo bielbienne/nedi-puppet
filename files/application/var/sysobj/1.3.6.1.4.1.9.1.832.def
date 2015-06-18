@@ -1,0 +1,58 @@
+# Definition for 1.3.6.1.4.1.9.1.832 created by Defgen 1.8 on 11.Jul 2013 (adm.obst)
+
+# General
+SNMPv	2HC
+Type	WS-C6509IOS
+Typoid	
+Sysdes	
+OS	IOS
+Icon	c3bd
+Size	14
+Bridge	VLX
+ArpND	oldcie
+Dispro	CDP
+Serial	1.3.6.1.4.1.9.3.6.3.0
+Bimage	1.3.6.1.4.1.9.2.1.73.0
+
+CfgChg	1.3.6.1.4.1.9.9.43.1.1.1.0
+CfgWrt	1.3.6.1.4.1.9.9.43.1.1.3.0
+VLnams	1.3.6.1.4.1.9.9.46.1.3.1.1.4.1
+VLnamx	
+Group	1.3.6.1.4.1.9.9.46.1.2.1.1.2.1
+Mode	1.3.6.1.4.1.9.9.46.1.2.1.1.3.1
+
+# Interfaces
+StartX	
+EndX	
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	oldcie
+IFalia	1.3.6.1.4.1.9.2.2.1.1.28
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	1.3.6.1.4.1.9.9.68.1.2.2.1.2
+IFvlix	
+IFpowr		
+IFpwix	
+IFdupl	1.3.6.1.2.1.10.7.2.1.19
+IFduix	
+Halfdp	2
+Fulldp	3
+
+# Modules
+Modesc	1.3.6.1.2.1.47.1.1.1.1.2
+Moclas	1.3.6.1.2.1.47.1.1.1.1.5
+Movalu	3|6|7|9|10
+Moslot	1.3.6.1.2.1.47.1.1.1.1.7
+Modhw	1.3.6.1.2.1.47.1.1.1.1.8
+Modsw	1.3.6.1.2.1.47.1.1.1.1.9
+Modfw	1.3.6.1.2.1.47.1.1.1.1.10
+Modser	1.3.6.1.2.1.47.1.1.1.1.11
+Momodl	1.3.6.1.2.1.47.1.1.1.1.13
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.9.9.109.1.1.1.1.8.1
+Temp	1.3.6.1.2.1.47.1.1.1.1.4.44	
+MemCPU	1.3.6.1.4.1.9.9.48.1.1.1.6.1	
+Custom	Temp2;G;C	1.3.6.1.4.1.9.9.91.1.1.1.1.4.48

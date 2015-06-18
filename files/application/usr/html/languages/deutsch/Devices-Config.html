@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Geräte Konfiguration
+</div>
+
+<h2>Einführung</h2>
+Durch Datenbankabfragen können die gespeicherten Geräte Konfigurationen verglichen und geprüft werden. 
+
+<h2>Benutzung</h2>
+Abfragen im Feld [Liste] können eigenständig und ohne Angaben im Feld [Vergleich] ausgeführt werden. Um mit dem Feld [Vergleich] arbeiten zu können, muss jedoch im Feld [Liste] ein Referenzgerät ausgwählt worden sein.
+
+<h3>Das Feld Liste</h3>
+<ol>
+<li> Über das Drop Down Menü (links) kann der anzuwendende Filter ausgewählt werden.
+<li> Nun entweder im Textfeld angeben, nach welchem Begriff die Gerätekonfigurationen durchsucht werden sollen oder im zweiten Drop Down Menü (rechts) ein Gerät auswählen, um die Gerätekonfigurationen nach dieser Gerätebezeichnung zu durchsuchen. Die Abfrage mit dem den Button "Zeigen" starten.
+</ol>
+<h3>Das Feld Vergleich</h3>
+
+Um die Vergleichsfunktionen nutzen zu können, muss zuerst im Feld [Liste] via dem Drop Down Menü ein Referenzgerät auswählt werden.
+<ul>
+<li> Im Feld [Vergleich] kann nun via dem Drop Down Menü ein zweites Gerät ausgewählt werden, um dessen Gerätekonfiguration mit dem Referenzgerät zu vergleichen.
+Via dem Button "Zeigen" wird dann die vollständige Konfiguration des Referenzgerätes und zusätzlich die Konfigurationsunterschiede des zweiten Geräts angezeigt.
+Über das zweite Drop Down Menü (rechts) im Feld [Vergleich] kann zusätzlich für unterstützte Betriebssysteme eine entsprechend optimierte Darstellung der Konfigurationen gewählt werden.  
+<li> Alternativ belässt man im Feld [Vergleich] den Standardwert-Typ und wählt nur eine entsprechend optimierte Darstellung des passenden Betriebssystems aus. 
+Via dem Button "Zeigen" wird dann die vollständige Konfiguration des Referenzgerätes und die Konfigurationsunterschiede aller identischen Gerätetypen zum Referenzgerät angezeigt. 
+</ul>
+
+<h2>Details</h2>
+<ul>
+<li> Um mit diesem Modul zu arbeiten, ist das Verstehen von Regular-Expressions (Abk. RegExp oder Regex) hilfreich.  
+<li> Abfragen können als Favoriten im Browser hinterlegt werden.
+<li> Am Ende der Tabellen steht immer die resultierende SQL-Abfrage. Diese kann z.B. im Modul {Other -> Export} weiter verwendet werden.
+</ul>
+Die Bedeutung der Werkzeugsymbole beim Anschauen einer Konfiguration:
+<ul>
+<li><img src="../../img/16/flop.png"> Exportiert die Gerätekonfiguration in eine .csv Datei.
+<li><img src="../../img/16/say.png"> Unterdrückt in der Konfiguration beim "banner login", "banner motd" und "banner exec" beim Trennzeichen ^C das nachfolgende C, so dass ^ als Trennzeichen bleibt. Dies erlaubt im Normalfall, dass die Konfiguration kopiert und durch anschliessendes Einfügen direkt weiter verwendet werden kann.
+<li><img src="../../img/16/form.png"> Nummeriert alle Linien in der Konfiguration und entfernt diese durch erneutes Klicken wieder. Änderungen der Konfiguration werden im NeDi mit Liniennummern angegeben. Diese können so leichter der aktuellen Konfiguration zugeordnet werden. 
+<li><img src="../../img/16/bcnl.png"> Auf die Konfiguration angewendet löscht diese Funktion die Konfiguration und alle Einträge der Spalte "Changes" (Änderung) in der NeDi-Datenbank. Wird diese Funktion auf die aufgelisteten Änderungen angewendet (sofern welche angezeigt werden), so werden nur diese gelöscht. 
+</ul>
+Links im Feld [Liste]:
+<ul>
+<li> Klickt man in der Spalte [Device] auf ein Gerätesymbol, wird man zum Modul [Device Status] weitergeleitet, wo man eine Statusübersicht des jeweiligen Gerätes erhält.
+<li> Klickt man in der Spalte [IP] auf eine IP-Adresse, wird eine Telnet-Verbindung zum jeweiligen Gerät aufgebaut.
+<li> Klickt man in der Spalte [Konfiguration] auf den angezeigten Abschnitt einer Konfiguration, wird die aktuelle Konfiguration des jeweiligen Gerätes angezeigt.
+</ul>
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

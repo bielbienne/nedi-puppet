@@ -1,0 +1,7 @@
+# List of devices to be discovered by nedi.pl
+# You can also specify communities and read version for
+# individual devices separated by tab(s).
+# If list is empty, the default gateway will be used.
+;192.168.1.1		pablic
+;192.168.1.2		peblic
+;router17.nedi.ch	poblic	1

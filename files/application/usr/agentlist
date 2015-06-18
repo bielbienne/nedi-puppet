@@ -1,0 +1,5 @@
+# List of NeDi agents to collect data from. In addition to the IP or 
+# DNS name a user from nedi.conf with a valid password for the agents'
+# GUI and its name location and contact should be specified as well.
+# DNS/IP	usr	name	location		contact
+;192.168.1.10	admin	nedio8	CH;Zurich;Home;U;Lab	Remo

@@ -1,0 +1,50 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Devices Config
+</div>
+
+<h2>Introduction</h2>
+Review and compare backed up configurations and their changes. Recent backup errors and config changes are shown by default.
+
+<h2>Usage</h2>
+
+<h3>List</h3>
+<ul>
+<li>The left selectbox defines how the list should be filtered. You can limit (default 10) the number of listed configs with the limit 
+selectbox to the right.
+<li>Type the pattern into the text box or select a device from the selectbox to the right.
+<li>Click on an excerpt (size can be set by limit by the limit selectbox to the left) from the list to view the actual configuration.
+<li>Knowledge about regexp is very helpful when working with this module!
+<li>You can save searches in Bookmarks or use the notepad icon in the header to add it to the admin message (only appears when a list is actually shown).
+<li>The last map can be included via paint icon and a limit (default 200) can be chosen as well. This can enhance any printouts which can be generated
+with the print icon in the header. Click on the rows you may wish to highlight (double-click to remove) in the printout itself.
+<li>You can export the list as XLS by clicking on the the list icon in the header (only appears when a list is actually shown).
+<li>The resulting SQL query can be shown using the debug icon in the header (admin only). It links to Other-Export to generate CSV files or the likes.
+<li>The triangles in the top row allow for the list to be sorted accordingly. They won't be available on special columns containing realtime data for example.
+</ul>
+
+<h3>Compare</h3>
+<ol>
+<li>Choose a reference device from the "List" selectbox. 
+<li>Now either select the 2nd device from the left selectbox in "Comparison" or leave it at -Type- (This will list all configs of the same type).
+Select how the output should be displayed.
+</ol>
+
+<h2>Details</h2>
+When viewing a config you've got the following options:
+<ul>
+<li><img src="../../img/16/form.png"> Toggles line number display for easier change review.
+<li><img src="../../img/16/say.png"> Suppresses the motd character with that configurations of Cisco devices can directly be copied an pasted.
+<li><img src="../../img/16/flop.png"> Use System-Export to display the config as plain-text or select a file version in the changes area to edit the actual file (made available with nedi.pl -Bx)
+<li><img src="../../img/16/bcnl.png"> Clears configuration or changes.
+</ul>
+<div id="footer">Remo Rickli 2013</div>
+</body>

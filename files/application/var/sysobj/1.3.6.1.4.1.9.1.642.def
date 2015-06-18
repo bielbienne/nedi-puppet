@@ -1,0 +1,54 @@
+# Created or edited by Marco Rauchenstein on October 2007
+# Please use for "Type" the exact Cisco Product Name
+# Please use "cpmCPUTotal5minRev" for "CPUutl" 
+# Please make sure that for "Serial" the correct value is shown
+
+# General
+SNMPv	2HC
+Type	Cisco-1812W
+OS	IOS
+Icon	rsbn
+Size	1
+Bridge	CAP
+ArpND	old
+Dispro	CDP
+Serial	1.3.6.1.4.1.9.9.92.1.1.1.2.3
+Bimage	1.3.6.1.4.1.9.2.1.73.0
+
+CfgChg	1.3.6.1.4.1.9.9.43.1.1.1.0
+CfgWrt	1.3.6.1.4.1.9.9.43.1.1.3.0
+VLnams	
+Group	
+Mode	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFdupl	1.3.6.1.2.1.10.7.2.1.19	
+IFduix	
+Halfdp	2
+Fulldp	3
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.9.9.109.1.1.1.1.8.1	
+Temp	
+MemCPU	1.3.6.1.4.1.9.9.48.1.1.1.6.1
+MemIO	1.3.6.1.4.1.9.9.48.1.1.1.6.2

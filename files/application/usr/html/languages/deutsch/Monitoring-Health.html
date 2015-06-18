@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Netzwerk-Überwachung
+</div>
+
+<h2>Einführung</h2>
+Dieses Modul ermöglicht einen zentralen Überblick über den aktuellen Netzwerkzustand. Die entsprechenden Gerätekonfigurationen vorausgesetzt, werden im integrierten Syslog Server alle Systemmeldungen erfasst und klassifiziert dargestellt.
+<p>
+Werden aussergewöhnliche Ereignisse festgestellt, wird dies zusätzlich dynamisch und solange der Zustand anhält, im dazugehörigen Feld eingeblendet:
+<p>
+<ul>
+<li>Im Feld [System] wird z.B. eine zu hohe Temperatur eines Gerätes dargestellt.
+<li>Im Feld [Interface Fehler] werden Schnittstellen mit einer ungewöhnlich hohen Fehlerquote dargestellt.
+<li>Im Feld [Interface Verkehr] werden Schnittstellen mit ungewöhnlich hohem Datenaufkommen dargestellt.
+<li>Im Feld [Uptime] werden Geräte eingeblendet, welche nicht mehr erreichbar sind. NeDi prüft auch die eigene Monitoring Funktionalität (moni.pl) und verändert das Uptime Symbol, sollte das Monitoring nicht mehr richtig funktionieren. Zusätzlich wird im Fehlerfall auch ein Alarmsound ausgegeben. 
+</ul>
+Auf den Zustand des Netzwerks wird auch farblich und akustisch hingewiesen. Ist ein Gerät oder ein Netzwerksegment nicht mehr erreichbar, ändert sich die Farbe der betroffenen Standorte.
+<p>
+Zusätzlich werden abhängig von der Schwere des Ausfalls unterschiedliche Sirenentöne ausgegeben. Dabei handelt es sich um Originalsirenentöne des Paul Scherrer Instituts (PSI), welche bei einer Katastrophenübung aufgenommen worden sind ;-)  
+
+<h2>Benutzung</h2>
+
+Um NeDi optimal einzusetzen, kann dieses Modul in einem Browser offen gelassen werden (z.B. an einem gut sichtbaren Ort innerhalb der IT-Abteilung). Das Browserfenster wird automatisch einmal pro Minute aktualisiert.
+<p>
+Die Topologie im unteren Teil ist hierarchisch aufgebaut. Durch das Anklicken eines Gebäudesymbols erreicht man die nächst höhere Ebene. Auf der untersten Ebene werden die Geräte des jeweiligen Standortes angezeigt. Klickt man anstelle eines Gebäudesymbols den Namen des Standorts an, werden direkt alle zugehörigen Netzwerkkomponenten im Modul {Geräte Liste} aufgelistet.
+<h2>Details</h2>
+<ul>
+<li>Im oberen Teil werden allgemeine Netzwerkzustände dargestellt. Welche Temperatur für die Geräte oder welche prozentuale Auslastung einer Netzwerkschnittstelle etc. als zu hoch eingestuft wird, kann in der Datei nedi.conf festgelegt werden.
+<li>Im mittleren Teil werden statistische Meldungen aufgezeigt. Die Statistik links zeigt die gesamte Anzahl bisher eingegangener Meldungen gruppiert nach Alarmstufen an. Auf der rechten Seite werden die aktuell eingegangenen Meldungen angezeigt.
+<li>Im unteren Teil wird eine Topologie der Netzwerkstandorte angezeigt. Diese wird automatisch erstellt, sofern die Netzwerkgeräte entsprechend konfiguriert (SNMP Location) und der vorgegebene Syntax in der Datei nedi.conf bei der Gerätekonfiguration berücksichitig worden sind.
+</ul>
+Weitere Links:
+<ul>
+<li> Klickt man im Feld [Statistik Meldungen] in der Spalte [Stufe] auf ein Icon, wird man zum Modul {Monitoring Meldungen}weiter geleitet. Die dort angezeigten Meldungen entsprechen dem gewählten Level respektive Symbol.
+<li> Klickt man im Feld [Meldungen Letztmals] in der Spalte [Zeit] auf einen bestimmten Zeitpunkt, so werden die zu diesem Zeitpunkt eingegangen Nachrichten im Modul {Monitoring Meldungen} dargestellt.
+<li> Klickt man im Feld [Meldungen Letztmals] in der Spalte [Quelle] auf einen Gerätenamen, so werden die aktuellsten von diesem Gerät eingegangen Nachrichten im Modul {Monitoring Meldungen} dargestellt.  
+</ul>
+Temporär verfügbare Links im Monitoring Health Bereich:
+<ul>
+<li> Klickt man bei einer temporären Information auf einen Gerätenamen, wird die Statusübersicht dieses Gerätes im Modul {Device Status} angezeigt.
+<li> Klickt man bei einer temporären Information auf eine Schnittstelle, werden die an dieser Schnittstelle angeschlossenen Geräte im Modul {Node Liste} angezeigt.
+</ul>
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

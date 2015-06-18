@@ -1,0 +1,34 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Devices Graph
+</div>
+<h2>Introduction</h2>
+The heart of your graphing pleasures allows you to dynamically generate stacked interface graphs on the fly and much more.
+<h4>Important!</h4>
+Please note that NeDi's graphing feature was implemented as an addition with lowest possible resource and maintenance cost in mind. 
+It will not graph those 5 minute peaks (unless you run NeDi every 5 minutes in very small networks), but provide a longterm view 
+on each and every interface (or system stats) based on your discovery schedule. This translates to baselining and prediction of potential 
+bottlenecks, instead of identifying erratic outbursts of any kind (You'd prefer using a tool like Cacti to monitor this stuff instead).
+
+<h2>Usage</h2>
+<ul>
+<li>Select any top graphs if you wish to get the big picture on your network.
+<li>Selecting a device will reveal its interfaces. You can choose several of them to be stacked dynamically (doesn't work for IF status!).
+<li>Select several graph sources at once to correlate and investigate problems (e.g. CPU load, broadcasts on some interfaces of a device)
+<li>System related graphs are CPU, Memory and Temperature and a custom graph for other values.
+<li>Use double arrows to move start (top one), the whole graph (middle) or its end (bottom one) by weeks or single arrows for days. Click 
+on a date icon to manually set a start or end time.
+<li>If you can't live without degrees Fahrenheit, check it in User-Profile.
+<li>If you use Cacti on the same host, set $cacticli in html/inc/libmisc.php to easily add graphs...
+</ul>
+
+<div id="footer">Remo Rickli 2013</div>
+</body>

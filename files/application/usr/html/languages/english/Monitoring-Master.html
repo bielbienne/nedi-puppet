@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Monitoring Master
+</div>
+
+<h2 class="warn">WARNING, this is still experimental!</h2>
+
+<h2>Introduction</h2>
+The master console should be used on a central NeDi host, where only the master.pl daemon is running. All other GUI modules except Devices-List, Devices-Status, Reports-Monitoring and Monitoring-Events should be disabled
+to avoid confusion. In addition a unique theme should be selected to further distinguish this host from regular NeDi installations.
+
+<h2>Usage</h2>
+<ul>
+<li>Add remote NeDi installations to the agentlist and add the usernames and passwords to access them in nedi.conf
+<li>Run master.pl from System-Services (only appears there if Monitoring-Master is enabled in nedi.conf)
+<li>Go to Devices-List and add detected agents to monitoring (NeDi agents are treated as devices)
+<li>Go to Monitoring-Setup and select http or https to tell master.pl how to access the agents
+<li>Go back to System-Services to restart master.pl or wait for a 'pause' intervall to get the agents polled
+</ul>
+
+<h2>Details</h2>
+<ul>
+<li>Upon first access, master.pl reads the last event with level 200 (alert) or above and all unacknowledged incidents.
+<li>On subsequent runs only new alert-events are read. Incidents are removed from the master console, if they're acknowledged on the agent.
+<li>Monitoring-Master shows those events and incidents with quick links to the respective agents.
+</ul>
+
+<div id="footer">Remo Rickli 2013</div>
+</body>

@@ -1,0 +1,54 @@
+# Created or edited by Martin Moor on Februar 2008
+# Please use for "Type" the exact Foundry Product Name
+# Please use "cpmCPUTotal1minRev" for "CPUutl" --> 5min average is not available
+# Please make sure that for "Serial" the correct value is shown if available
+# If you create a .def file please send it to "remo.rickli@psi.ch"
+
+# General
+SNMPv	2c
+Type	EIF2402CF
+OS	Ironware
+Icon	w3rn
+Size	1
+Bridge	
+ArpND	old
+Dispro	
+Serial	1.3.6.1.4.1.1991.1.5.1.1.1.1.3.1.10.1
+Bimage	1.3.6.1.4.1.1991.1.5.1.1.1.1.3.1.6.1
+
+VLnams	
+Group	
+Mode	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFdupl	
+IFduix	
+Halfdp	1
+Fulldp	2
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp	
+MemCPU	
+MemIO	
+

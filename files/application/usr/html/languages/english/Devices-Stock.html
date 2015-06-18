@@ -1,0 +1,31 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Devices Stock
+</div>
+<h2>Introduction</h2>
+This module provides the life-cycle management for your devices. 
+If an in-stock module or device's serial number is discovered on the network, its status will be set to active, 
+a comment will be added and an event created (if configured).
+
+<h2>Usage</h2>
+<ul>
+<li>Simply use a bar code scanner (should send a "tab" upon successful reading) to scan type and serial number or 
+enter them manually. Specify location, condition, source/provider and warranty, if you care. If the latter one is 
+closer than a month it'll be highlited with the "warning" color or with the "critical" color if expired. A zero 
+with no highligting is shown if no warranty is set.
+<li>Select a link from any of the summaries to list individual items.
+<li>If you list by a property (e.g. location), the appropriate field on the top is populated as well for easier batch additions. 
+<li>You can edit items listed by clicking on its status icon. The current list will stay. Note that the focus will move to the location field (SN cannot be edited anyway, since it's the reference). You can either update or delete an item now.
+<li>You can export a list as XLS by clicking on the the list icon in the header (only appears when a list is actually shown).
+</ul>
+
+<div id="footer">Remo Rickli 2013</div>
+</body>

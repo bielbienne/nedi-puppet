@@ -1,0 +1,331 @@
+/* General Classes */
+body {
+	font: 9px verdana, arial, sans-serif; 
+	background-color: #000000;
+}
+
+td{
+	padding: 2px;
+	font: 9px verdana, arial, sans-serif; 
+	color: #111111;
+}
+
+th{
+	padding: 4px;
+	font: 11px verdana, arial, sans-serif; 
+	font-weight: bold;
+	color: #222222;
+}
+
+/* Headings */
+h1   {
+	color: #ddddaa; 
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+}
+
+h2   {
+	color: #cccc99;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+}
+
+h3   {
+	color: #bbbb88;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+	font-style: italic;
+}
+
+h4   {
+	color: #aa4400;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h5   {
+	color: #44aa00;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Input Fields */
+select {
+	background-color: #dddddd;
+}
+
+input {
+	background-color: #dddddd;
+	border:1px solid;
+	border-color: #aaa #666 #666 #aaa; 
+}
+
+textarea {
+	font: 11px lucida console, fixedsys;
+	background-color: #dddddd;
+}
+
+/* Image Properties */
+img{
+	margin : 1px 1px;
+	vertical-align: middle;
+	border: none;
+}
+
+img.bigbar{
+	height : 12px;
+	margin : 1px 4px;
+	vertical-align: middle;
+	border: 1px solid #222222;
+}
+
+img.smallbar{
+	height : 5px;
+	margin : 1px;
+        vertical-align: middle;
+	border: 1px solid #222222;
+}
+
+/* Form Properties */
+:focus {background-color: #eecc44}
+
+/* Link Properties */
+:link {color: #995500;text-decoration: none;}
+:visited {color: #664400;text-decoration: none;}
+:link:focus, :visited:focus {color: #884400}
+:link:hover, :visited:hover {color: #cc8800}
+:link:active, :visited:active {color: #eecc00}
+
+/* Header table & Footer div*/
+#header{
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #878778;
+}
+
+#footer{
+	margin: 20px auto;
+	width:90%;
+	border: 1px solid #878778;
+	padding: 6px;
+	text-align: right;
+	font: 9px verdana, arial, sans-serif;
+	color: #888888;
+}
+
+/* Actual Module */
+table.content{
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #878778;
+}
+
+/* Helper td */
+td.helper{
+	padding: 1px;
+	vertical-align: top;
+	background-color: #151515;
+}
+
+table.fixed{
+	table-layout:fixed;
+}
+
+table.full{
+	width: 100%;
+}
+
+/* Style for logs etc. */
+.textpad{
+	margin: 5px auto;
+	width: 80%;
+	padding: 10px;
+	border-spacing: 1px;
+	border: 2px solid #878778;
+}
+
+/* Font Properties */
+.code{
+	overflow: auto;
+	text-align: left;
+	padding: 8px;
+	font-family: monospace;
+	font: 10px Courier New, monospace;
+	white-space: pre;
+}
+
+/* Scrollable list container */
+.scroller{
+	background-color: #aaaaaa;
+	height:150px;
+	width:100%;
+	overflow: auto;
+}
+
+.red {color: red }
+.drd {color: darkred }
+.grn {color: darkgreen }
+.blu {color: darkblue }
+.prp {color: purple }
+.blk {color: black }
+
+.gry {color: grey }
+.dgy {color: dimgrey }
+.org {color: orange }
+.mrn {color: maroon }
+.sna {color: sienna }
+.sbu {color: steelblue }
+.olv {color: olive }
+
+/* Text Fields */
+.txta{background-color: #c0c0c0}
+.txtb{background-color: #b0b0b0}
+
+/* Image Fields */
+.imga{background-color: #e6e6e6}
+.imgb{background-color: #e0e0e0}
+
+/* Status Fields */
+.good{background-color: #44dd44}
+.noti{background-color: #4444dd}
+.warn{background-color: #dddd44}
+.alrm{background-color: #dd8844}
+.crit{background-color: #dd4444}
+.part{background-image:url('../img/dia.png')}
+
+/* Default Group Based Module Colors */
+.adm1{background-color: #553333}
+.adm2{background-color: #775555}
+
+.net1{background-color: #444444}
+.net2{background-color: #666666}
+
+.dsk1{background-color: #444444}
+.dsk2{background-color: #666666}
+
+.mon1{background-color: #444444}
+.mon2{background-color: #666666}
+
+.mgr1{background-color: #444444}
+.mgr2{background-color: #666666}
+
+.oth1{background-color: #444444}
+.oth2{background-color: #666666}
+
+.usr1{background-color: #444444}
+.usr2{background-color: #666666}
+/* ThemeNMenu Style Sheet */
+
+.ThemeNMenu,.ThemeNSubMenuTable
+{
+	cursor:		default;
+	font-family:	verdana, arial, sans-serif;
+	font-size:	12px;
+
+	padding:	2px;
+	border:		0px;
+	white-space:	nowrap;
+}
+
+.ThemeNMenu
+{
+/*	background-color:	#F7F3EF; */
+}
+
+.ThemeNSubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:	100;
+	border:		0px;
+	padding:	0px;
+
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#454545, Direction=135, Strength=4);*/
+}
+
+.ThemeNSubMenuTable
+{
+	border:		1px solid #444444;
+	background-color:	#eeeeee;
+}
+
+.ThemeNSubMenuTable td
+{
+	white-space:	nowrap;
+	padding:	2px;
+}
+
+.ThemeNMainItem,.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItem,.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	padding-left:	6px;
+	padding-right:	6px;
+	white-space:	nowrap;
+}
+
+.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	color:		#888888;
+	background-color:	#ffffff;
+}
+
+.ThemeNMenuSplit
+{
+	height:		1px;
+	margin-top:	1px;
+	margin-bottom:	1px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #ADAA9C;
+}
+
+.ThemeNMenuVSplit
+{
+	width:		1px;
+	margin:		0px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-right:	1px solid #ADAA9C;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ThemeNMenuItem img.seq1
+{
+	display:	inline;
+}
+
+.ThemeNMenuItemHover seq2,
+.ThemeNMenuItemActive seq2
+{
+	display:	inline;
+}
+
+.ThemeNMenuItem .seq2,
+.ThemeNMenuItemHover .seq1,
+.ThemeNMenuItemActive .seq1
+{
+	display:	none;
+}

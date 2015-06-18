@@ -1,0 +1,39 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Benutzer Accounts
+</div>
+
+<h2>Einführung</h2>
+Dieses Modul ist den NeDi-Administratoren vorbehalten. Ein Administrator kann hier den NeDi-Benutzern Gruppen zuweisen, die Passwörter zurücksetzen oder auch vorhandene Benutzer löschen. 
+
+<h2>Benutzung</h2>
+Im Feld [Benutzer] kann über das Textfeld ein Benutzername eingeben und anschliessend der neue Benutzer über den Button "Hinzufügen" erstellt werden. Über Drop Down Menü im Feld [Gruppen] können die bereits vorhanden Benutzer nach Gruppenzugehörigkeit gefiltert aufgelistet werden.
+<p>
+Im Feld [Zeit] ist für jeden Benutzer das Erstellungsdatum hinterlegt. Im Feld [Letztmals] ist ersichtlich, wann sich der Benutzer letztmals beim NeDi angemeldet hat.
+<ul>
+<li> Über dieses Icon im Feld [Action] <img src="../../img/16/key.png"> kann bei einem Benutzer das Passwort zurück gesetzt werden.
+<li> Mit diesem Icon im Feld [Action] <img src="../../img/16/bcnl.png"> wird der jeweilige NeDi-Benutzer aus der Datenbank gelöscht.
+</ul>
+Für das Zuweisen der Gruppen können im Feld [Gruppen] die nachfolgenden Symbole verwendet werden. Die Gruppen werden einem Benutzer durch Anklicken zugewiesen respektive durch erneutes Anklicken wieder entzogen:
+<p>
+<ul>
+<li> <img src="../../img/16/ugrp.png"> Gruppe -> Anderes (oth)
+<li> <img src="../../img/16/umgr.png"> Gruppe -> Manager (mgr)
+<li> <img src="../../img/16/sys.png"> Gruppe -> Monitoring (mon)
+<li> <img src="../../img/16/ring.png"> Gruppe -> Helpdesk (dsk)
+<li> <img src="../../img/16/net.png"> Gruppe -> Network (net)
+<li> <img src="../../img/16/ucfg.png"> Gruppe -> Administratoren (adm)
+</ul>
+Welcher Gruppe welche Module zugeordnet sind, kann in der Datei "nedi.conf" eingesehen und bei Bedarf angepasst werden. Bei Anpassungen in der Datei "nedi.conf" ist darauf zu achten, dass bei Abständen immer mit dem Tabulator und nicht mit Leerzeichen gearbeitet werden darf! 
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

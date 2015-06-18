@@ -1,0 +1,49 @@
+# Definition for 1.3.6.1.4.1.1991.1.3.3.1 created by Defgen 1.0
+
+# General
+SNMPv	2HC
+Type	snSI
+OS	Ironware
+Icon	lbrn
+Size	1
+Bridge	normal
+ArpND	old
+Dispro	
+Serial	1.3.6.1.4.1.1991.1.1.1.1.2.0
+Bimage	1.3.6.1.4.1.1991.1.1.2.1.49.0
+
+VLnams	1.3.6.1.4.1.1991.1.1.3.2.1.1.25
+Group	
+Mode	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	1.3.6.1.4.1.1991.1.1.3.3.1.1.50
+IFvlix	1.3.6.1.4.1.1991.1.1.3.3.1.1.38
+IFdupl	1.3.6.1.4.1.1991.1.1.3.3.1.1.4
+IFduix	1.3.6.1.4.1.1991.1.1.3.3.1.1.38
+Halfdp	1
+Fulldp	2
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moname	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.1991.1.1.2.1.52.0
+Temp
+MemCPU	1.3.6.1.4.1.1991.1.1.2.1.55.0
+MemIO	1.3.6.1.4.1.1991.1.1.4.1.13.0

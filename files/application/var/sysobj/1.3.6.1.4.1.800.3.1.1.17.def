@@ -1,0 +1,54 @@
+# Definition for 1.3.6.1.4.1.800.3.1.1.17 created by Defgen 1.8 on 26.Jun 11 22:41 (admin)
+
+# General
+SNMPv	1
+Type	Omnistack4024G
+Typoid	
+Sysdes	
+OS	other
+Icon	w2yn
+Size	1
+Bridge	normal
+ArpND	
+Dispro	
+Serial	1.3.6.1.4.1.800.2.1.2.1.1.8.1.1
+Bimage	1.3.6.1.4.1.800.2.1.2.1.1.10.1.1
+
+VLnams	1.3.6.1.4.1.800.2.2.1.2.1.4
+VLnamx	
+Group	
+Mode	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	
+IFalix	
+InBcast	1.3.6.1.2.1.2.2.1.12
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	1.3.6.1.4.1.800.2.3.1.1.1.6
+IFvlix	1.3.6.1.4.1.800.2.3.1.1.1.32
+IFpowr	
+IFpwix	
+IFdupl	1.3.6.1.4.1.800.2.3.3.2.1.5
+IFduix	1.3.6.1.4.1.800.2.3.3.1.1.19
+Halfdp	2
+Fulldp	1
+
+# Modules
+Modesc	1.3.6.1.4.1.800.2.1.2.1.1.5.1
+Moclas	
+Movalu	
+Moslot	1.3.6.1.4.1.800.2.1.2.1.1.1.1
+Modhw	1.3.6.1.4.1.800.2.1.2.1.1.11.1
+Modsw	1.3.6.1.4.1.800.2.1.2.1.1.10.1
+Modfw	
+Modser	1.3.6.1.4.1.800.2.1.2.1.1.8.1
+Momodl	1.3.6.1.4.1.800.2.1.2.1.1.5.1
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.800.2.18.7.26.1.4
+Temp	1.3.6.1.4.1.800.2.18.1.20.0	0.1
+MemCPU	1.3.6.1.4.1.800.2.18.1.15.0	
+Custom		

@@ -1,0 +1,53 @@
+# Definition for 1.3.6.1.4.1.4458.20.2.1.1 created by Defgen 1.8 on 27.Jan 2012 (rbartels)
+
+# General
+SNMPv	1
+Type	Winlink
+Typoid	
+Sysdes	1.3.6.1.4.1.4458.1000.1.1.1.0
+OS	other
+Icon	atbn
+Bridge	normal
+ArpND	
+Dispro	
+Serial	1.3.6.1.4.1.4458.1000.1.3.2.1.5.0
+Bimage	1.3.6.1.4.1.4458.1000.1.1.3.0
+
+VLnams	
+VLnamx	
+Group	
+Mode	
+
+# Interfaces
+IFname	
+IFaddr	old
+IFalia	
+IFalix	
+InBcast	
+InDisc	
+OutDisc	
+IFvlan	
+IFvlix	
+IFpowr	
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp		
+MemCPU		
+Custom	BBE	1.3.6.1.4.1.4458.1000.1.6.1.1.4.101

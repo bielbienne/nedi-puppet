@@ -1,0 +1,56 @@
+# Definition for 1.3.6.1.4.1.25053.3.1.5.2 created by Defgen 1.8 on 25.Mar 2013 (admin)
+
+# General
+SNMPv	2HC
+Type	ZD1106
+Typoid	
+Sysdes	
+OS	ZDOS
+Icon	wcan
+Size	1
+Bridge	
+ArpND	
+Dispro	
+Serial	1.3.6.1.4.1.25053.1.2.1.1.1.1.15.0
+Bimage	1.3.6.1.4.1.25053.1.2.1.1.1.5.52.0
+
+VLnams	1.3.6.1.4.1.25053.1.2.2.1.1.1.1.1.1
+VLnamx	
+Group	
+Mode	
+
+# Interfaces
+StartX	
+EndX	
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.9
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	1.3.6.1.2.1.17.7.1.4.5.1.1
+IFvlix	
+IFpowr		
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	1.3.6.1.4.1.25053.1.2.2.1.1.2.1.1.2.6
+Moclas	
+Movalu	50
+Moslot	1.3.6.1.4.1.25053.1.2.2.1.1.2.1.1.1.6
+Modhw	
+Modsw	
+Modfw	
+Modser	1.3.6.1.4.1.25053.1.2.2.1.1.2.1.1.5.6
+Momodl	1.3.6.1.4.1.25053.1.2.2.1.1.2.1.1.4.6
+
+# RRD Graphing
+CPUutl	
+Temp		
+MemCPU		
+Custom	AP;G;#	1.3.6.1.4.1.25053.1.2.1.1.1.15.1.0

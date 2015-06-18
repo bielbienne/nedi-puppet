@@ -1,0 +1,50 @@
+# Definition for 1.3.6.1.4.1.4935.1.3 created by Defgen 1.0 on 1.Sep 06 16:19
+# Siemens AP1120 VoIP adapter. Derived from Mediatrix 1102
+# Mem = last connection Jitter (CPU=max, IO=avg)
+
+# General
+SNMPv	2
+Type	AP1120
+OS	other
+Icon	phan
+Bridge	
+ArpND	
+Dispro	
+Serial	1.3.6.1.4.1.4935.10.15.1.1.0
+Bimage	1.3.6.1.4.1.4935.10.15.1.3.0
+
+VLnams	
+Group	
+Mode	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp	
+MemCPU	1.3.6.1.4.1.4935.10.50.1.2.5.8.0
+MemIO	1.3.6.1.4.1.4935.10.50.1.2.5.9.0

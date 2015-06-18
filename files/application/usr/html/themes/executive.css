@@ -1,0 +1,381 @@
+/* General Classes */
+body {
+	font: 12px Copperplate, serif;
+	background-repeat: repeat;
+	background-image: URL(leather.jpg);
+}
+
+td{
+	padding: 5px;
+	color: #503315;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+th{
+	padding: 5px;
+	font-weight: bold;
+	color: #663F17;
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+tr{
+	border-radius: 5px;
+	-webkit-border-radius: 5px;
+}
+
+/* Headings */
+h1   {
+	color: #fbf1d2; 
+	font-size: 15px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2   {
+	color: #fbf1d2;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3   {
+	color: #fbf1d2;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h4   {
+	color: #440000;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	width: 40%;
+	border: 1px solid #ffaa66;
+	margin-left: auto;
+  	margin-right: auto;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: rgba(180, 120, 60, 0.8);
+	background: -webkit-linear-gradient(rgba(250, 190, 100, .9), rgba(150, 90, 25, 0.8) 90%);
+	background: linear-gradient(rgba(250, 190, 100, .9), rgba(150, 90, 25, 0.8) 90%);
+}
+
+h5   {
+	color: #004400;
+	font-size: 13px;
+	font-weight: bold;
+	text-align: center;
+	width: 40%;
+	border: 1px solid #88ffaa;
+	margin-left: auto;
+  	margin-right: auto;
+	padding: 5px;
+	border-radius: 5px;
+	background-color: rgba(60, 180, 120, 0.8);
+	background: -webkit-linear-gradient(rgba(100, 250, 190, .9), rgba(30, 150, 90, 0.8) 90%);
+	background: linear-gradient(rgba(100, 250, 190, .9), rgba(30, 150, 90, 0.8) 90%);
+}
+
+/* Input Fields */
+input, select, textarea {
+	color: #66452F;
+	padding : 3px;
+	box-shadow: inset 0px 5px 5px #cccccc;
+	border-radius: 1em;
+}
+
+/* Image Properties */
+img{
+	margin : 3px;
+	vertical-align: middle;
+	border: none;
+}
+
+img.bigbar{
+	height : 20px;
+	margin : 5px;
+	vertical-align: middle;
+	border: 1px solid #662222;
+	-moz-box-shadow: #666 2px 2px 2px;
+	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+img.smallbar{
+	height : 8px;
+	margin : 2px;
+	vertical-align: middle;
+	border: 1px solid #662222;
+}
+
+/* Form Properties */
+:focus {background-color: #F4EDA4}
+
+/* Link Properties */
+:link {color: #885E29;text-decoration: none;}
+:visited {color: #674A25;text-decoration: none;}
+:link:focus, :visited:focus {color: #A67639}
+:link:hover, :visited:hover {color: #C3883D;}
+:link:active, :visited:active {color: #CF9348}
+
+/* Header table & Footer div*/
+#header{
+	padding: 2px;
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #76521F;
+	border-radius: 1em;
+	-webkit-border-radius: 1em;
+}
+
+#footer{
+	padding: 2px;
+	margin: 20px auto;
+	width:40%;
+	border: 1px solid #76521F;
+	padding: 10px;
+	text-align: left;
+	color: #663F17;
+	font-style: italic;
+	border-radius: 1em;
+	-webkit-border-radius: 1em;
+}
+
+/* Actual Module */
+table.content{
+	padding: 2px;
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #AE8D65;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+td.content{
+	text-align: left;
+	border-radius: 8px;
+	-webkit-border-radius: 8px;
+}
+
+/* Helper td */
+td.helper{
+	padding: 10px 10px;
+	vertical-align: top;
+	background: -webkit-linear-gradient( rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0) );
+	background: linear-gradient( rgba(200, 200, 200, 0.3), rgba(200, 200, 200, 0) );
+	border-radius: 1em;
+	-webkit-border-radius: 1em;
+}
+
+table.fixed{
+	table-layout:fixed;
+}
+
+table.full{
+	width: 100%;
+}
+
+/* Style for logs etc. */
+.textpad{
+	margin: 10px auto;
+	width: 70%;
+	padding: 9px;
+	border-spacing: 4px;
+	border: 3px dotted #D99550;
+	border-radius: 1em;
+	-webkit-border-radius: 1em;
+	box-shadow: #211 10px 10px 10px;
+	-webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.1);
+}
+
+/* Font Properties */
+.code{
+	overflow: auto;
+	text-align: left;
+	padding: 12px;
+	font-family: monospace;
+	font: 11px Courier New, monospace;
+	white-space: pre;
+}
+
+/* Scrollable list container */
+.scroller{
+	background-color: #aaaaaa;
+	height:150px;
+	width:100%;
+	overflow: auto;
+}
+
+.red {color: red }
+.drd {color: darkred }
+.grn {color: green }
+.blu {color: blue }
+.prp {color: purple }
+.blk {color: black }
+
+.gry {color: grey }
+.dgy {color: dimgrey }
+.org {color: orange }
+.mrn {color: maroon }
+.sna {color: sienna }
+.sbu {color: steelblue }
+.olv {color: olive }
+
+/* Text Fields */
+.txta{background-color: #d8d0d0}
+.txtb{background-color: #d0c8c8}
+
+/* Image Fields */
+.imga{background-color: #fff0f0}
+.imgb{background-color: #eee6e6}
+
+/* Status Fields */
+.good{	-webkit-box-shadow: inset 0 -5px 15px #30a020, 0 1px 1px #888888;
+	box-shadow: inset 0 -5px 15px #30a020, 0 1px 1px #888888;
+	background-color: #aaeeaa
+}
+.noti{	-webkit-box-shadow: inset 0 -5px 15px #2030a0, 0 1px 1px #888888;
+	box-shadow: inset 0 -5px 15px #2030a0, 0 1px 1px #888888;
+	background-color: #aaaaee
+}
+.warn{	-webkit-box-shadow: inset 0 -5px 15px #a0a020, 0 1px 1px #888888;
+	box-shadow: inset 0 -5px 15px #a0a020, 0 1px 1px #888888;
+	background-color: #eeeeaa
+}
+.alrm{	-webkit-box-shadow: inset 0 -5px 15px #a08020, 0 1px 1px #888888;
+	box-shadow: inset 0 -5px 15px #a08020, 0 1px 1px #888888;
+	background-color: #eeaa44
+}
+.crit{	-webkit-box-shadow: inset 0 -5px 15px #a03030, 0 1px 1px #888888;
+	box-shadow: inset 0 -5px 15px #a03030, 0 1px 1px #888888;
+	background-color: #eeaaaa
+}
+.part{background-image:url('../img/dia.png')}
+
+/* Default Group Based Module Colors */
+
+.adm1, .net1, .dsk1, .mon1, .mgr1, .oth1, .usr1{
+	background: -webkit-linear-gradient(#dcc794, #ae8b39);
+	background: linear-gradient(#dcc794, #ae8b39);
+	background-color: #ae8b39
+}
+.adm2, .net2, .dsk2, .mon2, .mgr2, .oth2, .usr2{
+	background: -webkit-linear-gradient(#deca9a, #cdae67);
+	background: linear-gradient(#deca9a, #cdae67);
+	background-color: #cdae67
+}
+
+/* ThemeNMenu Style Sheet */
+
+.ThemeNMenu,.ThemeNSubMenuTable
+{
+	cursor:			default;
+	font-size:		13px;
+
+	padding:		2px;
+	border:			0px;
+	white-space:		nowrap;
+}
+
+.ThemeNMenu
+{
+/*	background-color:	#F7F3EF; */
+}
+
+.ThemeNSubMenu
+{
+	position:		absolute;
+	visibility:		hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:		100;
+	border:			0px;
+	padding:		0px;
+
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#454545, Direction=135, Strength=4);*/
+}
+
+.ThemeNSubMenuTable
+{
+	border:			1px solid #444444;
+	background-color:	#DCCCB8;
+	border-radius:		0.5em;
+	-webkit-border-radius:	0.5em;
+	opacity:		0.9;
+	filter:			alpha(opacity=90);
+	-moz-opacity:		0.9;
+}
+
+.ThemeNSubMenuTable td
+{
+	white-space:		nowrap;
+	padding:		2px;
+}
+
+.ThemeNMainItem,.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItem,.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	padding-left:		6px;
+	padding-right:		6px;
+	white-space:		nowrap;
+}
+
+.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	color:			#888888;
+	background-color:	#ECDCC8;
+}
+
+.ThemeNMenuSplit
+{
+	height:			1px;
+	margin-top:		1px;
+	margin-bottom:		1px;
+	overflow:		hidden;
+	background-color:	inherit;
+	border-top:		1px solid #ADAA9C;
+}
+
+.ThemeNMenuVSplit
+{
+	width:			1px;
+	margin:			0px;
+	overflow:		hidden;
+	background-color:	inherit;
+	border-right:		1px solid #ADAA9C;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ThemeNMenuItem img.seq1
+{
+	display:		inline;
+}
+
+.ThemeNMenuItemHover seq2,
+.ThemeNMenuItemActive seq2
+{
+	display:		inline;
+}
+
+.ThemeNMenuItem .seq2,
+.ThemeNMenuItemHover .seq1,
+.ThemeNMenuItemActive .seq1
+{
+	display:		none;
+}

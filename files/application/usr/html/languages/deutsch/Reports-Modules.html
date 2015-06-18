@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Modul Reports
+</div>
+
+<h2>Einführung</h2>
+Dieser Teil von NeDi hilft die Module, welche in den Netzwerkgeräten verbaut sind, zu verwalten. Auf diese Weise wird z.B. das Erstellen eines Inventars stark vereinfacht.
+
+<h2>Benutzung</h2>
+Es können nach Wunsch im Feld [Auswahl] auch mehrere Reports auf einmal ausgewählt werden (Ctrl + Mausklick). Bei Bedarf kann die Abfrage über das Textfeld [Filter] angepasst werden. Optional kann man durch das Setzen des Häkchens im Feld [Alternativ] die Reihenfolge der ausgegebenen Informationen beeinflussen. Die Abfrage mit dem Button "Zeigen" starten.
+<p>
+Report &lt;Übersicht&gt;
+<p>
+Bei diesem Report kann über das Textfeld [Filter] nach einer Modellbezeichnung gefiltert werden.
+<ul>
+<li> In der Spalte [Model Übersicht | Model] auf der linken Seite, wird die Modellbezeichnung eines Moduls angezeigt. Klickt man auf eine Modellbezeichnung, wird man zum Modul {Module Liste} weitergeleitet, wo alle Netzwerkgeräte aufgelistet werden, die dieses Modul enthalten. 
+<li> In der Spalte [Model Übersicht | Beschreibung] werden Informationen zum jeweiligen Modul angezeigt.
+<li> Klickt man stattdessen in der Spalte [Model Übersicht | Geräte] auf einen Gerätenamen, wird man zum Modul {Geräte Status} weitergeleitet und erhält detaillierte Informationen zu diesem Netzwerkgerät. Die Schreibweise <i>Gerätename:Zahl</i> gibt an, wieviele Module diese Typs im jeweiligen Netzwerkgerät verbaut sind.
+<li> In der Spalte [Model Übersicht | Total] wird die Anzahl der im Netzwerk gefundenen Module dieses Typs angezeigt.
+</ul>
+<p>
+Report &lt;Inventar&gt;
+<p>
+Bei diesem Report kann über das Textfeld [Filter] nach einer Gerätebezeichnung (z.B. WS-C2950-24) gefiltert werden.
+<ul>
+<li> In der linken Spalte [Inventar | Geräte / Slot] werden die Namen der Netzwerkgeräte aufgelistet. Klickt man auf einen Gerätenamen, wird man zum Modul {Geräte Status} weitergeleitet und erhält detaillierte Informationen zu diesem Netzwerkgerät. In der rechten Spalte [Inventar | Geräte / Slot] werden Informationen zum jeweiligen Modul angezeigt.
+<li> In der Spalte [Inventar | Info] wird, sofern diese in der zugehörigen ".def" Datei korrekt angegeben worden ist, die genaue Herstellerbezeichnung des jeweiligen Netzwerkgerätes angezeigt. Zusätzlich werden wo vorhanden die Module aufgelistet, welche in den jeweiligen Netzwerkgeräten verbaut sind.
+<li> In der Spalte [Inventar | Serien#] wird die Seriennummer des Netzwerkgeräts angezeigt.
+<li> In der Spalte [Inventar | HW] wird die Hardware-Revision der jeweiligen Module angezeigt.
+<li> In der Spalte [Inventar | FW] wird der Typ des Betriebssystems angezeigt (z.B. LCOS, IOS etc).
+<li> In der Spalte [Inventar | SW] wird die genaue Bezeichung und Version des Betriebssystems angezeigt.
+</ul>
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

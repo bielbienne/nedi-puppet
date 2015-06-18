@@ -1,0 +1,56 @@
+# Definition for 1.3.6.1.4.1.2925.4 created by Defgen 1.8 on 23.Sep 2012 (admin)
+
+# General
+SNMPv	1
+Type	AlterPath_ACS
+Typoid	
+Sysdes	
+OS	other
+Icon	atan
+Size	1
+Bridge	
+ArpND	
+Dispro	
+Serial	
+Bimage	
+
+VLnams	
+VLnamx	
+Group	
+Mode	
+
+# Interfaces
+StartX	
+EndX	
+IFname	
+IFaddr	
+IFalia	
+IFalix	
+InBcast	
+InDisc	
+OutDisc	
+IFvlan	
+IFvlix	
+IFpowr	
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp		
+MemCPU		
+Custom		

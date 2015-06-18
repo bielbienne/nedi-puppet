@@ -1,0 +1,56 @@
+# Definition for 1.3.6.1.4.1.11.2.3.7.11.66 created by Defgen 1.8 on 8.Oct 2012 (admin)
+
+# General
+SNMPv	2HC
+Type	HP1800-8G
+Typoid	
+Sysdes	
+OS	other
+Icon	w2gp
+Size	0
+Bridge	normalX
+ArpND	
+Dispro	LLDPX
+Serial	
+Bimage	
+
+VLnams	
+VLnamx	
+Group	
+Mode	
+
+# Interfaces
+StartX	
+EndX	
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	
+IFalix	
+InBcast	1.3.6.1.2.1.2.2.1.18
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFpowr	
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp		
+MemCPU		
+Custom		

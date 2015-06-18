@@ -1,0 +1,56 @@
+# Definition for 1.3.6.1.4.1.311.1.1.3.1.2 created by Defgen 1.8 on 14.May 2013 (admin)
+
+# General
+SNMPv	2HC
+Type	NTserver
+Typoid	
+Sysdes	
+OS	other
+Icon	vmwn
+Size	1
+Bridge	
+ArpND	
+Dispro	
+Serial	1.3.6.1.4.1.9.3.6.3.0
+Bimage	1.3.6.1.4.1.9.2.1.73.0
+
+VLnams	1.3.6.1.4.1.9.9.46.1.3.1.1.4.1
+VLnamx	
+Group	1.3.6.1.4.1.9.9.46.1.2.1.1.2.1
+Mode	1.3.6.1.4.1.9.9.46.1.2.1.1.3.1
+
+# Interfaces
+StartX	
+EndX	
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	oldip6
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.9
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFpowr		
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp		
+MemCPU		
+Custom	MemIO;G;Bytes	

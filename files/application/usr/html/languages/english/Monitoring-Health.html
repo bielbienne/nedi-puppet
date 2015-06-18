@@ -1,0 +1,28 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Monitoring Health
+</div>
+
+<h2>Introduction</h2>
+If you do use NeDi's network monitoring features, this is the module to just leave open in a browser.
+It'll refresh every minute to alert you (with original www.PSI.ch siren sounds!), if something went bad.
+The size of the graphs can be set in User-Profile.
+If you drill down into locations, the messages and events will be filtered accordingly. A mobile version without graphs and session management (no login required) can be accessed with mh.php.
+Simply delete this file, if you don't want to allow this.
+
+<h2>Usage</h2>
+<ul>
+<li>The top section displays overall network condition. Device availability, exceeded traffic, error or system thresholds (which are set in nedi.conf).
+<li>The middle section takes care of events. Some statistic to the left and important events within the last 24h to the right.
+<li>The bottom part works just like Topology-Map, while providing operational status of locations (monitored nodes and non-SNMP devices won't be shown). A shaded backgroun indicates that some devices are not monitored in a location.
+</ul>
+<div id="footer">Remo Rickli 2013</div>
+</body>

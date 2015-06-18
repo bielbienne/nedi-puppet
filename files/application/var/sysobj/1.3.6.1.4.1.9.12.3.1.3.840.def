@@ -1,0 +1,57 @@
+# Definition for 1.3.6.1.4.1.9.12.3.1.3.840 created by Defgen 1.8 on 30.Aug 2013 (admin)
+ 
+# General
+SNMPv	2HC
+Type	Nexus 1000V
+Typoid	
+Sysdes	
+OS	other
+Icon	vsbn
+Size	0
+Bridge	
+ArpND	
+Dispro	CDP
+Serial	1.3.6.1.2.1.47.1.1.1.1.11.22
+Bimage	1.3.6.1.2.1.47.1.1.1.1.9.22
+CfgChg	
+CfgWrt	
+VLnams	
+VLnamx	
+Group	
+Mode	
+ 
+# Interfaces
+StartX	
+EndX	
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	1.3.6.1.4.1.9.9.68.1.2.2.1.2
+IFvlix	
+IFpowr		
+IFpwix	
+IFdupl	1.3.6.1.2.1.31.1.1.1.17
+IFduix	
+Halfdp	1
+Fulldp	2
+ 
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+ 
+# RRD Graphing
+CPUutl		
+Temp		
+MemCPU		
+Custom		

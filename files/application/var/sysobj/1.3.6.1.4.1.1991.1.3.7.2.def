@@ -1,0 +1,51 @@
+# Definition for 1.3.6.1.4.1.1991.1.3.7.2 created by Defgen 1.8 on 23.Apr 2013 (admin)
+
+# General
+SNMPv	2HC
+Type	BigIron8000
+Typoid	
+Sysdes	
+OS	Ironware
+Icon	c3rn
+Bridge	normal
+Dispro	
+Serial	1.3.6.1.4.1.1991.1.1.1.1.2.0
+Bimage	1.3.6.1.4.1.1991.1.1.2.1.49.0
+
+VLnams	1.3.6.1.4.1.1991.1.1.3.2.1.1.25
+VLnamx	
+VTPdom	
+VTPmod	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	1.3.6.1.4.1.1991.1.1.3.3.1.1.50
+IFvlix	1.3.6.1.4.1.1991.1.1.3.3.1.1.38
+IFpowr	
+IFpwix	
+IFdupl	1.3.6.1.4.1.1991.1.1.3.3.1.1.4
+IFduix	1.3.6.1.4.1.1991.1.1.3.3.1.1.38
+Halfdp	1
+Fulldp	2
+
+# Modules
+Modesc	1.3.6.1.4.1.1991.1.1.2.2.1.1.2
+Moclas	
+Movalu	
+Moslot	1.3.6.1.4.1.1991.1.1.2.2.1.1.1
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.1991.1.1.2.1.35.0
+Temp		
+MemCPU		
+Custom		

@@ -1,0 +1,69 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Endgeräte Reports
+</div>
+
+<h2>Einführung</h2>
+Dieses Modul erlaubt Auswertungen über alle Endgeräte in Bezug auf die Gerätehersteller, leere Vlans, mehrere MAC-Adressen pro Port und noch einiges mehr.
+
+<h2>Benutzung</h2>
+Es können nach Wunsch im Feld [Auswahl] auch mehrere Reports auf einmal ausgewählt werden (Ctrl + Mausklick). Bei Bedarf kann die Limite der angezeigten Informationen via dem Drop Down Menü [Limite] angepasst werden. Optional kann man durch das Setzen des Häkchens im Feld [Alternativ] die Reihenfolge der ausgegebenen Informationen beeinflussen. Die Abfrage mit dem Button "Zeigen" starten.
+
+<p>
+Report &lt;Übersicht&gt;
+<p>
+Dieser Report ermöglicht eine Übersicht über die Gerätehersteller der Endgeräte. Setzt man im Feld [Alternativ] das Häkchen, werden die Endgeräte der Hersteller nicht mehr nach der Anzahl, sondern alphabetisch aufgelistet.
+<h3>Hinweis</h3>
+Eine MAC-Adresse wird üblicherweise in hexadezimaler Form angegeben z.B. 00-30-05-5C-6E-CD. Der Hersteller einer Netzwerkkarte kann anhand der ersten 24 Bit einer 48 Bit MAC-Adresse eindeutig ermittelt werden. Die ersten 3 Oktets einer MAC-Adresse weisen also auf den Hersteller hin und die letzten 3 Oktets werden vom Hersteller verwendet, um die Netzwerkkarte eindeutig zu identifizieren.
+<ul>
+<li> In der Spalte [Node Übersicht | Item] werden die Kriterien aufgelistet, welche ausgewertet werden. 
+<li> In der Spalte [Node Übersicht | Wert]  wird anhand von Balken die Anzahl graphisch veranschaulicht. Klickt man auf die Anzahl, werden die entsprechenden Endgeräte im Modul {Endgeräte Liste} aufgelistet.
+<li> In der Spalte [OUI Statistik| NIC Hersteller] werden auf der linken Seite die Symbole der Netzwerkkarten Hersteller aufgelistet. In der rechten Spalte befindet sich ein Link auf die Homepage des jeweiligen NIC-Herstellers.
+<li> In der Spalte [OUI Statistik| Endgeräte] wird anhand von Balken die Anzahl der Endgeräte graphisch veranschaulicht. Klickt man auf die Anzahl, werden die Endgeräte dieses Herstellers im Modul {Endgeräte Liste} aufgelistet.
+</ul>
+<p>
+Report &lt;IP Statistik&gt;
+<p>
+Dieser Report gibt Auskunft darüber, wie häufig IP-Adressänderungen oder allfällige ARP spoofing Attacken auftreten etc. 
+<ul>
+<li> In der Spalte [IP Änderungen | Anzahl] wird die Anzahl der IP-Änderungen angeben.
+<li> In der Spalte [IP Änderungen | Endgeräte] wird die Anzahl der Endgeräte angegeben, bei welchen die IP-Adresse entsprechend geändert hat z.B. nach dem Erneuern einer DHCP Lease oder nach dem Wechseln des Ports. Die Menge der Endgeräte wird graphisch mit einem Balken dargestellt. Klickt man auf die Anzahl, werden die entsprechenden Endgeräte im Modul {Endgeräte Liste} aufgelistet.
+<li> In der Spalte [IP Verloren | Anzahl] wird angezeigt, wie häufig ein Endgerät <i>seine</i> IP verloren hat.
+<li> In der Spalte [IP Verloren | Endgeräte] wird die Anzahl der Endgeräte, welche <i>ihre</i> IP-Adresse ensprechend häufig verloren haben, angegeben. Dies kann z.B. passieren, wenn durch zu lange Inaktivität des Clients die Zuordnung der IP im ARP Caches des Netzwerkgeräts ungültig wird. Die Menge dieser Endgeräte wird graphisch mit einem Balken dargestellt. Klickt man auf die Anzahl, werden die entsprechenden Endgeräte im Modul {Endgeräte Liste} aufgelistet.
+<li> In der Spalte [Mehrere MACs/IP | IP Adresse] werden die IP-Adressen, für welche mehrere MAC-Adressen gefunden worden sind, angezeigt. 
+<li> In der Spalte [Mehrere MACs/IP | Endgeräte] wird die Anzahl MAC-Adressen, welche für dieselbe IP-Adresse gefunden worden sind, angezeigt. Tritt dieser Fall auf, entspricht dies bei Endgeräten einem möglichen IP-Adressierungskonflikt, der behoben werden muss. Klickt man auf die Anzahl, werden die entsprechenden Endgeräte im Modul {Endgeräte Liste} aufgelistet.
+<li> In der Spalte [Mehrere ARPs | Anzahl] wird die Anzahl der ARP Einträge (IPs), die auf einem Netzwerkgerät für ein Endgerät (MAC Adresse) gefunden worden sind, angegeben.
+<li> In der Spalte [Mehrere ARPs | Endgeräte] wird die Anzahl der Endgeräte, für welche mehrere ARP Einträge (IP <-> MAC <-> VLAN <-> Interface) auf einem Netzwerkgerät gefunden worden sind (mehrere IP-Adressen pro Endgerät / MAC-Adresse), angegeben. Dies kann z.B. passieren, wenn auf einem Client die IP-Adresse ändert, und die <i>alte</i> IP-Adresse noch im ARP Cache vorhanden ist. Diese <i>alte</i> IP-Adresse wird überlicherweise nach ca. 4 Stunden Inaktivität automatisch aus dem ARP Cache des Netzwerkgerätes gelöscht werden. Weiter ist es natürlich auch möglich, dass ein Client einfach über eine zweite IP-Adresse auf derselben Netzwerkkarte erreichbar ist. Einträge in diesem Report sollten auch auf eine mögliche "ARP Poisoning" Attacke im Netzwerk geprüft werden.
+</ul>
+<p>
+Report &lt;IF Statistik&gt;
+<p>
+Mit Hilfe diese Reports können HUBs oder Virtuelle Hosts im Netzwerk entdeckt werden etc.
+<ul>
+<li> In der Spalte [Mehrere MACs/IF | Gerät] wird das Netzwerkgerät angezeigt, auf welchem mehrere MAC-Adressen pro Netzwerkschnittstelle gefunden worden sind. Klickt man auf den Namen des Netzwerkgerätes, werden im Modul {Geräte Status} detaillierte Informationen angezeigt.
+<li> In der Spalte [Mehrere MACs/IF | Schnittstelle] wird die Schnittstelle des Netzwerkgeräts, an welcher mehrere MAC-Adressen gefunden worden sind, angezeigt.
+<li> In der Spalte [Mehrere MACs/IF | VLAN] wird das VLAN, in welchem sich die Endgeräte befinden respektive welchem die Netzwerkschnittstelle zugewiesen worden sind, angegeben. Klickt man auf die VLAN-ID, werden im Modul {VLAN Liste} weitere Informationen zu diesem VLAN angezeigt.
+<li> In der Spalte [Mehrere MACs/IF | Endgeräte] wird die Anzahl der gefundenen Endgeräte an diese Netzwerkschnittstelle angezeigt. Klickt man auf die Anzahl, werden diese Endgeräte im Modul {Endgeräte Liste} aufgelistet.
+<li> In der Spalte [Schnittstellen Änderungen | Anzahl] wird angegeben, wie häufig ein Endgerät auf unterschiedlichen Netzwerkschnittstellen gefunden worden ist. Bei Servern mit Teaming-Funktion kann dies auch auf Netzwerkprobleme hindeuten.
+<li> In der Spalte [Schnittstellen Änderungen | Endgeräte] wird anhand von Balken die Anzahl graphisch veranschaulicht. Klickt man auf die Anzahl, werden die entsprechenden Endgeräte im Modul {Endgeräte Liste} aufgelistet.
+<li> In der Spalte [IF Metric Statistik | Metric] werden die NeDi internen Metric-Werte angezeigt (0 = Access, 10 = IP Phone, 30 = Router, 50 = Uplink, 100 = Channel)
+<li> In der Spalte [IF Metric Statistik | Endgeräte] wird anhand von Balken die Anzahl der jeweiligen Geräte graphisch veranschaulicht. Klickt man auf die Anzahl, werden die Endgeräte diese Herstellers im Modul {Endgeräte Liste} aufgelistet.
+
+</ul>
+<p>
+Report &lt;Vlans Leer&gt;
+<ul>
+<li> In der Spalte [VLANs Leer | VLAN ID] werden die VLAN-IDs, welche auf gewissen Switches keine Endgeräte enthalten, aufgelistet. Diese können nach einer Überprüfung bei Bedarf von diesen Switches entfernt werden. Klickt man auf eine VLAN-ID, wird man zum Modul {VLAN Liste} weitergeleitet.
+<li> In der Spalte [VLANs Leer | Geräte] werden die Namen der Netzwerkgeräte aufgelistet, auf welchen leere VLANs gefunden worden sind. Klickt man auf den Namen des Netzwerkgerätes, werden im Modul {Geräte Status} detaillierte Informationen zu diesem Netzwerkgerät angezeigt.
+</ul>
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

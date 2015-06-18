@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Topologie Multicast
+</div>
+<h2>Einführung</h2>
+Dieses Modul zeigt auf einem Cisco-Layer3-Gerät mit aktiviertem Protocol Independent Mulitcast (PIM) die Routing Tabelle (mroute). Für laufende Multicast-Streams wird die aktuelle Bandbreite in Bit/s angezeigt. Aufgrund der Eigenschaft von Multicast ist diese Bandbreite nicht abhängig von der Anzahl der partizipierenden Multicast-Clients. 
+<p>
+Layer3-Ciscogeräte, welche für Multicast konfiguriert sind, jedoch keine aktiven Endgeräte aufweisen, welche über eine bestimmte Multicast-Adresse an einem Stream partipizieren, blockieren diesen Stream (pruning). NeDi zeigt dies für die jeweiligen Multicast-Sessions mit diesem Symbol an <img src="../../img/16/bstp.png"> an.
+<p>
+Gemäss der Aussage von Remo hat dieses Modul aktuell noch eher experimentellen Charakter. So kann es z.B. sein, dass die Bandbreite für Multicast-Sessions auf gewissen Netzwerkgeräten nicht angezeigt wird. Die verwendeteten SNMP-OID's findet man in der Datei "Topology-Multicast.php". 
+
+<h2>Benutzung</h2>
+
+Im Feld [Router] ein Layer3-Netzwerkgerät auswählen und die Abfrage mit dem Button "Zeigen" starten. Sind an dem gewählten Layer3-Netzwerkgerät Hosts angeschlossen, welche an einem Multicast-Stream partipizieren, wird die genutzte Bandbreite in Bit/s angezeigt und mit einem Balkendiagram visualisiert.
+<p>
+Das Feld Übersicht
+<p>
+<ul>
+<li> In der ersten Zeile wird links der Name und das Symbol des gewählten Netzwerkgerätes angezeigt. Klickt man auf das Netzwerksymbol, wird man zum Modul {Geräte Status} weitergeleitet und erhält detaillierte Informationen zu diesem Netzwerkgerät.
+<li> In der ersten Zeile wird rechts die IP-Adresse des gewählten Netzwerkgerätes angezeigt. Klickt man auf diese IP-Adresse, wird eine Telnet-Verbindung zu diesem Gerät aufgebaut.
+<li> Die nachfolgenden Zeilen enthalten weitere Informationen zum gewählten Netzwerkgerät.
+</ul>
+<p>
+
+Das Feld Multicast Routes Liste 
+<p>
+<ul> 
+<li> In der Spalte [Quelle] werden die IP-Adressen der des Multicast-Sourcen aufgelistet.
+<li> In der Spalte [Ziel] werden die Mulicast-Adressen, über welche z.B. ein Multimedia-Stream oder ein Software-Image empfangen werden kann, aufgelistet.
+<li> In der Spalte [Bit/s] wird die konsumierte Bandbreite des Streams in Bit/s angezeigt.
+<li> In der Spalte [Letztmals] wird angezeigt wie lange es her ist, seit das letzte Multicast Paket via "Fast Switching" weitergeleitet worden ist.
+</ul>
+
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

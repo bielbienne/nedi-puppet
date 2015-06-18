@@ -1,0 +1,52 @@
+# Created or edited by Marco Rauchenstein on October 2007
+# Please use for "Type" the exact Cisco Product Name
+# Please use "cpmCPUTotal5minRev" for "CPUutl" 
+# Please make sure that for "Serial" the correct value is shown
+
+# General
+SNMPv	1
+Type	VPN3005
+OS	Cvpn
+Icon	vpbn
+Size	1
+Bridge	
+ArpND	old
+Dispro	
+Serial	1.3.6.1.4.1.3076.2.1.2.22.1.63.0
+Bimage	1.3.6.1.4.1.3076.2.1.2.1.1.4.0
+
+VLnams	
+Group	
+Mode	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFdupl	
+IFduix	
+Halfdp	1
+Fulldp	2
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moname	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.3076.2.1.2.25.1.2.0
+Temp	1.3.6.1.4.1.3076.2.1.2.22.1.33.0
+MemCPU	
+MemIO	1.3.6.1.4.1.9.9.171.1.2.1.1.0

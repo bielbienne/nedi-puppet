@@ -1,0 +1,57 @@
+# Definition for 1.3.6.1.4.1.2636.1.1.1.2.39 created by Defgen 1.8 on 30.Aug 2013 (admin)
+ 
+# General
+SNMPv	2MC
+Type	Juniper SRX240
+Typoid	1.3.6.1.2.1.47.1.1.1.1.13.1
+Sysdes	1.3.6.1.4.1.2636.3.1.2.0
+OS	JunOS
+Icon	fwan
+Size	1
+Bridge	normal
+ArpND	old
+Dispro	
+Serial	1.3.6.1.4.1.2636.3.1.3.0
+Bimage	1.3.6.1.2.1.25.6.3.1.2.2
+CfgChg	
+CfgWrt	
+VLnams	
+VLnamx	
+Group	
+Mode	
+ 
+# Interfaces
+StartX	
+EndX	
+IFname	
+IFaddr	old
+IFalia	
+IFalix	
+InBcast	
+InDisc	
+OutDisc	
+IFvlan	
+IFvlix	
+IFpowr		
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+ 
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+ 
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.2636.3.1.13.1.8.9.1.0.0	
+Temp	1.3.6.1.4.1.2636.3.1.13.1.7.9.1.0.0	
+MemCPU	1.3.6.1.4.1.2636.3.1.13.1.11.9.1.0.0	-%
+Custom		

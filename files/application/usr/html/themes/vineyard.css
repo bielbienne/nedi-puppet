@@ -1,0 +1,389 @@
+/* General Classes */
+body {
+	font: 11px New Century Schoolbook, serif; 
+	font-style: oblique;
+	background-color: #3a1e1e;
+	background-repeat: no-repeat;
+	background-image: URL(grapes.png);
+	background-position:0% 16px;
+}
+
+td{
+	padding: 6px;
+	color: #222222;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+}
+
+th{
+	padding: 8px;
+	font-weight: bold;
+	color: #222222;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+}
+
+tr{
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+}
+
+/* Headings */
+h1   {
+	color: #C6AFB2; 
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2   {
+	color: #D1C4C5;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3   {
+	color: #C6AFB2;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h4   {
+	color: #ff4400;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h5   {
+	color: #44ff44;
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Input Fields */
+select {
+	color: #6E2C31;
+}
+
+input {
+	color: #6E2C31;
+}
+
+textarea {
+	color: #6E2C31;
+}
+
+/* Image Properties */
+img{
+	margin : 3px;
+	vertical-align: middle;
+	border: none;
+}
+
+img.bigbar{
+	height : 20px;
+	margin : 5px;
+	vertical-align: middle;
+	border: 1px solid #221E1E;
+	-webkit-box-shadow: 2px 2px 2px rgba(0,0,0,0.6);
+}
+
+img.smallbar{
+	height : 8px;
+	margin : 2px;
+	vertical-align: middle;
+	border: 1px solid #221E1E;
+}
+
+/* Form Properties */
+:focus {background-color: #F4EDA4}
+
+/* Link Properties */
+:link {color: #904B86;text-decoration: none;}
+:visited {color: #703665;text-decoration: none;}
+:link:focus, :visited:focus {color: #C34AA6}
+:link:hover, :visited:hover {color: #E34ABE;text-decoration:underline;}
+:link:active, :visited:active {color: #F215BD}
+
+/* Header table & Footer div*/
+#header{
+	padding: 3px;
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #602732;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+}
+
+#footer{
+	padding: 3px;
+	margin: 20px auto;
+	width:90%;
+	border: 1px solid #602732;
+	padding: 10px;
+	text-align: right;
+	font: 11px;
+	color: #3a1e1e;
+	font-style: italic;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+}
+
+/* Actual Module */
+table.content{
+	padding: 3px;
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #602732;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+}
+
+td.content{
+	text-align: left;
+	border-radius: 9px;
+	-moz-border-radius: 9px;
+	-webkit-border-radius: 9px;
+	-khtml-border-radius: 9px;
+}
+
+/* Helper td */
+td.helper{
+	padding: 10px 10px;
+	vertical-align: top;
+	background-color: #522628;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+}
+
+table.fixed{
+	table-layout:fixed;
+}
+
+table.full{
+	width: 100%;
+}
+
+/* Style for logs etc. */
+.textpad{
+	margin: 10px auto;
+	width: 70%;
+	padding: 9px;
+	border-spacing: 4px;
+	border: 3px solid #760013;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+	-moz-box-shadow: #222 10px 10px 10px;
+	-webkit-box-shadow: 10px 10px 10px rgba(0,0,0,0.2);
+}
+
+/* Font Properties */
+.code{
+	overflow: auto;
+	text-align: left;
+	padding: 12px;
+	font-family: monospace;
+	font: 11px Courier New, monospace;
+	white-space: pre;
+}
+
+/* Scrollable list container */
+.scroller{
+	background-color: #aaaaaa;
+	height:150px;
+	width:100%;
+	overflow: auto;
+}
+
+.red {color: red }
+.drd {color: darkred }
+.grn {color: green }
+.blu {color: blue }
+.prp {color: purple }
+.blk {color: black }
+
+.gry {color: grey }
+.dgy {color: dimgrey }
+.org {color: orange }
+.mrn {color: maroon }
+.sna {color: sienna }
+.sbu {color: steelblue }
+.olv {color: olive }
+
+/* Text Fields */
+.txta{background-color: #A5A5A5}
+.txtb{background-color: #C8C8C8}
+
+/* Image Fields */
+.imga{background-color: #fff0f0}
+.imgb{background-color: #eee6e6}
+
+/* Status Fields */
+.good{background-color: #aaffaa}
+.noti{background-color: #aaaaff}
+.warn{background-color: #ffffaa}
+.alrm{background-color: #ffaa44}
+.crit{background-color: #ff4444}
+.part{background-image:url('../img/dia.png')}
+
+/* Default Group Based Module Colors */
+.adm1{background-color: #822E3E}
+.adm2{background-color: #8A4451}
+
+.net1{background-color: #822E3E}
+.net2{background-color: #8A4451}
+
+.dsk1{background-color: #822E3E}
+.dsk2{background-color: #8A4451}
+
+.mon1{background-color: #822E3E}
+.mon2{background-color: #8A4451}
+
+.mgr1{background-color: #822E3E}
+.mgr2{background-color: #8A4451}
+
+.oth1{background-color: #822E3E}
+.oth2{background-color: #8A4451}
+
+.usr1{background-color: #822E3E}
+.usr2{background-color: #8A4451}
+
+/* ThemeNMenu Style Sheet */
+
+.ThemeNMenu,.ThemeNSubMenuTable
+{
+	cursor:			default;
+	font-size:		14px;
+
+	padding:		2;
+	border:			0;
+	white-space:		nowrap;
+}
+
+.ThemeNMenu
+{
+	background-color:	#9E5B67;
+	border-radius:		0.5em;
+	-moz-border-radius:	0.5em;
+	-webkit-border-radius:	0.5em;
+	-khtml-border-radius:	0.5em;
+}
+
+.ThemeNSubMenu
+{
+	position:		absolute;
+	visibility:		hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:		100;
+	border:			0;
+	padding:		0;
+
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#454545, Direction=135, Strength=4);*/
+}
+
+.ThemeNSubMenuTable
+{
+	border:			1px dotted #444444;
+	background-color:	#E1D8D8;
+	border-radius:		0.5em;
+	-moz-border-radius:	0.5em;
+	-webkit-border-radius:	0.5em;
+	-khtml-border-radius:	0.5em;
+	opacity:		0.9;
+	filter:			alpha(opacity=90);
+	-moz-opacity:		0.9;
+	-khtml-opacity:		0.9
+}
+
+.ThemeNSubMenuTable td
+{
+	white-space:		nowrap;
+	padding:		2;
+}
+
+.ThemeNMainItem,.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItem,.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	padding-left:		6px;
+	padding-right:		6px;
+	white-space:		nowrap;
+}
+
+.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	color:			#E8D5D5;
+	background-color:	#C8A7A7;
+}
+
+.ThemeNMenuSplit
+{
+	height:			1px;
+	margin-top:		1px;
+	margin-bottom:		1px;
+	overflow:		hidden;
+	background-color:	inherit;
+	border-top:		1px solid #ADAA9C;
+}
+
+.ThemeNMenuVSplit
+{
+	width:			1px;
+	margin:			0px;
+	overflow:		hidden;
+	background-color:	inherit;
+	border-right:		1px solid #ADAA9C;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ThemeNMenuItem img.seq1
+{
+	display:		inline;
+}
+
+.ThemeNMenuItemHover seq2,
+.ThemeNMenuItemActive seq2
+{
+	display:		inline;
+}
+
+.ThemeNMenuItem .seq2,
+.ThemeNMenuItemHover .seq1,
+.ThemeNMenuItemActive .seq1
+{
+	display:		none;
+}

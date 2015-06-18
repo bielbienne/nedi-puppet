@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Devices Status
+</div>
+<h2>Introduction</h2>
+This is the centerpoint of individual device management. It's divided into 6 sections (General Info, Modules, 
+Vlans, Links, Interfaces and Monitoring Stats), which correspond to the tables Devices, Modules, Vlans, Links and Interfaces. The 
+monitoring part is shown on the bottom representing data from events, monitoring and incidents.
+Except for interfaces those tables are limited to your Format setting in User-Profile, to avoid clutter. 
+Hover over the icons for hints on what they do.
+<p>
+You'll see print supply levels on supported printers or VMs on VMware ESXis. If ssh access is enabled in addition, the VMs can be turned on and off.
+
+<h4>Important!</h4>
+Due to performance reasons, only uptime, poe, interface (and VM) operational status and interface 
+last-change is realtime (if devices was seen in last discovery). Everthing else is retrieved from the database.
+
+<h2>Usage</h2>
+<img src="../../img/16/geom.png"> takes you straight to DefGen, in case you want to edit the definition file.<br>
+<img src="../../img/16/bino.png"> adds the device to monitoring and tests SNMP uptime by default. This icons turns into
+a clock in that case or another symbol, if you change the test method in Monitoring-Setup (click on icon to get there).
+<p>
+Click on its serial number to add it to your stock or update an existing item (e.g. to track decomissioned devices).
+<p>
+Node population is shown by checking <img src="../../img/16/nods.png">. The background turns blue if a node was ever 
+discovered on it, even if it's empty now. The last seen MAC will be revealed upon hovering over it.
+<p>
+Graphs can be displayed with the interfaces by checking <img src="../../img/16/grph.png">. They're tiny unless you 
+select large graphs in User-Profile. If unchecked the counter values are shown. If the absolute counter is not 0, 
+the background is blue. Recent IF status changes, high IF errors or PoE values will be turn the background red(ish).
+<b>The idea</b> behind all this is to show you which ports can be re-patched on a fully occupied switch. Chances are you won't get complaints if you unplug a port where:
+<ol>
+<li>No link (icon not green)
+<li>IF last change is as much as switch uptime...or at least a long time ago! To be sure, you can also check the DB lastchange value in Devices-Interfaces.
+<li>No nodes shown when Population is checked and field itself is not blue.
+<li>Traffic is 0 and field is not blue.
+</ol>
+<p>
+If SNMP write access is discovered you can change location, contact, IF adminstatus directly. If the device is using standard MIBs you may also edit IF-alias (enter a "-" to clear) and toggle PoE 
+delivery (e.g. to reset a hanging AP or VoIP phone). On devices not updating the config automatically, you can click on <img src="../../img/16/wrte.png"> to do so, if CLI
+access is provided.
+<p>
+Active interfaces' names are blue and clicking on it pops up a realtime SVG graph window, which lets you observe the traffic in a 1 - 300 second interval.
+<p>
+You can modify log/devtools.php in System-Files to include links to other parts of NeDi (e.g. Managed AP list of Wlan controllers) or external tools.
+
+<div id="footer">Remo Rickli 2013</div>
+</body>

@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Monitoring Setup
+</div>
+
+<h2>Einführung</h2>
+In diesem Modul kann die Geräteüberwachung in Bezug auf die Verfügbarkeit konfiguriert werden. Die Einstellungen in diesem Modul dienen als Basis für das Modul {Monitoring Health}, welches über die Erreichbarkeit der Geräte informiert. Weiter wird hier auch festgelegt, wie die entsprechenden NeDi-Benutzer über Ausfälle in Kenntnis gesetzt werden sollen.
+<p>
+<ul>
+<li> Um via Email über Ausfälle benachrichtigt zu werden, muss der jeweilige Benutzer in seinem NeDi-Profil eine gültige Email-Adresse hinterlegt haben. Zudem sind globale Anpassungen in der Datei nedi.conf notwendig. Weiter muss ein Mail-Server vorhanden sein, an welchen NeDi die Nachrichten senden kann. Pro Fehlerfall und pro ausgefallenes Gerät wird jeweils eine Email versendet. Dasselbe gilt, sobald die betroffenen Geräte wieder erreichbar sind.
+<li> Zusätzlich besteht die Möglichkeit, sich via SMS informieren zu lassen. 
+</ul>
+<h2>Benutzung</h2>
+<p>
+Soll mit NeDi eine grosse Anzahl Geräte für die Überwachung konfiguriert werden, ist es wichtig, über das Feld [Lokation] die abgefragten Geräte einzugrenzen. Basis hierfür sind die auf den Netzwerkgeräten konfigurierten SNMP-Lokationen.
+<p>
+<hr>
+Beispiel:
+<p>
+Wurde auf einem Teil der Geräte z.B. die SNMP-Lokation <i>snmp-server location Switzerland;Zuerich;Buchenweg;Dachgeschoss</i> konfiguriert, kann z.B. <i>Switzerland;Zuerich</i> als Filter verwendet werden, um alle Geräte in der Schweiz, welche in Zürich im Einsatz sind, anzuzeigen. Grenzt man die Abfrage weiter ein  z.B. <i>Switzerland;Zuerich;Buchenweg</i>, dann werden nur noch Geräte angezeigt, welche sich in der Schweiz in Zürich am Buchenweg befinden.
+<p>
+<hr>
+<p>
+Vorgehen:
+<ol>
+<li> Im Textfeld [Lokation] den gewünschten Standort für die zu bearbeitenden Geräte eingeben. Alternativ kann auch das Drop Down Menü neben dem Textfeld [Lokation] als Filter verwendet werden. Anschliessend können die Geräte mit dem Button "Zeigen" aufgelistet werden.
+<li> Um nun alle in der Liste aufgeführten Geräte für das Monitoring zu aktivieren, kann der Button "Hinzufügen" verwendet werden. Sind die angezeigten Geräte nur mit einem Nachbar verbunden, kann die Abhängigkeit zwischen den Geräten mit dem Häkchen "Auto Eltern" durch NeDi automatisch gesetzt werden. 
+<li> Hat man das Häkchen "Auto Eltern" nicht verwendet oder ist ein Gerät mit mehreren Nachbarsgeräten verbunden, so muss nun im Feld [Eltern] die Abhängigkeit vom <i>nächst höheren</i> Nachbargerät manuell gesetzt werden. Dabei sollte jeweils dasjenige Nachbargerät ausgewählt werden, ohne welches das aktuell zu konfigurierende Gerät nicht mehr erreichbar wäre. Fehlt ein Link zwischen zwei benachbarten Geräten, kann dieser manuall im Modul {Link Editor} erstellt werden. Alternativ könnte man im Feld [Eltern] auch das zugehörige Textfeld nutzen, um das <i>nächst höhere</i> Nachbarsgerät anzugeben.   
+<li> Abschliessend im Feld [Meldungen] die Benachrichtigung via Email oder SMS durch anklicken der zugehörigen Icons neben den jeweiligen Geräten aktivieren. Auf die Bedeutung der Icons <img src="../../img/16/bcls.png"> wird, sobald man mit dem Mauszeiger darüber fährt, über eine Kurzinfo (Quick info) hingewiesen.
+</ol>
+Im Feld [Info] ist immer ersichtlich, zu welchem Zeitpunkt das jeweilige Gerät letztmals abgefragt worden ist. Über das Icon <img src="../../img/16/star.png"> kann die Anzahl der fehlgeschlagenen Abfragen pro Gerät zurückgesetzt werden. Dies kann zum Beispiel im Rahmen von jährlichen Statistiken geschehen. Die Anzahl der bisher erfolgreich gesendeten Pakete bleibt dabei erhalten.  
+<p>
+Soll die Anzahl der gesendeten Pakete für alle Geräte auf Null zurückgesetzt werden, kann dies über den Button "Zurücksetzen" im Feld [Verfügbarkeit] erfolgen.
+<p>
+Im Feld [Uptime] kann für die jeweiligen Geräte die Überwachung manuell aktiviert <img src="../../img/16/bcls.png">, respektive deaktiviert <img src="../../img/16/bchk.png"> werden.
+<p>
+Ist im Feld [Device] ein Gerätesymbol grün hinterlegt, bedeutet dies, dass dieses Gerät überwacht wird und auch erreichbar ist. Ist ein Gerätesymbol gelb hinterlegt, bedeutet dies, dass dieses Gerät aktuell nicht erreichbar ist. Ist ein Gerätesymbol nicht mit einer Farbe hinterlegt, wird dieses Gerät aktuell nicht überwacht. Mit dem Button "Zeigen" kann die Seite neu geladen und der Zustand der Geräte geprüft werden.
+<p>
+Klickt man im Feld [Device] auf ein Gerätesymbol, wird eine Statusübersicht des jeweiligen Gerätes im Modul {Device Status} angezeigt.
+<p>
+<h2>Details</h2>
+<div class="code">Damit die Verfügbarkeit der Geräte abgefragt werden kann, ist sicherzustellen, 
+dass das Perl-Modul "moni.pl" läuft und richtig konfiguriert worden ist.
+</div>
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

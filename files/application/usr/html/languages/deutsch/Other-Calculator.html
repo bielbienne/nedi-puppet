@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+IP Calculator
+</div>
+
+<h2>Einführung</h2>
+In diesem Modul können mit dem NeDi Subnet Calculator schnell und sicher Subnetze berechnet oder überprüft werden. Je nach Art der Abfrage kann auch ein grosser Subnetzbereich in kleinere Subnetze unterteilt dargestellt werden.
+
+<h2>Benutzung</h2>
+Im Textfeld [IP Adresse] kann die Subnetz-ID oder einfach eine IP-Adresse aus einem Subnetzbereich eingegeben werden. Im zugehörigen Textfeld muss zusätzlich die Anzahl der gesetzten Bits der Subnetzmaske angegeben werden.
+<p>
+<div class="code">
+Beispiel: IP = 172.16.1.32 /28 (/28 steht für die Anzahl gesetzter Bits in der
+Subnetzmaske und ist eine kurze Schreibform für die Maske 255.255.255.240)
+</div>
+<p>
+Eine einfache Aufgabe könnte sein, dass man für eine bekannte IP-Adresse mit der zugehörigen Subnetzmaske wissen möchte, welches die zugehörige Subnetz-ID und Broadcast-Adresse sind. Weiter möchte man allenfalls auch noch wissen, welche die erste und welches die letzte verfügbare IP-Adresse zur freien Nutzung in diesem Bereich ist. 
+<p>
+In diesem Fall reicht eine Eingabe im Textfeld [IP Adresse], indem man die bekannte IP-Adresse mit der Anzahl der gesetzten Bits der zugehörigen Subnetzmaske eingibt. Die Abfrage dann mit dem Button "Zeigen" starten.
+<p>
+Eine etwas andere Aufgabe könnte sein, dass ein bekanntes Subnetz in kleinere Subnetze unterteilt werden soll. Nehmen wir an, wir hätten das Subnetz 172.16.0.0/20 zu unserer Verfügung und möchten dieses nun in kleinere Subnetze mit maximal 254 Hosts unterteilen.
+<p> 
+In diesem Fall geben wir das "Supernetz" 172.16.0.0/20 in das Textfeld [IP Adresse] ein. Zusätzlich geben wir im Feld [Sub/Supernet Mask] die 24 gesetzten Bits der kleineren Subnetze ein, in welches wir das "Supernetz" unterteilen wollen. Nachdem wir die Anfrage mit dem Button "Zeigen" gestartet haben, zeigt NeDi eine Liste, in welcher das Supernetz /20 in kleinere /24 Subnetze unterteilt worden ist.
+<p>
+<h2>Details</h2>
+<ul>
+<li> Dieses Modul unterstützt den NeDi-Benutzer beim Berechnen oder Überprüfen von Subnetzen. Dennoch ist es notwendig, dass ein fundiertes Wissen rund um das Berechnen von Subnetzen notwendig ist.
+</ul>
+
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

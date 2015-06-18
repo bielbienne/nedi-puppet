@@ -1,0 +1,35 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Nodes Status
+</div>
+<h2>Introduction</h2>
+This is the Devices-Status counterpart for nodes. It gathers all related database information amongst some 
+realtime scans and displays everything in one page.<p>
+<h2>Usage</h2>
+<ul>
+<li>You'd usually land here coming from other modules like Nodes-List. Alternatively you can enter/paste 
+a MAC-address in any common format (grouped by - or . or : or plain HEX).
+<li>If you need the MAC-address in a CLI window of a device, simply copy the appropriate format below the toolbar.
+<li><img src="../../img/16/bell.png"> View syslog events coming from this IP (if available).
+<li><img src="../../img/16/sys.png"> Get the status of the connecting device.
+<li><img src="../../img/16/exit.png"> Visible for users in the helpdesk group to send 2 Wake on Lan packets to the 
+node. The first one is a diected broadcast to the subnet of the node and the second one is a local broadcast.
+<li><img src="../../img/16/step.png"> Visible for users in the helpdesk group to mark this node as stolen.
+<li><img src="../../img/16/bcnl.png"> Allows administrators to delete the node.
+</ul>
+<p>
+Those to actions will be available, if the node was seen during the last discovery:
+<ul>
+<li><img src="../../img/16/find.png"> Scans node for open ports.
+<li><img src="../../img/16/radr.png"> Try to discover as an SNMP device.
+</ul>
+<div id="footer">Remo Rickli 2013</div>
+</body>

@@ -1,0 +1,73 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Schnittstellen Reports
+</div>
+
+<h2>Einführung</h2>
+Schnittstellen Reports unterstützen beim Planen und Ausbauen des Netzwerks, helfen Fehlkonfigurationen zu lokalisieren und noch vieles mehr.
+
+<h2>Benutzung</h2>
+Es können nach Wunsch im Feld [Auswahl] auch mehrere Reports auf einmal ausgewählt werden (Ctrl + Mausklick). Bei Bedarf kann die Limite der angezeigten Informationen via dem Drop Down Menü angepasst werden. Optional kann man durch das Setzen des Häkchens im Feld [Optimiert] und [Alternativ] die ausgegebenen Informationen beeinflussen. Die Abfrage mit dem Button "Zeigen" starten.
+<p>
+Report &lt;Voll/Leer Geräte&gt;
+<p>
+Dieser Report gibt darüber Auskunft, wie viele Schnittstellen eines Netzwerkgeräts in Gebrauch sind, respektive wie viele Schnittstellen noch für die Nutzung zur Verfügung stehen.
+<p>
+Setzt man bei diesem Report das Häkchen im Feld [Alternativ] werden nur noch Ethernet- und Wireless-Schnittstellen bei den Reports berücksichtigt. 
+<blockquote>Im Feld [Geräte Voll] werden die Geräte absteigend nach genutzten Schnittstellen aufgelistet.</blockquote>
+<ul> 
+<li> In der Spalte [Geräte Voll | Gerät] werden die Namen der Netzwerkgeräte aufgelistet. Klickt man auf einen Gerätenamen, wird man zum Modul {Geräte Status} weitergeleitet und erhält detaillierte Informationen zu diesem Netzwerkgerät.
+<li> In der Spalte [Geräte Voll | Schnittstellen] wird die Anzahl der Schnittstellen angezeigt, welche ein Gerät hat.
+<li> In der Spalte [Geräte Voll | Aktive IFs] wird die prozentuale Nutzung der verfügbaren Schnittstellen anhand eines Balkens angezeigt. Die Farbe des Balkens gibt darüber Auskunft, wie gross der Anteil der noch freien Schnittstellen ist. Die Zahl in der Klammer ( ) hinter dem Balken gibt darüber Auskunft, wieviele der vorhandenen Schnittstellen aktuell in Gebrauch sind. 
+</ul>
+<blockquote>Im Feld [Geräte Leer] werden die Geräte absteigend nach freien Schnittstellen aufgelistet. Die Bedeutung der Spalten bleibt dieselbe wie für das Feld [Geräte Voll] beschrieben.</blockquote>
+<p>
+Report &lt;Deaktivierte Schnittstellen&gt;
+<p>
+Dieser Report gibt Auskunft über alle administrativ (durch den Administrator) deaktivierten Schnittstellen auf den Netzwerkgeräten.
+<ul>
+<li> In der Spalte [Deaktivierte Schnittstellen | Gerät] werden die Namen der Netzwerkgeräte aufgelistet, auf welchen sich deaktivierte Schnittstellen befinden. Klickt man auf einen Gerätenamen, wird man zum Modul {Geräte Status} weitergeleitet und erhält detaillierte Informationen zu diesem Netzwerkgerät.
+<li> In der Spalte [Deaktivierte Schnittstellen | Schnittstellen Liste] werden die deaktivierten Schnittstellen der jeweiligen Netzwerkgeräte angezeigt. 
+</ul>
+<p>
+Report &lt;Statistik Verkehr&gt;
+<p>
+Dieser Report zeigt anhand von Graphiken die Auslastung und die Fehler von Schnittstellen. Setzt man  bei diesem Report das Häkchen im Feld [Optimiert], wird bei den Graphiken die Schnittstellenbandbreite berücksichtigt.
+<p>
+<h3>Hinweis:</h3> 
+Gesendete Daten eines Endgerätes bedeuten aus der Sicht des Netzwerkgerätes eingehende Daten. Empfangene Daten eines Endgerätes bedeuten aus der Sicht des Netzwerkgerätes ausgehende Daten.
+<p>
+<blockquote>In der Tabelle [Verkehr Eingehend] werden die Geräte mit den Schnittstellen-Graphiken absteigend nach der Menge der empfangenen Daten (Oktets) von den Endgeräten aufgelistet.</blockquote>
+<ul>
+<li> In der Spalte [Verkehr Eingehend| Gerät] werden die Namen der Netzwerkgeräte aufgelistet. Klickt man auf einen Gerätenamen, wird man zum Modul {Geräte Status} weitergeleitet und erhält detaillierte Informationen zu diesem Netzwerkgerät.
+<li> In der Spalte [Verkehr Eingehend| Schnittstelle] werden die Bezeichnungen der Schnittstellen angezeigt. Klickt man auf eine Schnittstelle, werden die angeschlosssenen Endgeräte im Modul {Endgeräte Liste} aufgelistet.
+<li> In der Spalte [Verkehr Eingehend| Verkehr] wird der Datenverkehr über diese Schnittstellen graphisch dargestellt. Klickt man auf eine Graphik, wird diese detailliert im Modul {Geräte Graphiken} dargestellt.
+</ul>
+<blockquote>In der Tabelle [Verkehr Ausgehend] werden die Geräte mit den Schnittstellen-Graphiken absteigend nach der Menge der gesendeten Daten (Oktets) an die Endgeräte aufgelistet. Die Handhabung der Spalten bleibt gleich.</blockquote>
+<p>
+<blockquote>In der Tabelle [Fehler Eingehend] werden die Geräte mit den Schnittstellen-Graphiken absteigend nach der Menge der aufgetretenen Fehler beim Empfangen der Daten von den Endgeräten aufgelistet. Die Handhabung der Spalten bleibt gleich.</blockquote>
+<p>
+<blockquote>In der Tabelle [Fehler Ausgehend] werden die Geräte mit den Schnittstellen-Graphiken absteigend nach der Menge der aufgetretenen Fehler beim Senden der Daten an die Endgeräte aufgelistet. Die Handhabung der Spalten bleibt gleich.</blockquote>
+<p>
+Report &lt;Link Status Fehler&gt;
+<p>
+Dieser Report zeigt Schnittstellen mit inkompatiblen Duplex-Einstellungen, Schnittstellen mit inkompatiblen Bandbreiten und Schnittstellen mit unterschiedlichen VLAN-Einstellungen. Setzt man im Feld [Alternativ] das Häkchen, werden zusätzliche Schnittstellen mit Fehlkonfigurationen angezeigt.
+<ul>
+<li> In der Spalte [Link Status Fehler | Fehler] wird anhand von Symbolen die Art des Fehlers angezeigt.
+<li> In der Spalte [Link Status Fehler | Gerät] werden die Namen der Netzwerkgeräte aufgelistet. Klickt man auf einen Gerätenamen, wird man zum Modul {Geräte Status} weitergeleitet und erhält detaillierte Informationen zu diesem Netzwerkgerät.
+<li> In der Spalte [Link Status Fehler | Schnittstelle] werden in der linken Spalte die betroffenen Schnittstellen angezeigt und in der rechten Spalte auf den Fehler hingewiesen.
+<li> In der Spalte [Link Status Fehler | Typ] wird auf die Art des Fehlers hingewiesen (C=CDP, M=Mac, O=Oui, V=VoIP, L=LLDP, S=Static, P=Population)
+</ul>
+<p>
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

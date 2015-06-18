@@ -1,0 +1,37 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Run NeDi
+
+</div>
+
+<h2>Introduction</h2>
+Execute nedi.pl from the GUI.
+
+<h2>Usage</h2>
+
+The module is divided in to the following parts:
+<ol>
+<li>The default is --help, which reveals options and the output legend. 
+<li>Definitions shows all available .def files.
+<li>Discover will actually find devices (a limit of 100 devices is added for the WebGUI).
+<li>Scan IP to search open ports on an ip.
+<li>Init is the most dangerous one here and will only proceed with the right DB admin credentials and after confirmation. It will delete and recreate the whole database, but not remove any config files or RRDs.
+</ol>
+
+
+<h2>Details</h2>
+<ul>
+<li>It's not intended for a full blown discovery, but helps to quickly update a device or backup its confguration.
+<li>Don't worry, if nothing happens right away, give it some time to complete.
+</ul>
+
+<div id="footer">Remo Rickli 2013</div>
+</body>

@@ -1,0 +1,56 @@
+# Definition for 1.3.6.1.4.1.1991.1.3.34.8.1.2.2 created by Defgen 1.8 on 30.Nov 2012 (admin)
+
+# General
+SNMPv	2
+Type	FESX624HF
+Typoid
+Sysdes
+OS	Ironware
+Icon	w3rn
+Size	1
+Bridge	normalX
+ArpND	old
+Dispro	FDP|LLDPXN
+Serial	1.3.6.1.4.1.1991.1.1.1.1.2.0
+Bimage	1.3.6.1.4.1.1991.1.1.2.1.49.0
+
+VLnams	1.3.6.1.4.1.1991.1.1.3.2.1.1.25
+VLnamx	1.3.6.1.4.1.1991.1.1.3.2.1.1.2
+Group
+Mode
+
+# Interfaces
+StartX
+EndX
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	1.3.6.1.4.1.1991.1.1.3.3.1.1.50
+IFvlix	1.3.6.1.4.1.1991.1.1.3.3.1.1.38
+IFpowr
+IFpwix
+IFdupl	1.3.6.1.4.1.1991.1.1.3.3.1.1.4
+IFduix	1.3.6.1.4.1.1991.1.1.3.3.1.1.38
+Halfdp	1
+Fulldp	2
+
+# Modules
+Modesc	1.3.6.1.4.1.1991.1.1.2.2.1.1.2
+Moclas
+Movalu
+Moslot	1.3.6.1.4.1.1991.1.1.2.8.1.1.1
+Modhw	1.3.6.1.4.1.1991.1.1.2.2.1.1.2
+Modsw
+Modfw
+Modser	1.3.6.1.4.1.1991.1.1.2.8.1.1.6
+Momodl	1.3.6.1.4.1.1991.1.1.2.2.1.1.2
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.1991.1.1.2.1.52.0
+Temp	1.3.6.1.4.1.1991.1.1.1.1.18.0
+MemCPU	1.3.6.1.4.1.1991.1.1.2.1.55.0
+Custom

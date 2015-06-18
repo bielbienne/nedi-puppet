@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Endgeräte Status
+</div>
+<h2>Einführung</h2>
+Dieses Modul bietet eine Übersicht aller relevanten Informationen eines Endgerätes. Ausserdem kann hier ein Endgerät aus der Datenbank gelöscht oder via der Wake on Lan Funktionalität (WOL) über das Netzwerk eingeschaltet werden.
+<h2>Benutzung</h2>
+Üblicherweise landet man in diesem Modul, wenn man im Modul {Endgeräte Liste} auf das zugehörige Hersteller Icon eines Endgerätes klickt. Alternativ kann man im Feld [MAC Adresse] auch die MAC-Adresse eines Endgerätes eingeben und die Abfrage mit dem Button "Zeigen" starten. Es werden für diese Abfrage alle gängigen Schreibweisen der MAC-Adresse unterstützt.
+<p>
+Die Informationen im Feld [Dienste] (Netbios, HTTP etc.) werden bei jeder Abfrage geprüft und das aktuelle Ergebnis wird angezeigt. Die Daten im Feld [Übersicht] werden der Datenbank entnommen.
+<p>
+Die Bedeutung der Werkzeugsymbole im Feld [Übersicht]:
+<ul>
+<li><img src="../../img/16/bcnl.png"> Ermöglicht den Mitgliedern der Administratoren Gruppe, dieses Gerät aus der Datenbank zu löschen.
+<li><img src="../../img/16/star.png"> Löscht die Werte, welche im unteren Teil dieser Seite angesiedelt sind, in den Feldern [IF Änderungen] und [IP Änderungen].
+<li><img src="../../img/16/bell.png"> Erlaubt via einem unicast WOL magic Packet das Aufwecken eines Clients über das Netzwerk, sofern der für dieses Netzwerksegment zuständige Router oder Layer 3 Switch noch die MAC-Adresse des Clients im Cache hat (ist üblicherweise für ca. 4 Stunden der Fall). Natürlich muss diese Funktion auch clientseitig untersützt und aktiviert sein (BIOS und ev. Netzwerkkarten Einstellungen im OS).
+<li><img src="../../img/16/hat.png"> Erlaubt den Mitgliedern der Helpdesk Gruppe dieses Gerät als gestohlen zu markieren.
+<li><img src="../../img/16/sys.png"> Es wird im Modul {Geräte Status}, an welchem das Endgerät angeschlossen ist, der Status des Netzwerk Gerätes angezeigt.
+<li><img src="../../img/16/say.png"> Falls eine IP Addresse vorhanden ist, kann man die zugehörigen Syslog Meldungen im Modul {Monitoring Events} ansehen.
+</ul>
+<p>
+Ob von einem Endgerät der jeweilige Dienst unterstützt wird <img src="../../img/16/bchk.png">, oder nicht <img src="../../img/16/bstp.png">, kann den gezeigten Symbolen entnommen werden. 
+<p>
+Direkte Links für die Geräteadministration im Feld [Dienste]:
+<ul>
+<li><img src="../../img/16/loko.png"> Öffnet eine unverschlüsselte Telnet-Verbindung mit dem Endgerät.
+<li><img src="../../img/16/lokc.png"> Öffnet eine verschlüsselte SSH-Verbindung mit dem Endgerät.
+<li><img src="../../img/16/glob.png"> Öffnet eine unverschlüsselte Webbrowser-Verbindung mit mit dem Endgerät.
+<li><img src="../../img/16/glok.png"> Öffnet eine verschlüsselte Webbrowser-Verbindung mit dem Endgerät.
+</ul>
+<p>
+Diverse weitere Links:
+<ul>
+<li> Klickt man im Feld [Übersicht] in der Zeile [NIC Hersteller] auf den Namen des Herstellers, wird man zu dessen Homepage weitergeleitet.
+<li> Klickt man im Feld [Interface Verkehr] respektive im Feld [Interface Fehler] auf die Graphiken, werden diese Graphiken detaillierter im Modul {Device Graphen} dargestellt. 
+</ul>
+<p>
+Situativ verfügbare Links für das jeweilige Endgerät in den Feldern [IP Änderungen] und [IF Änderungen]:
+<ul>
+<li> Klickt man auf den Namen des Netzwerkgerätes, an welchem das Endgerät angeschlossen ist, wird die Statusübersicht dieses Netzwerkgerätes im Modul {Device Status} angezeigt.
+<li> Klickt man auf den Namen einer Schnittstelle, werden alle an dieser Schnittstelle angeschlossenen Endgeräte im Modul {Node Liste} angezeigt.
+</ul>
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

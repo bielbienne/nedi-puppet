@@ -1,0 +1,62 @@
+# Definition for 1.3.6.1.4.1.9.1.1291 created by Defgen 1.8 on 23.Sep 2012 (admin)
+# Cisco ACE Application Control Engine Module (ACE10-6500-K9)
+# For admin context only. The other contexts can be queried by using a sort of community string indexing.
+# Example: admin context is reachable with "public" community, then the context "VC_test" would be reachable
+# with "public@VC_test" community.
+
+# General
+SNMPv	1
+Type	ACE10-6500-K9
+Typoid	
+Sysdes	
+OS	other
+Icon	lbbn
+Size	1
+Bridge	
+ArpND	
+Dispro	
+Serial	1.3.6.1.2.1.47.1.1.1.1.11.1
+Bimage	1.3.6.1.2.1.47.1.1.1.1.10.1
+
+CfgChg	1.3.6.1.4.1.9.9.43.1.1.1.0
+CfgWrt	1.3.6.1.4.1.9.9.43.1.1.3.0
+VLnams	
+VLnamx	
+Group	
+Mode	
+
+# Interfaces
+StartX	
+EndX	
+IFname	
+IFaddr	
+IFalia	
+IFalix	
+InBcast	
+InDisc	
+OutDisc	
+IFvlan	
+IFvlix	
+IFpowr	
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	1.3.6.1.2.1.47.1.1.1.1.2
+Moclas	1.3.6.1.2.1.47.1.1.1.1.5
+Movalu	9
+Moslot	1.3.6.1.2.1.47.1.1.1.1.7
+Modhw	1.3.6.1.2.1.47.1.1.1.1.8
+Modsw	1.3.6.1.2.1.47.1.1.1.1.10
+Modfw	1.3.6.1.2.1.47.1.1.1.1.9
+Modser	1.3.6.1.2.1.47.1.1.1.1.11
+Momodl	1.3.6.1.2.1.47.1.1.1.1.13
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.9.9.109.1.1.1.1.8.1
+Temp		
+MemCPU		
+Custom		

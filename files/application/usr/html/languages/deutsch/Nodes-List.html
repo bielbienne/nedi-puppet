@@ -1,0 +1,68 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Endgeräte Liste
+</div>
+<h2>Einführung</h2>
+Dieses Modul listet Endgeräte auf, welche an den Netzwerkkomponenten angeschlossen sind. Informationen über die VLAN-Zugehörigkeit, die verwendete IP-Addresse, die MAC-Addresse, wo ein Eingerät angeschlossen ist etc., können pro Endgerät angezeigt werden. 
+<p>
+<div class="code">
+Via einer SNMP-Abfrage kennt NeDi die MAC-Addresse und die zugehörige IP-
+Adresse eines Endgerätes. Damit im Feld [Name] der korrekte DNS-Name eines
+Endgerätes angezeigt werden kann, führt NeDi für jedes neu erkannte Endgerät
+einmalig einen reverse DNS lookup aus. Ist ein Endgerät nicht in der reverse
+DNS Lookup Zone eingetragen, wird für Windows-Hosts stattdessen der Netbios-
+Name verwendet. Wurde für ein bereits erkanntes Endgerät nachträglich ein
+reverse DNS Lookup Eintrag erstellt, so muss dieses Endgerät über das Modul
+{Endgerät Status} manuell aus der Datenbank gelöscht werden, damit nach einer
+erneuten Abfrage die korrekte DNS-Namensbezeichnung verwendet wird. 
+
+Wurde für alle Endgeräte erst nachträglich ein reverse DNS Lookup Eintrag 
+erstellt, kann das erneute Einlesen der Engeräte, indem man diesen Wert
+temporär auf einen Tag setzt, über die "retire" Funktion in der Datei 
+"nedi.conf" veranlasst werden.    
+</div>
+<p>
+<h4>Wichtig!</h4>
+Sollen die Endgeräte auf vorhandene Dienste wie z.B. Telnet, SSH oder Netbios abgefragt werden, prüft NeDi jedes in der Abfrage enthaltene Gerät auf geöffnete Ports. Diese Abfragen benötigten Zeit und Ressourcen! Es ist daher unbedingt darauf zu achten, die Abfrage mit Hilfe der Filter so zu formulieren, dass nicht zu viele Endgeräte auf einmal abgefragt werden. 
+
+<h2>Benutzung</h2>
+Mit dem Button "Zeigen" können die Endgeräte aufgelistet werden. Im Feld [Anzeigen] können darzustellende Werte hinzugefügt oder weggenommen werden (Ctrl + Mausklick).
+Es stehen, um die Suche anhand von bestimmten Kriterien einzugrenzen, folgende unterschiedliche Filtermethoden zur Verfügung:
+<ol>
+<li> Innerhalb der [Bedingung A] kann über das Drop Down Menü der gewünschte Abfrage Wert ausgewählt werden z.B. &lt;Name&gt; oder &lt;Vlan&gt;. 
+Diese Abfrage kann durch das zweite Drop Down Menü im Feld [Bedingung A] mit den Operatoren und zusätzlich durch Eingabe von Text weiter eingeschränkt werden.
+<li> Die Abfrage im Feld [Bedingung A] kann mit einer Abfrage im Feld [Bedingung B] über das Drop Down Menü im Feld [Verknüpfung] kombiniert werden.
+</ol>
+
+Mit den Symbolen <img src="../../img/up.png"><img src="../../img/dwn.png"> können die einzelnen Spalten in der Liste aufsteigend respektive absteigend sortiert werden.
+
+<h2>Details</h2>
+<ul>
+<li> Um mit diesem Modul zu arbeiten, ist das Verstehen von Regular Expressions (Abk. RegExp oder Regex) hilfreich.  
+<li> Abfragen können als Favoriten im Browser hinterlegt werden.
+<li> Am Ende der Tabellen steht immer die resultierende SQL-Abfrage. Diese kann z.B. im Modul {Other -> Export} weiter verwendet werden.
+</ul>
+
+Links in der Liste der Endgeräte:
+<ul>
+<li> Durch das Klicken auf ein Hersteller-Icon gelangt man zum Modul {Endgerät Status}, in welchem eine Statusübersicht des jeweiligen Gerätes angezeigt wird.
+<li> Klickt man im Feld [IP Adresse] auf eine IP, wird diese als Filter gesetzt, so dass nur das entsprechende Endgerät angezeigt wird.
+<li> Klickt man im Feld [OUI Hersteller] auf den Herstellernamen, wird man zu dessen Homepage weiter geleitet.
+<li> Klickt man im Feld [IF Name] auf den Namen eines Netzwerkgerätes, wird dieses als Filter gesetzt und es werden nur noch Endgeräte, welche an diesem Netzwerkgerät angeschlossen sind, angezeigt. Klickt man stattdessen auf die Schnittstellenbezeichnung, werden durch einen zusätzlichen Filter nur noch Endgeräte angezeigt, welche an dieser Schnittstelle angeschlossen sind.
+<li> Klickt man im Feld [Vlan] auf eine VLAN-ID, werden nur noch Endgeräte angezeigt, welche sich in diesem VLAN befinden.
+<li> Klickt man im Feld [Verkehr / Fehler] auf einen Graphen, werden diese Graphiken detaillierter im Modul {Device Graphen} dargestellt.
+<li> Klickt man im Feld [SSH Server] oder im Feld [Telnet Server] auf das jeweilige Schlosssymbol, wird eine SSH- respektive Telnet-Verbindung zu diesem Gerät aufgebaut (sofern vom Gerät unterstützt).
+</ul>
+
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

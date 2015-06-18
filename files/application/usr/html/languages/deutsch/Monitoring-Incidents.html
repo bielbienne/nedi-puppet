@@ -1,0 +1,36 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Monitoring Ereignisse
+</div>
+
+<h2>Einführung</h2>
+In diesem Modul werden Ereignisse angezeigt und können durch das Support-Personal klassifiziert werden. 
+Ein angezeigtes Ereignis bedeutet, dass ein Gerät innerhalb eines Abfragezeitraums (Uptime-alert) nicht geantwortet hat (siehe nedi.conf).
+Dieses Modul soll die Ausgangsbasis für weitere Analysen bilden. Konnte ein Vorfall geklärt werden, dann kann dieser durch das Angeben der Ursache quittiert werden.
+<p>
+Wird dieses Modul sorgfältig gepflegt, ist dies hilfreich für Analysen bezogen auf die häufigsten Fehlerursachen. Weiter ist für die Support-Mitarbeiter auch ersichtlich, ob ein Fall noch offen ist (noch nicht quittiert) oder ob sich allenfalls bereits ein anderer Mitarbeiter darum gekümmert hat.
+
+
+<h2>Benutzung</h2>
+<ul>
+<li> Wenn abgeklärt worden ist, was passiert ist (z.B. Stromausfall), kann dem jeweiligen Ereignis über das Drop Down Menü im Feld [Info] die entsprechende Fehler-Kategorie zugeordnet werden. Zusätzlich steht für weitere Informationen das zugehörige Textfeld zur Verfügung. Sobald diese Zuordnung vorgenommen worden ist, wird das Ereignis quittiert und der genaue Zeitpunkt sowie der Benutzer werden bei beim Quittieren geloggt.  
+<li> Um eine Auswertung der Ereignisse zu erhalten, kann im Feld [Filter] über das Drop Down Menü nach Ereignissen sortiert werden. Zusätzlich kann über das Drop Down Menü im Feld [Limite] die maximale Anzahl der angezeigten Nachrichten festgelegt werden. Mit dem Button "Zeigen" wird die Abfrage dann gestartet. Die beiden Pfeilsymbole unterhalb des Buttons "Zeigen" dienen zum Blättern innerhalb der angezeigten Ereignisse.
+</ul>
+
+Weitere Links:
+<ul>
+<li> Klickt man im Feld [Liste] auf einen Gerätenamen, wird der Status des jeweiligen Gerätes im Modul {Geräte Status} angezeigt.
+<li> Im Feld [Info] kann das rote Kreuz <img src="../../img/16/bcnl.png"> genutzt werden, um einen Vorfall aus der Datenbank zu löschen.
+</ul>
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

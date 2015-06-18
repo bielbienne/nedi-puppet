@@ -1,0 +1,96 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Devices Write
+</div>
+
+<h2>Einführung</h2>
+
+<div class="code">
+Dieses Modul erlaubt die direkte Manipulation von Gerätekonfigurationen und 
+sollte daher nur mit grösster Vorsicht eingesetzt werden!
+
+Die Möglichkeit, Befehle an mehrere Geräte zentral abzusetzen, ist sehr mächtig 
+und kann helfen, den Konfigurationsaufwand für Anpassungen zu reduzieren. Auf 
+diese Weise ist es auch möglich, von mehreren Geräten z.B. die Betriebssystem
+Version oder den Zustand von Schnittstellen abzufragen. Um den Output der 
+Befehle einzusehen, wird jeweils eine Datei pro Gerät erstellt, welche am Ende 
+dieser Seite über einen Link aufgerufen werden kann.
+
+</div>
+
+<h4>Achtung!</h4>
+
+<b>Unüberlegte Handlungen in diesem Modul können das ganze Netzwerk zum Stillstand bringen!</b>
+
+<h2>Benutzung</h2>
+Wurde das Filter-Konzept zum Ansprechen der Geräte verstanden, so ist es möglich, die genaue Zielgruppe für die Befehle, auf welche zugegriffen werden soll, festzulegen. Dabei ist zu beachten, dass jeweils nur Geräte mit demselben Betriebssystem angesprochen werden können. Inwiefern unterschiedliche Release-Versionen desselben Betriebssystems die gewünschten Befehle unterstützen, sollte vorgängig geprüft werden. Auf jeden Fall muss der Befehlssyntax des Herstellers für die gewählten Geräte eingehalten werden.
+<p>
+Die Felder [Bedingung A] und [Bedingung B] können genutzt werden, um die Abfragen zu filtern. Das Feld [Bedingung A] kann ohne das Feld [Bedingung B] genutzt werden. Soll das Feld [Bedingung B] ebenfalls verwendet werden, muss dies via dem Drop Down Menü im Feld [Verknüpfung] angegeben werden.
+<p>
+Die Felder [Befehle / Konfiguration] und [Interface Konfiguration] werden genutzt, um die zu verwendenden Befehle anzugeben. Das Feld [Interface Konfiguration] ist nicht an das Feld [Bedingung B] gebunden und kann auch mit einer einfachen Abfrage über das Feld [Bedingung A] verwendet werden.
+<p>
+Mit dem Button "Zeigen" können die getätigten Eingaben getestet werden. Mit dem Button "Befehle" werden die gewählten Befehle ausgeführt. Mit dem Button "Konfiguration" werden Befehle wie "conf t", "end" und "write mem" automatisch für Geräte ausgeführt, welche diese Befehle unterstützen. 
+<p>
+Das Feld [Bedingung A]
+<p>
+Über die beiden Drop Down Menüs die gewünschten Filterkriterien setzen und über das zugehörige Textfeld die Abfrage komplettieren. Um die gesetzten Filter zu testen, kann jederzeit gefahrlos der Button "Zeigen" verwendet werden. Die angesprochenen Geräte werden dann in einer Liste aufgeführt.
+<p>
+Das Feld [Bedingung B]
+<p>
+Um eine Abfrage weiter einzugrenzen, kann das Feld [Bedingung B] genutzt werden, sofern dieses über das Feld [Verknüpfung] aktiviert worden ist. Der Abfrageteil im Feld [Bedingung B] ist gleich aufgebaut wie im Feld [Bedingung A]. Zusätzlich gibt es jedoch ein zweites Textfeld (rechts), welches nachfolgend noch erklärt wird.
+<p>
+Das Feld [Befehle / Konfiguration]
+<p>
+Im Feld [Befehle / Konfiguration] die gewünschten Befehle in das Textfeld eingeben und diese mit dem Button "Befehle" absetzen. Der Button "Konfiguration" wird nur vom Cisco IOS™ oder einem ähnlich aufgebauten Betriebssystem unterstützt, da Befehle wie "conf t", "end" und "write mem" automatisch mitgegeben werden.
+<p>
+Das Feld [Interface Konfiguration]
+<p>
+Für Geräte, basierend auf dem Cisco IOS™ oder einem ähnlich aufgebauten Betriebssystem, kann zusätzlich das Feld [Interface Konfiguration] genutzt werden. Im Feld [Interface Konfiguration] kann über das Drop Down Menü und den zugehörigen Textfeldern ein Bereich der zu konfigurierenden Schnittstellen festgelegt werden. Die Befehle für die Schnittstellen werden im zugehörigen Textfeld eingegeben.
+<p>
+<hr>
+<p>
+Spezialfall - Das zweite Textfeld rechts im Feld [Bedingung B]
+<p>
+Dieses zweite Textfeld rechts im Feld [Bedingung B] ist ein Spezialfall. Es dient dazu, bereits auf den Geräten vorhande Konfigurationseinträge gezielt zu ändern. Dies ermöglicht zum Beispiel, innerhalb der <i>snmp-server location</i> Zeichenfolge gezielt ein Wort zu ändern. Wird diese Möglichkeit genutzt, kann jeweils nur ein Befehl abgesetzt werden. Diese Restriktion setzt in den meisten Fällen ein Cisco IOS oder kompatibles Betriebssystem voraus, da die Befehle mit dem Button "Konfiguration" auf den Geräten geschrieben werden müssen.
+<p>
+Beispiel:<br> 
+In der Zeichenfolge <i>snmp-server location Switzerland;Zuerich;MeineStrasse;Dachgeschoss</i> soll das Wort <i>MeineStrasse</i> durch <i>Buchenweg</i> ersetzt werden.
+<p>
+Vorgehen:<br> 
+Im Feld [Bedingung A] die Abfrage für die gewünschten Geräte definieren und im Textfeld den Befehl <i>snmp-server location </i> eingeben. Das Feld [Verknüpfung] auf dem Eintrag &lt;Bedingung A&gt; belassen. Anschliessend im Feld [Bedingung B] im ersten Drop Down Menü den Eintrag &lt;Lokation&gt; auswählen. Im zweiten Drop Down Menü kann der Standardwert &lt;regexp&gt; belassen werden. Mit dem Button "Zeigen" die Abfrage testen. 
+<p>
+In der Liste der abgefragten Geräte kann man nun die aktuell auf den Geräten vorhandene SNMP-Lokation sehen.
+<p>
+Nun im ersten Textfeld (links) das zu ersetzende Wort <i>MeineStrasse</i> hineinschreiben und im zweiten Textfeld (rechts) das neue Wort <i>Buchenweg</i>. Abschliessend mit dem Button "Zeigen" testen. 
+<p>
+In der Liste der abgefragten Geräte kann man nun sehen, dass in der vorhandene SNMP-Lokation des Wort <i>MeineStrasse</i> durch <i>Buchenweg</i> ersetzt wurde. 
+<p>
+Neue Zeichenfolge:<br>
+Die neue Zeichenfolge <i>snmp-server location Switzerland;Zuerich;Buchenweg;Dachgeschoss</i> könnte nun mit dem Button "Konfiguration" auf die Geräte (Cisco) geschrieben werden.
+<p>
+<hr>
+<h4>Wichtig!</h4>
+<b>Mit dem Button "Zeigen" können die Eingaben und die gesetzten Filter verifiziert werden, bevor sie endgültig ausgelöst werden!</b>
+<p>
+<h2>Details</h2>
+Hinweise für die Einstellungen:
+<ul>
+<li>Über die NeDi Gruppenberechtigungen kann im Modul {Benutzer Accounts} sichergestellt werden, dass nur versierte Benutzer dieses kritische Module nutzen können. Das Recht, dieses Modul zu nutzen, wird mit der Gruppe +Adm <img src="../../img/16/ucfg.png"> erteilt.
+<li>Um das Senden von Befehlen komplett zu unterbinden, kann die Datei “html/inc/Devsend.pl” gelöscht oder umbenannt werden. Diese Modul ist dann weiterhin sichtbar, jedoch werden keine Befehle mehr an die Geräte gesendet.
+</ul>
+Links im Feld [Devices] mit den aufgelisteten Geräten:
+<ul>
+<li> Klickt man in der Spalte [IP Adresse] auf eine IP-Adresse, wird eine Telnet-Verbindung zum jeweiligen Gerät aufgebaut.
+</ul>
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

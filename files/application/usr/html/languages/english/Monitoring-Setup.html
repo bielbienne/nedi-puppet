@@ -1,0 +1,52 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Monitoring Setup
+</div>
+
+<h2>Introduction</h2>
+Configure how targets should be monitored and how users are notified upon their failure. In addition you can specify if traps, syslog or discovery events should be discarded or forwarded. For discovery events you can define a coarse alert policy with the "notify" string and thresholds (CPU, Mem etc.) in nedi.conf. They can be overridden here for each target.
+
+<h2>Usage</h2>
+
+Traps or syslog messages of nodes or devices not added to monitoring will only create "other" (level 10) events.
+<p>
+The actual polling is done by moni.pl which should be started automatically. It also relies on nedi.conf (can be edited in System-Files), where you can set the pause between polls, how many tests a device can fail before it is marked down and how emails should be sent.
+<p>
+If a target is reported to be down an incident is created with the start time set to the time it's detected at. The end time will be added automatically, when the target is responding again.
+<p>
+This daemon can be stopped and started from System-Services after changing any settings to quickly see the results. Otherwhise you'll have to wait until the next polling cycle starts.
+<p>
+A shaded background indicates that the target is not found as node or device anymore.
+
+<h3>Message Flows</h3>
+<img src="../../img/messageflows.png">
+
+<h2>Details</h2>
+
+<ul>
+<li>Add targets from Devices List or Status (uptime is default for SNMP devices) and Nodes List or Status respectively (TCP ping is default for nodes). They'll show up here afterwards.
+<li>http/https: You can add a string to send like index.html and a regexp matching a successful response. Only a SYN check is performed, if you don't.
+<li>dns: you can send a hostname and a regexp matching the expected IP address.
+<li>ntp: you can send RFC2030 fields like "Stratum" and enter a match ^[1-5]$ to detect if your ntp server lost sync.
+<li>The concept behind Monitoring-Setup is to use the filter to rapidly change settings on a group of targets. Click on a targetname, test, alert or manually set a filter and click "Show".
+<li>Clicking "Update" applies the settings to the displayed targets.
+<li>Clicking "Delete" removes the displayed targets from monitoring.
+<li><img src="../../img/16/bchk.png"> Change the test (a tcp ping to the appropriate port or uptime) and how many lost replies mark it down.
+<li>Select email or SMS alerts, just have incidents create Monitoring-Events or  nothing at all. If you select a repeat option, the alert is resent every 100th failed test and in addition you can adjust latency warnings for slower targets.
+<li>To check for more than just open ports, <img src="../../img/16/bbrt.png"> Lets you enter an a string to send ("GET /" or a FQDN) and <img src="../../img/16/bblf.png"> the expected answer.
+<li><img src="../../img/16/bell.png"> Select Forward and enter a regexp to match the message and/or select a minimum event level to get a mail on matching  events. Alternatively you can select Discard, a maximum event level and/or a regexp and matching events will not even be stored in the DB (A forward match of a target overrules a discard match. Level limit can only be used to forward OR discard but not both).
+<li><img src="../../img/16/net.png"> Updates target IP address from devices or nodes, in case they've changed.
+<li><img src="../../img/16/ncon.png"> Sets dependency info, if available via links or device information (in case of node targets). After that, the dependencies can be adjusted on each target individually.
+<li><img src="../../img/16/walk.png"> Reset the availability counters (lost & ok) once a year if you need to know annual availability for example.
+</ul>
+
+<div id="footer">Remo Rickli 2013</div>
+</body>

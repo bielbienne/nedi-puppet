@@ -1,0 +1,52 @@
+# Definition for 1.3.6.1.4.1.841.2.11 created by m.rufer & Defgen 1.4 on 25.Jun 14:25:37
+#OUI discovery needed: ouidev	PROXIM
+#Attention: sysLocation, sysContact and sysName are not persistent when the device is rebooted
+#use a script to copy these values from the custom Proxim OIDs each time before Nedi runs!
+
+# General
+SNMPv	1
+Type	QB-8150
+OS	other
+Icon	wban
+Size	1
+Bridge	normal
+ArpND	
+Dispro	
+Serial	1.3.6.1.4.1.841.1.1.2.1.2.1.1.2.4
+Bimage	1.3.6.1.4.1.841.1.1.2.1.2.1.1.2.3
+
+VLnams	
+Group	
+Mode	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp	1.3.6.1.4.1.841.1.1.3.8.1.0
+MemCPU	
+MemIO	

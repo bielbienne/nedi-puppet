@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Datenbank Export
+</div>
+
+<h2>Einführung</h2>
+Dieses Modul bietet einen Überblick über den Aufbau der NeDi-Datenbankstruktur. Des weiteren ist es möglich die Konfigurationsdateien der Netzwerkgeräte als Textdateien zu exportieren und es kann auch ein Dump der Datenbank oder von einzelnen Tabellen erstellt werden. SQL-Tabellen können optional auch als .csv Dateien exportiert werden.  
+<p>
+<div class="code">
+Die Übersicht zum Datenbankaufbau kann jederzeit 
+mit diesem Symbol wieder angezeigt werden:   		     <img src="../../img/32/flop.png">	
+</div>
+<p>
+
+<h2>Benutzung</h2>
+<h3>Export</h3>
+Vorgehen, um die Konfigurationsdateien der Netzwerkgeräte zu exportieren:
+<ol>
+<li> Im Feld [Export] die gleichnamige Option &lt;Export&gt; auswählen.
+<li> Anschliessend via dem Drop Down Menü [Query Templates] den Eintrag &lt;Device Config Files&gt; auswählen. 
+<li> Im Feld [Archiv Typ] die Option &lt;Text&gt; wählen und anschliessend auf den Button "Zeigen" klicken. 
+<li> Das angebotene Tar-Archiv speichern. Anschliessend können die Konfigurationsdateien extrahiert und abgelegt werden.
+</ol>
+<p>
+Das Feld [Export] kann auch verwendet werden, um einzelne SQL-Tabellen als .csv Dateien zu exportieren. Die gewünschten Trennzeichen können via einem separaten Drop Down Menü ausgewählt werden. Den Export auch wieder mit dem Button "Zeigen" auslösen.
+
+<h3>SQL-Dump</h3>
+Vorgehen, um einen SQL-Dump zu exportieren:
+<ol> 
+<li>Im Feld [SQL Dump] die gleichnamige Option &lt;SQL Dump&gt; auswählen.
+<li> Im Feld [SQL Dump | Tabellen] können einzelne oder mehrere (Ctrl + Mausklick) SQL-Tabellen markiert werden, welche im Dump enthalten sein sollen. 
+<li> Anschliessend im Feld [Archiv Typ] die gewünschte Komprimierung auswählen und den SQL-Dump via dem Button "Zeigen" speichern.
+<li> Die angebotene Archivdatei speichern. Anschliessend kann die nedi.sql Dump-Datei extrahiert und abgelegt werden.
+</ol>
+<p>
+Die resutierende .sql Datei kann später über die Kommandozeilenaufforderung wieder importiert werden.
+
+<h2>Details</h2>
+<ul>
+<li> Um .csv Exporte direkt im Browser ansehen zu können, muss man im Feld [Archiv Typ] die Option &lt;Text&gt; auswählen. 
+<li> Abhängig von der Datenmenge, welche exportiert werden soll, kann das Ausführen der gewünschten Operation etwas Zeit benötigen.
+</ul>
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

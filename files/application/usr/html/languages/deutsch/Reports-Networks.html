@@ -1,0 +1,57 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Netzwerk Report
+</div>
+
+<h2>Einführung</h2>
+In diesem Modul können alle Subnetze eines Netzwerks angezeigt werden. Zusätzlich gibt dieser Report Auskunft über die Anzahl der Endgeräte im jeweiligen Subnetz und wie lange die Endgeräte durchschnittlich in einem Subnetz verbleiben.
+<h2>Benutzung</h2>
+Im Feld [IP] kann über das Drop Down Menü die Abfragelogik bestimmt werden. Anschliessend muss im zugehörigen Textfeld ein Subnetz angegeben werden.
+<p>
+<div class="code">
+Beispiel: IP = 192.168.0.0 /24  (/24 steht für die Anzahl gesetzter Bits in 
+der Subnetz Maske und ist eine kurze Schreibform für die Maske 255.255.255.0)
+</div>
+Mit dem Button "Zeigen" wird die Abfrage ausgelöst. Man kann auch auf eine Eingabe im Textfeld verzichten, so dass alle Subnetze angezeigt werden.
+<p>
+Spalte [Netzwerk]
+<ul>
+<li> Auf der linken Seite wird anhand von Symbolen angezeigt, ob es sich bei dem jeweiligen Subnetz um einen privaten oder öffentlichen IP-Bereich handelt. Private IP-Bereiche werden im Internet nicht geroutet.
+<li> Klickt man auf ein Subnetz, wird man zum Modul {Topologie Karte} weitergeleitet. 
+</ul>
+<blockquote>Bedeutung der Symbole für die Netzwerkbereiche:</blockquote>
+<p>
+<blockquote><img src="../../img/16/brld.png"> Loopback-Addresse</blockquote>
+<blockquote><img src="../../img/16/bblf.png"> 10.0.0.0/8 (Subnetz für private Nutzung aus dem A Klasse Bereich)</blockquote>
+<blockquote><img src="../../img/16/bbrt.png"> 172.16.0.0/12 (Subnetz für private Nutzung aus dem B Klasse Bereich)</blockquote>
+<blockquote><img src="../../img/16/bbdn.png"> 192.168.0.0/16 (Subnetz für private Nutzung aus dem C Klasse Bereich)</blockquote>
+<blockquote><img src="../../img/16/brgt.png"> Öffentliches registriertes Subnetz; wird im Internet geroutet.</blockquote>
+<p>
+Spalte [Devices]
+<ul> 
+<li> In dieser Spalte werden die Netzwerkgeräte, für welche eine Schnittstelle in dem jeweiligen Subnetz konfiguriert worden ist, angezeigt.
+<li> Klickt man auf den Namen eines Netzwerkgerätes, wird man zum Modul {Geräte Status} weitergeleitet. 
+</ul>
+<p>
+Spalte [Bevölkerung]
+<ul> 
+<li> In dieser Spalte wird die Anzahl der vorhanden Endgeräte, welche sich in den jeweiligen Subnetzen befinden, angezeigt. Zusätzlich wird die Anzahl der Endgeräte grafisch in der Form eines Balkens dargestellt. Anhand der Farbe des Balkens kann man erkennen, ob sich die Anzahl der Endgeräte im selben Subnetz im grünen Bereich befindet oder nicht. Zu viele Endgeräte im selben Subnetz gehen zu Lasten der Performance, da jedes Endgerät auf Broadcasts reagieren muss.  
+<li> Klickt man auf die Anzahl der Endgeräte in einem Subnetz, werden diese im Modul {Endgeräte Liste} aufgelistet. 
+</ul>
+<p>
+Spalte [Node Alter]
+<ul> 
+<li> In dieser Spalte wird die durchschnittliche Zeit angezeigt, die ein Endgerät im jeweiligen Subnetz verbleibt. 
+</ul>
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

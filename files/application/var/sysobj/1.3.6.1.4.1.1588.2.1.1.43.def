@@ -1,0 +1,57 @@
+# Definition for 1.3.6.1.4.1.1588.2.1.1.43 created by Defgen 1.8 on 9.Sep 2013 (admin)
+ 
+# General
+SNMPv	2HC
+Type	HPVC-FC
+Typoid	
+Sysdes	
+OS	other
+Icon	fcgn
+Size	1
+Bridge	
+ArpND	old
+Dispro	
+Serial	1.3.6.1.4.1.1588.2.1.1.1.1.10.0
+Bimage	1.3.6.1.4.1.1588.2.1.1.1.1.6.0
+CfgChg	
+CfgWrt	
+VLnams	
+VLnamx	
+Group	
+Mode	
+ 
+# Interfaces
+StartX	
+EndX	
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.4.1.1588.2.1.1.1.6.2.1.36
+IFalix	
+InBcast	
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFpowr		
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+ 
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+ 
+# RRD Graphing
+CPUutl		
+Temp	1.3.6.1.4.1.1588.2.1.1.1.1.22.1.4.2	
+MemCPU		
+Custom		

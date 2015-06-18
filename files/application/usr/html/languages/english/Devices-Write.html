@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Devices Write
+</div>
+
+<h2>Introduction</h2>
+
+<div class="code warn">This is a very helpful, but also dangerous module!
+Always use with caution, because you could create a big mess rather quickly...
+</div>
+
+<h2>Usage</h2>
+Once you understand the filtering concept of Devices-List you should be able to pinpoint the group of devices you wish to access. (Note that only devices of the same operating system can be used at once).
+<p>
+Additionally you'll have to specify the desired commands. On IOS or similar devices you can use the Interface Configuration section (to the right) to generate ranges of commands.
+<p>
+<h4>Important!</h4>
+<b>Click Show to verify your input before sending!</b>
+<p>
+You can simply Send Commands or use Configure to surround your commands with "conf t" and "end", "write mem" (or "sys" and "save" for Comware) on supported devices.
+<p>
+A newer feature is the "Condition B" subsitution mode, where you can substitute the matches (using 2nd text field) and use the result as argument for the command in "Commands" (only 1 command per device supported in this mode).<br>
+Here's an Example:<br>
+<ul>
+<li>Let's say you moved all switches named SW01,02,03 etc. from the floor into a wallrack.
+<li>Use ^SW as Condition A
+<li>Enter something like "snmp-server location " (or whatever sets SNMP location on those switches) in the Execute/Config area.
+<li>Select Location in Condition B and  enter "floor" in the left text field of Condition B and "wallrack" in the right one.
+<li>Click Show and you should see each matched device with the command setting the new location.
+<li>Click configure if it's correct.
+</ul>
+<p>
+<h2>Details</h2>
+A couple pointers for the setup:
+<ul>
+<li>Make sure you adjust GUI authentication (towards the end of nedi.conf) to fit your needs.
+<li>If you're unsure about it, delete html/inc/Devsend.pl to completely disable sending commands to devices!
+</ul>
+<div id="footer">Remo Rickli 2013</div>
+</body>

@@ -1,0 +1,45 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Vlan Liste
+</div>
+
+<h2>Einführung</h2>
+Dieses Modul listet die Vlan-IDs der Geräte auf. Weiter kann angezeigt werden, wie viele Geräte sich in einem Vlan befinden.
+
+<h2>Benutzung</h2>
+Mit dem Button "Zeigen" können die Vlans der Geräte aufgelistet werden. Im Feld Anzeigen können darzustellende Werte hinzugefügt oder weggenommen werden (Ctrl + Mausklick).
+Es stehen folgende unterschiedliche Filtermethoden zur Verfügung, um die Suche anhand von bestimmten Kriterien einzugrenzen.
+<ol>
+<li> Innerhalb der Bedingung A kann über das Drop Down Menü der gewünschte Abfrage-Wert ausgewählt werden z.B. &lt;Duplex&gt; oder &lt;Device&gt;. 
+Diese Abfrage kann durch das zweite Drop Down Menü der Bedingung A mit den Operatoren und durch Eingabe von Text weiter eingeschränkt werden.
+<li> Die Abfrage der Bedingung A kann mit einer Abfrage der Bedingung B über das Drop Down Menü im Feld Verknüpfen kombiniert werden.
+</ol>
+
+<h2>Details</h2>
+<ul>
+<li> Um mit diesem Modul zu arbeiten ist das Verstehen von Regular Expressions (Abk. RegExp oder Regex) hilfreich.  
+<li> Abfragen können als Favoriten im Browser hinterlegt werden.
+<li> Am Ende der Tabellen steht immer die resultierende SQL-Abfrage. Diese kann z.B. im Modul "Other -> Export" weiter verwendet werden.
+<li> Durch das Klicken auf einen Gerätenamen gelangt man direkt zur Statusübersicht des jeweiligen Gerätes. Klickt man in der Spalte Population
+(Bevölkerung) auf die Anzahl der Geräte im jeweiligen Vlan, dann wird man direkt zum Modul "Nodes -> List" weitergeleitet, welches detailliert die Geräte 
+in diesem Vlan anzeigt.
+</ul>
+
+Links in der Liste der Geräte und VLANs:
+<ul>
+<li> Der Gerätename in der Spalte [Device] ist mit gesetztem Filter für das jeweilige Gerät mit dem Modul {Device Status} verlinkt.
+<li> Die angegeben Anzahl der Nodes in der Spalte [Population] ist mit dem Modul {Nodes Liste} verlinkt und zeigt die vorhanden Nodes im jeweiligen VLAN.
+</ul>
+
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

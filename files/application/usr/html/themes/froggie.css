@@ -1,0 +1,347 @@
+/* General Classes */
+body {
+	font: 9px verdana, arial, sans-serif; 
+	color: #004400;
+	background-color: #688367;
+}
+
+td{
+	padding: 2px;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+th{
+	padding: 3px;
+	font-weight: bold;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+tr{
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+/* Headings */
+h1   {
+	color: #003300; 
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2   {
+	color: #003300;
+	font-size: 11px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3   {
+	color: #000033;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h4   {
+	color: #C00000;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h5   {
+	color: #00C000;
+	font-size: 10px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Input Fields */
+select {
+	color: #004400;
+	background-color: #eeffee;
+}
+
+textarea {
+	color: #004400;
+	background-color: #eeffee;
+}
+
+/* Image Properties */
+img{
+	margin : 1px 2px;
+	vertical-align: middle;
+	border: none;
+}
+
+img.bigbar{
+	height : 15px;
+	margin : 2px;
+	vertical-align: middle;
+	border: 1px solid #003300;
+}
+
+img.smallbar{
+	height : 7px;
+	margin : 2px;
+	vertical-align: middle;
+	border: 1px solid #003300;
+}
+
+/* Form Properties */
+:focus {background-color: #f0f0a0}
+
+/* Link Properties */
+:link {color: #009559;text-decoration: none;}
+:visited {color: #00804D;text-decoration: none;}
+:link:focus, :visited:focus {color: #68C811}
+:link:hover, :visited:hover {color: #B6F521}
+:link:active, :visited:active {color: #66FE01}
+
+/* Header table & Footer div*/
+#header{
+	width: 100%;
+	border-spacing: 2px;
+	background-color: #ACC4AC;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+#footer{
+	margin: 6px auto;
+	width: 90%;
+	border: 2px solid #ACC4AC;
+	padding: 4px;
+	text-align: right;
+	font-style: italic;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+/* Actual Module */
+table.content{
+	width: 100%;
+	border-spacing: 2px;
+	background-color: #ACC4AC;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+/* Helper td */
+td.helper{
+	padding: 4px;
+	vertical-align: top;
+	border: 1px solid #ACC4AC;
+	background-color: #B1CBB1;
+}
+
+table.fixed{
+	table-layout:fixed;
+}
+
+table.full{
+	width: 100%;
+}
+
+/* Style for logs etc. */
+.textpad{
+	margin: 4px auto;
+	width: 80%;
+	padding: 4px;
+	border-spacing: 1px;
+	border: 1px solid #008800;
+}
+
+/* Font Properties */
+.code{
+	overflow: auto;
+	text-align: left;
+	padding: 4px;
+	font-family: monospace;
+	font: 9px Courier New, monospace;
+	white-space: pre;
+}
+
+/* Scrollable list container */
+.scroller{
+	background-color: #aaaaaa;
+	height:150px;
+	width:100%;
+	overflow: auto;
+}
+
+.red {color: red }
+.drd {color: darkred }
+.grn {color: green }
+.blu {color: blue }
+.prp {color: purple }
+.blk {color: black }
+
+.gry {color: grey }
+.dgy {color: dimgrey }
+.org {color: orange }
+.mrn {color: maroon }
+.sna {color: sienna }
+.sbu {color: steelblue }
+.olv {color: olive }
+
+/* Text Fields */
+.txta{background-color: #e0e0e0}
+.txtb{background-color: #d0d0d0}
+
+/* Image Fields */
+.imga{background-color: #f0f0f0}
+.imgb{background-color: #e6e6e6}
+
+/* Status Fields */
+.good{background-color: #00ff00}
+.noti{background-color: #0000ff}
+.warn{background-color: #ffff00}
+.alrm{background-color: #ff8800}
+.crit{background-color: #ff0000}
+.part{background-image:url('../img/dia.png')}
+
+/* Default Group Based Module Colors */
+.adm1{background-color: #aa7}
+.adm2{background-color: #aa8}
+
+.net1{background-color: #7a7}
+.net2{background-color: #8a8}
+
+.dsk1{background-color: #7b8}
+.dsk2{background-color: #8d9}
+
+.mon1{background-color: #7aa}
+.mon2{background-color: #8aa}
+
+.mgr1{background-color: #7a7}
+.mgr2{background-color: #8a8}
+
+.oth1{background-color: #797}
+.oth2{background-color: #898}
+
+.usr1{background-color: #5a7}
+.usr2{background-color: #6a8}
+/* ThemeNMenu Style Sheet */
+
+.ThemeNMenu,.ThemeNSubMenuTable
+{
+	cursor:		default;
+	font-family:	verdana, arial, sans-serif;
+	font-size:	11px;
+
+	padding:	1px;
+	border:		0;
+	white-space:	nowrap;
+}
+
+.ThemeNMenu
+{
+/*	background-color:	#F7F3EF; */
+}
+
+.ThemeNSubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:	100;
+	border:		0px;
+	padding:	0px;
+
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#454545, Direction=135, Strength=4);*/
+}
+
+.ThemeNSubMenuTable
+{
+	border:		1px solid #444444;
+	background-color:	#eeeeee;
+}
+
+.ThemeNSubMenuTable td
+{
+	white-space:	nowrap;
+	padding:	1px;
+}
+
+.ThemeNMainItem,.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItem,.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	padding-left:	6px;
+	padding-right:	6px;
+	white-space:	nowrap;
+}
+
+.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	color:		#888888;
+	background-color:	#ffffff;
+}
+
+.ThemeNMenuSplit
+{
+	height:		1px;
+	margin-top:	1px;
+	margin-bottom:	1px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #ADAA9C;
+}
+
+.ThemeNMenuVSplit
+{
+	width:		1px;
+	margin:		0px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-right:	1px solid #ADAA9C;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ThemeNMenuItem img.seq1
+{
+	display:	inline;
+}
+
+.ThemeNMenuItemHover seq2,
+.ThemeNMenuItemActive seq2
+{
+	display:	inline;
+}
+
+.ThemeNMenuItem .seq2,
+.ThemeNMenuItemHover .seq1,
+.ThemeNMenuItemActive .seq1
+{
+	display:	none;
+}

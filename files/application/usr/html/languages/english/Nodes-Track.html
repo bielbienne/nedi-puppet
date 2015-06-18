@@ -1,0 +1,41 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Nodes Track
+</div>
+<h2>Introduction</h2>
+Add Nodes to be tracked from Nodes List. You can then specify here, what criterias (e.g. node MAC address or IF alias) should be matched in order to detect differences.
+In case a node is tracked, an appropriate icon (the IF type otherwhise) is shown.
+<p>
+<h2>Usage</h2>
+List tracked interfaces by pressing the "Show" button. Use the "Columns" select box to add or remove the columns you wish to see (hold down CTRL for multiple).
+
+The following filter methods are available to narrow down your search:
+<ol>
+<li>1 criteria matching a column within Condition A (leaving Operator at A only).
+<li>2 criterias like above, but logically combined with Operator.
+<li>Alternatively you can compare 2 columns directly by using a combination with "col" (To find devices where firstseen equals lastseen for example).
+</ol>
+
+General Notes:
+<ul>
+<li>Knowledge about regexp is very helpful when working with this module!
+<li>You can save searches in Bookmarks or use the notepad icon in the header to add it to the admin message.
+<li>The last map can be included via paint icon and a limit (default 200) can be chosen as well. This can enhance any printouts which can be generated
+with the print icon in the header. Click on the rows you may wish to highlight (double-click to remove) in the printout itself.
+<li>You can export the list as XLS by clicking on the the list icon in the header.
+<li>The resulting SQL query can be shown using the debug icon in the header (admin only). It links to Other-Export to generate CSV files or the likes.
+<li>The triangles in the top row allow for the list to be sorted accordingly. They won't be available on special columns containing realtime data for example.
+</ul>
+
+<h2>Details</h2>
+Use Configuration to set up the criterias. At this point only the status color will change based on this setting. Furthermore is tracking of multiple nodes per IF not supported yet.
+<div id="footer">Remo Rickli 2011</div>
+</body>

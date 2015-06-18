@@ -1,0 +1,51 @@
+# Definition for 1.3.6.1.4.1.9.5.28 created by Defgen 1.0
+
+# General
+SNMPv	1
+Type	WS-C1912
+OS	Cat1900
+Icon	w2bp
+Size	1
+Bridge	normal
+ArpND	
+Dispro	CDP
+Serial	1.3.6.1.4.1.437.1.1.3.1.22.0
+Bimage	1.3.6.1.4.1.437.1.1.3.5.4.0
+
+CfgChg	1.3.6.1.4.1.9.9.43.1.1.1.0
+CfgWrt	1.3.6.1.4.1.9.9.43.1.1.3.0
+VLnams	1.3.6.1.4.1.9.9.46.1.3.1.1.4.1
+Group	1.3.6.1.4.1.9.9.46.1.2.1.1.2.1
+Mode	1.3.6.1.4.1.9.9.46.1.2.1.1.3.1
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFdupl	1.3.6.1.4.1.437.1.1.3.3.1.1.30
+IFduix	
+Halfdp	2
+Fulldp	1
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp	
+MemCPU	
+MemIO	

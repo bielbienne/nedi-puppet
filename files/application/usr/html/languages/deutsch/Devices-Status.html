@@ -1,0 +1,76 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Geräte Status
+</div>
+<h2>Einführung</h2>
+Dieses Modul ist der zentrale Punkt, um ein Gerät zu verwalten. Die angezeigten Informationen sind unterteilt in 5 Bereiche (Übersicht, Module, Vlans, Links und Schnittstellen).
+
+<h4>Wichtig!</h4>
+
+Um das Netzwerk und die Leistung der überwachten Geräte möglichst wenig zu beinträchtigen, werden nur die nachfolgenden Werte in Echtzeit angezeigt:
+<p>
+<li> die Laufzeit des Gerätes (Uptime) 
+<li> der aktuelle Zustand der Netzwerk-Schnittstellen
+<li> die letzte Zustandsänderung einer Netzwerk-Schnittstelle
+<p>
+Alle anderen Informationen werden von der Datenbank ausgelesen.
+
+<h2>Benutzung</h2>
+
+Im Feld [Geräte] (Device) über das Drop Down Menü ein Gerät auswählen und mit dem Button "Zeigen" die Abfrage starten. 
+Die Werte der Interface Counter werden in der Tabelle blau hinterlegt, sofern bereits Daten über die jeweilige Schnittstelle ausgetauscht worden sind.
+Setzt man zusätzlich das Häkchen im Feld [IF Graphen], dann werden die Werte der Interface Counter graphisch dargestellt. 
+Klickt man auf einen solchen Graphen, dann wird man direkt zum Modul {Interface -> Graph} weitergeleitet.
+<p>
+Setzt man das Häkchen im Feld [Bevölkerung], wird in einer zusätzlichen Spalte die Anzahl der angeschlossenen Geräte an einer Schnittstelle angezeigt.
+Klickt man auf diese Anzahl, wird man direkt zum Modul {Nodes -> List} weiter geleitet.
+<p>
+Eine Änderung des Schnittstellenzustands oder ein dramatischer Anstieg von Schnittstellen-Fehlern wird farblich hervorgehoben. 
+Die Idee hinter diesem Farbschema ist, einen schnellen Überblick des Schnittstellenzustandes zu ermöglichen. 
+<p>
+Die Werkzeug-Symbole im Feld [Übersicht] sind abhängig von den Benutzerberechtigungen und dem jeweiligen Gerätetyp. 
+Fährt man mit der Maus über ein Werkzeug-Symbol, wird dessen Bedeutung in einer Kurzinfo (Quick info) angezeigt.
+<p>
+Die Bedeutung der Werkzeugsymbole im Feld [Übersicht]:
+<ul>
+<li><img src="../../img/16/say.png"> Zeigt die Monitoring-Meldungen des jeweiligen Gerätes an.
+<li><img src="../../img/16/conf.png"> Zeigt die Konfigurationsdatei des jeweiligen Gerätes an.
+<li><img src="../../img/16/cubs.png"> Zeigt die angeschlossenen Endgeräte am jeweiligen Gerät.
+<li><img src="../../img/16/port.png"> Zeigt eine Liste der vorhanden Schnittstellen im jeweiligen Gerät.
+<li><img src="../../img/16/pcm.png"> Zeigt eine Liste der vorhanden Module im jeweiligen Gerät.
+<li><img src="../../img/16/rout.png"> Zeigt die Routing-Tabelle des jeweiligen Gerätes.
+<li><img src="../../img/16/cam.png"> Zeigt eine Liste der Multicast-Routen des jeweiligen Gerätes.
+<li><img src="../../img/16/vlan.png"> Zeigt eine Liste der vorhandenen Vlan-IDs auf dem jeweiligen Gerät.
+<li><img src="../../img/16/traf.png"> Zeigt Spanning Tree Informationen zum jeweiligen Gerät.
+<li><img src="../../img/16/wrte.png"> Holt sich das Logfile des jeweiligen Gerätes und stellt es dar.
+<li><img src="../../img/16/ncon.png"> Ermöglicht eine schnelle Korrektur der Linkzugehörigkeit mit Nachbargeräten.
+<li><img src="../../img/16/kons.png"> Wurde das Loginpasswort des jeweiligen Gerätes geändert, wird NeDi hiermit aufgefordert, sich erneut anzumelden.
+<li><img src="../../img/16/bcnl.png"> Löscht das jeweilige Geräte beim nächsten Netzwerk-Discovery aus der Datenbank.
+</ul>
+<p>
+Direkte Links für die Geräteadministration im Feld [Übersicht]:
+<ul>
+<li><img src="../../img/16/loko.png"> Öffnet eine unverschlüsselte Telnet-Verbindung mit dem jeweiligen Gerät.
+<li><img src="../../img/16/lokc.png"> Öffnet eine verschlüsselte SSH-Verbindung mit dem jeweiligen Gerät.
+<li><img src="../../img/16/glob.png"> Öffnet eine unverschlüsselte Webbrowser-Verbindung mit dem jeweiligen Gerät.
+<li><img src="../../img/16/glok.png"> Öffnet eine verschlüsselte Webbrowser-Verbindung mit dem jeweiligen Gerät.
+</ul>
+<p>
+Diverse weitere Links:
+<ul>
+<li> Klickt man im Feld [Übersicht] in der Zeile [System] auf die Graphiken, wird man zum Modul [Device Graphen] weitergeleitet.
+<li> Klickt man im Feld [Links] auf einen Gerätenamen, wird nun dieses Gerät im Modul [Device Status] angezeigt.
+<li> Klickt man im Feld [VLANs] auf eine VLAN-ID, wird man zum Modul [Topologie Karte] weitergeleitet.
+<li> Klickt man im Feld [Interfaces] in der Spalte [Adresse] auf eine IP, wird man zum Modul [Topologie Karte] weitergeleitet.
+</ul>
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

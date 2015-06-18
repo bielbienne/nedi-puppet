@@ -1,0 +1,206 @@
+/* General Classes */
+body {
+	margin : 20px;
+	font: 12px verdana, arial, sans-serif; 
+	color: #000000;
+	background-color: #ffffff;
+}
+
+td{
+	padding: 4px;
+	color: #000000;
+}
+
+th{
+	padding: 6px;
+	font-weight: bold;
+	color: #000000;
+}
+
+/* Headings */
+h1   {
+	font: 14px;
+	color: #000000; 
+	font-weight: bold;
+	text-align: center;
+}
+
+h2   {
+	font: 12px;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3   {
+	font: 12px;
+	color: #000000;
+	font-weight: bold;
+	text-align: center;
+}
+
+h4   {
+	font: 12px;
+	color: #660000;
+	font-weight: bold;
+	text-align: center;
+}
+
+h5   {
+	font: 12px;
+	color: #006600;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Input Fields */
+select {
+	color: #444444;
+}
+
+input {
+	color: #444444;
+}
+
+textarea {
+	color: #444444;
+}
+
+/* Image Properties */
+img{
+	margin : 2px 4px;
+	vertical-align: middle;
+	border: none;
+}
+
+img.bigbar{
+	height : 20px;
+	margin : 4px;
+	vertical-align: middle;
+	border: 1px solid #333333;
+	border-radius: 4px;
+}
+
+img.smallbar{
+	height : 8px;
+	margin : 2px;
+	vertical-align: middle;
+	border: 1px solid #333333;
+	border-radius: 2px;
+}
+
+/* Form Properties */
+:focus {background-color: #ffffff}
+
+/* Link Properties */
+:link {color: #000000;text-decoration: none;}
+:visited {color: #000000;text-decoration: none;}
+:link:focus, :visited:focus {color: #000000}
+:link:hover, :visited:hover {color: #000000}
+:link:active, :visited:active {color: #000000}
+
+/* Header table & Footer div*/
+#header{
+	width: 98%;
+	border: 1px solid #888;
+	padding: 8px;
+	background-color: #d4d4d4;
+	border-radius: 6px;
+}
+
+#footer{
+	text-align: right;
+	font-style: italic;
+	width: 98%;
+	border: 1px solid #888;
+	padding: 8px;
+	background-color: #d4d4d4;
+	border-radius: 6px;
+}
+
+/* Actual Module */
+table.content{
+	empty-cells:show;
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #aaaaaa;
+}
+
+/* Helper td */
+td.helper{
+	padding: 5px;
+	vertical-align: top;
+}
+
+table.fixed{
+	table-layout:fixed;
+}
+
+table.full{
+	width: 100%;
+}
+
+/* Style for logs etc. */
+.textpad{
+	margin: 10px auto;
+	width: 60%;
+	padding: 10px;
+	border-spacing: 1px;
+	border: 2px solid #d8d8d8;
+}
+
+/* Font Properties */
+.code{
+	overflow: auto;
+	padding: 10px;
+	font-family: monospace;
+	font: 11px Courier New, monospace;
+	white-space: pre;
+}
+
+.red {color: red }
+.drd {color: darkred }
+.grn {color: green }
+.blu {color: blue }
+.prp {color: purple }
+.blk {color: black }
+
+.gry {color: grey }
+.dgy {color: dimgrey }
+.org {color: orange }
+.mrn {color: maroon }
+.sna {color: sienna }
+.sbu {color: steelblue }
+.olv {color: olive }
+
+/* Text Fields */
+.txta{background-color: #eeeeee}
+.txtb{background-color: #eaeaea}
+
+/* Image Fields */
+.imga{background-color: #f8f8f8}
+.imgb{background-color: #f4f4f4}
+
+/* Status Fields */
+.good{background-color: #88ff88}
+.noti{background-color: #8888ff}
+.warn{background-color: #ffff88}
+.alrm{background-color: #ffaa88}
+.crit{background-color: #ff8888}
+.part{background-image:url('../img/dia.png')}
+
+/* Module Colors */
+.adm1, .net1, .dsk1, .mon1, .mgr1, .oth1, .usr1{
+	background-color: #bbbbbb;
+	background: -webkit-linear-gradient(90deg, #b0b0b0 25%, #cccccc 75%);
+	background: -moz-linear-gradient(25% 75% 90deg, #b0b0b0, #cccccc);
+	background: -ms-linear-gradient(25% 75% 90deg, #b0b0b0, #cccccc);
+}
+
+.adm2, .net2, .dsk2, .mon2, .mgr2, .oth2, .usr2{
+	background-color: #cccccc;
+	background: -webkit-linear-gradient(90deg, #c0c0c0 25%, #dddddd 75%);
+	background: -moz-linear-gradient(25% 75% 90deg, #c0c0c0, #dddddd);
+	background: -ms-linear-gradient(25% 75% 90deg, #c0c0c0, #dddddd);
+}
+

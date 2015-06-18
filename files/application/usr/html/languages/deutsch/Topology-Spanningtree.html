@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Topologie Spanningtree 
+</div>
+<h2>Einführung</h2>
+Dieses Modul zeigt Spanningtree-Informationen eines ausgewählten Layer2-Gerätes (Switch), respektive eines Netzwerkgerätes mit Spanningtree-Funktionalität (L3 Switch mit VLAN's / Router mit Bridge Group's).
+
+<h2>Benutzung</h2>
+
+Im Drop Down Menü [Gerät] ein Layer2-Netzwerkgerät auswählen und auf den Button "Zeigen" klicken, so dass die vorhandenen VLAN-IDs von diesem Gerät ausgelesen werden können. Anschliessend im Drop Down Menü [Vlan] eine VLAN-ID auswählen und die Abfrage mit dem Button "Zeigen" starten. Wird im Drop Down Menü [VLAN] keine VLAN-ID ausgewählt, so werden die Spanningtree-Informationen für die VLAN-ID 1 angezeigt, welche bei den meisten Geräten ab Werk bereits vorhanden ist (Default VLAN). 
+<br> Alternativ kann man noch das Häkchen [Graphen] setzen, um sich pro Schnittstelle eine Graphik zur Bandbreite und den aufgetretenen Fehlern anzeigen zu lassen. Klickt man auf eine solche Graphik, wird man zum Modul {Geräte Graphiken} weitergeleitet.
+
+<p>
+Feld Geräte Info
+<p>
+<ul>
+<li> In der obersten Zeile wird links der Name und das Symbol des gewählten Netzwerkgerätes angezeigt. Klickt man auf das Netzwerksymbol, wird man zum Modul {Geräte Status} weitergeleitet und erhält detaillierte Informationen zu diesem Netzwerkgerät.
+<li> In der obersten Zeile wird rechts die IP-Adresse des gewählten Netzwerkgerätes angezeigt. Klickt man auf diese IP-Adresse, wird eine Telnet-Verbindung zu diesem Gerät aufgebaut.
+<li> Die nachfolgenden Zeilen enthalten weitere Informationen zum gewählten Netzwerkgerät.
+</ul>
+<p>
+
+
+<p>
+Feld Spanningtree Info
+<p>
+<ul>
+<li> Dieses Feld zeigt Spanningtree-Informationen für die gewählte VLAN-ID an.
+</ul>
+
+
+<p>
+Feld Schnittstellen
+<p>
+<ul>
+<li> Das Feld [Schnittstellen | Name] zeigt auf der linken Spalte Symoble für den jeweiligen Schnittstellentyp an. In der rechten Spalte werden die Bezeichnungen der Schnittstellen aufgelistet.
+<li> Das Feld [Info] zeigt für die jeweiligen Schnittstellen auf den Netzwerkgeräten eingetragene Kommentare des Administrators an. Auf die Schnittstelle (Root Port), welche zum Spanningtree-Root-Gerät führt, wird mit diesem Symbol <img src="../../img/16/home.png"> hingewiesen. 
+<li> Das Feld [Status] zeigt in der linken Spalte den aktuellen Spanningtree-Status für die jeweiligen Schnittstellen. Die Statusinformationen werden über den Button "Zeigen" jedesmal neu vom Netzwerkgerät ausgelesen und können auf diese Weise aktualisiert werden. Die rechte Spalte gibt darüber Auskunft, ob das Spanningree-Protokoll auf dem jeweiligen Interface korrekt läuft.
+<li> Das Feld [Kosten] gibt Auskunft über die Pfadkosten von der jeweiligen Netzwerkschnittstelle bis zur Root-Bridge. Diese Pfadkosten werden über BPDU-Pakete (Bridge Protocol Data Units) zwischen den Spanningtree-Partnern (Switches) ermittelt. Die angezeigten Portkosten sind also immer die kumulierten Kosten aller Links bis zur Root-Bridge.
+</ul> 
+
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

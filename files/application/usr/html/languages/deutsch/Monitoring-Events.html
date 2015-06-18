@@ -1,0 +1,74 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Monitoring Meldungen
+</div>
+
+<h2>Einführung</h2>
+In diesem Modul werden eingehende Syslog-Nachrichten und SNMP-Traps angezeigt, sofern die Geräte entsprechend konfiguriert worden sind. Mit Hilfe der vielen Filtermöglchkeiten können Probleme schnell und effizient eingegrenzt werden.
+<p>
+<h2>Benutzung</h2>
+Mit dem Button "Zeigen" können die Nachrichten aufgelistet werden. Im Feld [Limite] kann die Anzahl der anzuzeigenden Nachrichten eingestellt werden. Wählt man dort über das Drop Down Menü den Eintrag &lt;none!&gt; um alle Nachrichten anzuzeigen, kann dies bei einer grossen Anzahl Nachrichten negative Auswirkungen auf die Perfomance von NeDi haben.
+<p>
+Die Felder [Bedingung A] und [Bedingung B] können genutzt werden, um die Abfragen zu filtern. Das Feld [Bedingung A] kann ohne das Feld [Bedingung B] genutzt werden. Soll das Feld [Bedingung B] ebenfalls verwendet werden, muss dies via dem Drop Down Menü im Feld [Verknüpfung] angegeben werden.
+In den Feldern [Bedingung A] und [Bedingung B] besteht nebst der Nutzung der Drop Down Menüs auch noch die Möglichkeit, die angezeigten Nachrichten durch Verwendung des jeweiligen Textfeldes zusätzlich zu filtern.
+<p>
+Via dem Drop Down Menü im Feld [Level] ist es möglich, innerhalb der angezeigten Nachrichten nur noch Nachrichten mit einem bestimmten Level anzuzeigen. Belässt man im Feld [Level] das Drop Down Menü auf dem Standardwert &lt;Auswahl&gt;, kann man stattdessen für das Feld [Bedingung A] vordefinierte Filter über die Symbole nutzen nutzen. Die angezeigten Nachrichten können bei Bedarf in einem zweiten Schritt via dem Feld [Bedinung B] zusätzlich gefiltert werden.
+<p>
+Unterhalb des Buttons "Zeigen", kann mit den Pfeilsymbolen innerhalb der Resultate geblättert werden. Der Button "Löschen" löscht die angezeigten Nachrichten permanent aus der Datenbank.
+<p>
+Klickt man in den aufgelisteten Nachrichten in der Spalte [Level] auf ein Icon, werden nur noch Nachrichten desselben Levels dargestellt. Dasselbe gilt für die Spalte [Quelle]. Klickt man auf einen Gerätenamen, werden nur noch Nachrichten bezogen auf dieses Gerät angezeigt.
+
+<h2>Bedeutung der Symbole</h2>
+Übersichtstabelle:
+
+<table>
+<tr><th>Symbol</th><th>Syslog Wert</th><th>NeDi Wert</th><th>Bedeutung</th></tr>
+<tr><td><img src="../../img/16/foor.png"></td><td>0</td><td>200</td><td>Notfall</td></tr>
+<tr><td><img src="../../img/16/foor.png"></td><td>1</td><td>200</td><td>Alarm</td></tr>
+<tr><td><img src="../../img/16/foor.png"></td><td>2</td><td>200</td><td>Kritisch</td></tr>
+<tr><td><img src="../../img/16/fovi.png"></td><td>3</td><td>150</td><td>Fehler</td></tr>
+<tr><td><img src="../../img/16/fobl.png"></td><td>4</td><td>100</td><td>Warnung</td></tr>
+<tr><td><img src="../../img/16/fogr.png"></td><td>5</td><td>50</td><td>Nachricht</td></tr>
+<tr><td><img src="../../img/16/fogr.png"></td><td>6</td><td>50</td><td>Information</td></tr>
+<tr><td><img src="../../img/16/fogr.png"></td><td>7</td><td>50</td><td>Analyse</td></tr>
+<tr><td><img src="../../img/16/fogy.png"></td><td>-</td><td>10</td><td>Andere</td></tr>
+</table>
+
+<h2>Details</h2>
+<ul>
+<li> Um mit diesem Modul zu arbeiten, ist das Verstehen von Regular Expressions (Abk. RegExp oder Regex) hilfreich.  
+<li> Abfragen können als Favoriten im Browser hinterlegt werden.
+<li> Am Ende der Tabellen steht immer die resultierende SQL-Abfrage. Diese kann z.B. im Modul {Other -> Export} weiter verwendet werden.
+</ul>
+
+Die Bedeutung der Symbole im Feld [Level] zum Filtern der Syslog Meldungen:
+<ul>
+<li><img src="../../img/16/radr.png"> Zeigt Meldungen von aufgetretenen Fehlern bei der Datenübertragung an.
+<li><img src="../../img/16/conf.png"> Zeigt Meldungen bezogen auf die Gerätekonfigurationen an (z.B. Änderungen, Backupprobleme etc.).
+<li><img src="../../img/16/find.png"> Zeigt Meldungen von aufgetretenen Fehlern beim Netzwerk-Discovery an. Zeigt zusätzlich auch zu hohe Temperaturen, zu hohe Prozessorlast etc. von Geräten auf. 
+<li><img src="../../img/16/user.png"> Zeigt Meldungen bezogen auf das Anmelden auf den Geräten an z.B. Loginfehler, Wechsel in den privilegierten Modus etc.
+<li><img src="../../img/16/exit.png"> Zeigt Meldungen von neu gestarteten Geräten an.
+<li><img src="../../img/16/node.png"> Zeigt Host spezifische Meldungen an z.B. wenn ein als gestohlen markiertes Gerät wieder im Netzwerk entdeckt wird.
+</ul>
+
+Die Bedeutung der Symbole in der Spalte [Action]:
+<ul>
+<li><img src="../../img/16/sys.png"> Link zum Modul {Geräte Status} des jeweiligen Gerätes.
+<li><img src="../../img/16/conf.png"> Link zum Modul {Geräte Konfiguration} des jeweiligen Gerätes.
+<li><img src="../../img/16/node.png"> Link zum Modul {Node Status} des jeweiligen Gerätes.
+<li><img src="../../img/16/cubs.png"> Link zum Modul {Node List} mit gesetztem Filter für das jeweilige Gerät.
+</ul>
+
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+
+

@@ -1,0 +1,48 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Geräte Reports
+</div>
+<h2>Einführung</h2>
+Dieses Modul erlaubt Auswertungen über alle Netzwerkgeräte in Bezug auf die Gerätetypen, das verwendete Betriebssystem, wann ein Netzwerkgerät zum ersten Mal von NeDi gefunden worden ist und noch einiges mehr.
+<h2>Benutzung</h2>
+Es können nach Wunsch im Feld [Auswahl] auch mehrere Reports auf einmal ausgewählt werden (Ctrl + Mausklick). Bei Bedarf kann die Limite der angezeigten Informationen via dem Drop Down Menü angepasst werden. Optional kann man durch das Setzen des Häkchens im Feld [Alternativ] die Reihenfolge der ausgegebenen Informationen beeinflussen. Die Abfrage mit dem Button "Zeigen" starten.
+<p>
+Report &lt;Geräte Typ&gt;
+<ul>
+<li> In der Spalte [Geräte Typ | Typ] auf der linken Seite ist anhand von Gerätesymbolen ersichtlich, um welchen Gerätetyp es sich handelt (Switch, Router etc.). Klickt man auf ein Gerätesymbol, wird man zum Modul {Geräte Liste} weitergeleitet, wo alle Geräte dieses Typs (Modells) aufgelistet werden. 
+<li> Klickt man stattdessen in der Spalte [Geräte Typ | Typ] auf der rechten Seite auf eine Gerätebezeichnung, werden alle Geräte dieses Typs im Modul {Module Reports} aufgelistet.
+<li> In der Spalte [Geräte Typ | Devices] wird die Anzahl der jeweiligen Gerätetypen angezeigt.
+</ul>
+<p>
+Report &lt;Software&gt;
+<ul>
+<li> In der Spalte [Betriebssystem | OS] auf der linken Seite ist ersichtlich, um welches Betriebssystem es sich handelt. Klickt man auf eine Betriebssystembezeichnung, werden alle Geräte mit diesem Betriebssystem im Modul {Geräte Liste} aufgelistet.
+<li> In der Spalte [Betriebssystem | Geräte] auf der rechten Seite wird die Anzahl der Geräte mit diesem Betriebssystem angezeigt.
+<li> In der Spalte [Boot Images | Boot Image] auf der linken Seite werden die genauen Betriebssystemversionen aufgelistet. Klickt man auf eine Betriebssystemversion, wird man zum Modul {Geräte Liste}, wo alle zugehörigen Geräte aufgelistet werden, weitergeleitet. 
+<li> In der Spalte [Boot Images | Geräte] auf der rechten Seite wird die Anzahl der Geräte angezeigt, auf welchen die jeweilige Betriebssystemversion läuft.
+</ul>
+<p>
+Report &lt;VTP Übersicht&gt;
+<ul>
+<li> In der Spalte [VTP Domains | VTP Domain] auf der linken Seite sind die Namen der VTP-Domains ersichtlich. Klickt man auf eine VTP-Domain, wird man zum Modul {Topologie Karte} weitergeleitet.
+<li> In der Spalte [VTP Domains | Geräte] auf der rechten Seite wird die Anzahl der Geräte angezeigt, welche der jeweiligen VTP-Domain angehören. Klickt man auf die Anzahl, werden die zugehörigen Geräte im Modul {Geräte Liste} aufgelistet.
+<li> In der Spalte [VTP Domains | VTP Mode] auf der linken Seite werden die verschiedenen VTP Modi angezeigt (Client, Server, Transparent, etc.). 
+<li> In der Spalte [VTP Domains | Geräte] auf der rechten Seite wird die Anzahl der Geräte angezeigt, welche im jeweiligen VTP-Modus laufen. Klickt man auf diese Anzahl, werden im Modul {Geräte Liste} die zugehörigen Netzwerkgeräte aufgelistet.
+</ul>
+<p>
+Report &lt;Aktualisierung&gt;
+<ul>
+<li> In der Spalte [Geräte Aktualisierung |Zeit] auf der linken Seite sind die Zeitpunkte, wann ein Netzwerkgerät zum ersten Mal im Netzwerk gefunden worden ist, aufgelistet.
+<li> In der Spalte [Geräte Aktualisierung |Erstmals Letztmals] auf der rechten Seite wird die Anzahl der Geräte angezeigt, welche zum jeweiligen Zeitpunkt zum ersten Mal im Netzwerk gesehen worden sind (grün). Der Zeitpunkt, zu welchem die Netzwerkgeräte zum letzten Mal gesehen worden sind, wird rot dargestellt. Klickt man für einen gewissen Zeitpunkt auf die jeweilige Anzahl Netzwerkgeräte, werden die zugehörigen Geräte im Modul {Geräte Liste} aufgelistet.
+</ul>
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>

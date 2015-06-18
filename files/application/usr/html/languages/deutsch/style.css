@@ -1,0 +1,106 @@
+/* General Classes */
+body {
+	margin : 20px;
+	font: 12px verdana, arial, sans-serif; 
+	color: #000000;
+	background-color: #ffffff;
+}
+
+table{
+	margin: 10px;
+	empty-cells:show;
+	border-spacing: 1px;
+	background-color: #888888;
+}
+
+td{
+	padding: 4px;
+	background-color: #eeeeee;
+}
+
+th{
+	padding: 6px;
+	font-weight: bold;
+	background-color: #ffffee;
+}
+
+h1   {
+	font: 16px verdana, arial, sans-serif;
+	color: #333333; 
+	font-weight: bold;
+	text-align: center;
+}
+
+h2   {
+	font: 14px verdana, arial, sans-serif;
+	background-color: #eeeeee;
+	color: #333333;
+	font-weight: bold;
+}
+
+h3   {
+	font: 12px verdana, arial, sans-serif;
+	color: #000066;
+	font-weight: bold;
+}
+
+h4   {
+	font: 12px verdana, arial, sans-serif;
+	color: #660000;
+	font-weight: bold;
+}
+
+h5   {
+	font: 12px verdana, arial, sans-serif;
+	color: #006600;
+	font-weight: bold;
+}
+
+.code{
+	margin : 10px;
+	padding: 10px;
+	border: 1px solid #77aacc;
+	font: 12px lucida console, fixedsys;
+	background-color: #aaccee;
+	white-space: pre;
+}
+
+#header{
+	margin: 10px;
+	padding: 8px;
+	font: 18px verdana, arial, sans-serif;
+	background-color: #f5f5f5;
+	background-image: URL(../../img/n.png);
+	background-repeat:no-repeat;
+	background-position:10px 50%;
+	text-align: center;
+	font-style: italic;
+}
+
+#footer{
+	margin: 10px;
+	padding: 8px;
+	background-color: #f5f5f5;
+	text-align: right;
+	font-style: italic;
+}
+
+.red {color: red }
+.drd {color: darkred }
+.grn {color: green }
+.blu {color: blue }
+.prp {color: purple }
+.blk {color: black }
+
+.gry {color: grey }
+.dgy {color: dimgrey }
+.org {color: orange }
+.mrn {color: maroon }
+.sna {color: sienna }
+.sbu {color: steelblue }
+.olv {color: olive }
+
+.good{background-color: #00ff00}
+.warn{background-color: #ffff00}
+.alrm{background-color: #ff0000}
+.crit{background-color: #ff8888}

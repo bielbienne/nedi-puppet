@@ -1,0 +1,53 @@
+# Definition for 1.3.6.1.4.1.3854.1 created by m.rufer
+#BlackBox ServSensor / AKCP SensorProbe2
+#temperature and humidity sensor
+#tested with firmware SP2365
+
+# General
+SNMPv	1
+Type	AKCP-SP2
+OS	other
+Icon	csan
+Size	10
+Bridge	
+ArpND	old
+Dispro	
+Serial	1.3.6.1.4.1.3854.1.2.2.1.3.0
+Bimage	1.3.6.1.4.1.3854.1.2.2.1.86.0
+
+VLnams	
+Group	
+Mode	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFdupl	
+IFduix	
+Halfdp	1
+Fulldp	2
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+#CPUutl is humidity in %
+CPUutl	1.3.6.1.4.1.3854.1.2.2.1.17.1.3.0
+Temp	1.3.6.1.4.1.3854.1.2.2.1.16.1.3.0
+MemCPU	
+MemIO	

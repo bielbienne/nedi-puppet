@@ -1,0 +1,52 @@
+# Created or edited by Marco Rauchenstein on October 2007
+# Please use for "Type" the exact Cisco Product Name
+# Please use "cpmCPUTotal5minRev" for "CPUutl" 
+# Please make sure that for "Serial" the correct value is shown
+
+# General
+SNMPv	1
+Type	Lancom821-AnnexB
+OS	LCOS
+Icon	rsan
+Size	1
+Bridge	
+ArpND	old
+Dispro	
+Serial	1.3.6.1.4.1.2356.500.4.821.3.1.1.4.1
+Bimage	1.3.6.1.4.1.2356.500.4.821.3.1.1.3.1
+
+VLnams	
+Group	
+Mode	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.2356.500.4.821.1.47.3.0
+Temp	
+MemCPU	1.3.6.1.4.1.2356.500.4.821.1.47.5.0
+MemIO	

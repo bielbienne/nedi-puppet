@@ -1,0 +1,57 @@
+# Definition for 1.3.6.1.4.1.17163.1.1 created by Defgen 1.8 on 30.Aug 2013 (admin)
+ 
+# General
+SNMPv	2
+Type	Riverbed Steelhead Appliance
+Typoid	1.3.6.1.4.1.17163.1.1.1.1.0
+Sysdes	
+OS	other
+Icon	csan
+Size	1
+Bridge	
+ArpND	
+Dispro	
+Serial	1.3.6.1.4.1.17163.1.1.1.2.0
+Bimage	1.3.6.1.4.1.2021.100.2.0
+CfgChg	
+CfgWrt	
+VLnams	
+VLnamx	
+Group	
+Mode	
+ 
+# Interfaces
+StartX	
+EndX	
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.9
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFpowr		
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+ 
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+ 
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.17163.1.1.5.1.2.0	
+Temp		
+MemCPU		
+Custom		

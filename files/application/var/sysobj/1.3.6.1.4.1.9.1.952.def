@@ -1,0 +1,54 @@
+# Created or edited by Marco Rauchenstein on October 2007
+# Please use for "Type" the exact Cisco Product Name
+# Please use "cpmCPUTotal5minRev" for "CPUutl" 
+# Please make sure that for "Serial" the correct value is shown
+
+# General
+SNMPv	2HC
+Type	WS-C2960PD-8TT-L
+OS	IOS
+Icon	w2bp
+Size	0
+Bridge	VLX
+ArpND	
+Dispro	CDP
+Serial	1.3.6.1.2.1.47.1.1.1.1.11.1001
+Bimage	1.3.6.1.4.1.9.2.1.73.0
+
+CfgChg	1.3.6.1.4.1.9.9.43.1.1.1.0
+CfgWrt	1.3.6.1.4.1.9.9.43.1.1.3.0
+VLnams	1.3.6.1.4.1.9.9.46.1.3.1.1.4.1
+Group	1.3.6.1.4.1.9.9.46.1.2.1.1.2.1
+Mode	1.3.6.1.4.1.9.9.46.1.2.1.1.3.1
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.4.1.9.5.1.4.1.1.4
+IFalix	1.3.6.1.4.1.9.5.1.4.1.1.11
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	1.3.6.1.4.1.9.9.68.1.2.2.1.2
+IFvlix	
+IFdupl	1.3.6.1.4.1.9.5.1.4.1.1.10
+IFduix	1.3.6.1.4.1.9.5.1.4.1.1.11
+Halfdp	1
+Fulldp	2
+
+# Modules
+Modesc	1.3.6.1.2.1.47.1.1.1.1.2
+Moclas	1.3.6.1.2.1.47.1.1.1.1.5
+Movalu	9
+Moslot	1.3.6.1.2.1.47.1.1.1.1.7
+Modhw	1.3.6.1.2.1.47.1.1.1.1.8
+Modsw	1.3.6.1.2.1.47.1.1.1.1.10
+Modfw	1.3.6.1.2.1.47.1.1.1.1.9
+Modser	1.3.6.1.2.1.47.1.1.1.1.11
+Momodl	1.3.6.1.2.1.47.1.1.1.1.13
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.9.9.109.1.1.1.1.8.1
+Temp	
+MemCPU	1.3.6.1.4.1.9.9.48.1.1.1.6.1
+MemIO	1.3.6.1.4.1.9.9.48.1.1.1.6.2

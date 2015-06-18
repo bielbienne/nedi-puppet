@@ -1,0 +1,56 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Geräte Definitionen Generator
+</div>
+
+<h2>Einführung</h2>
+Dieses Modul unterstützt den NeDi-Administrator dabei, eine Gerätedefinitionsdatei zu erstellen. Eine Gerätedefinitionsdatei wird dann benötigt, wenn ein Gerätetyp von NeDi richtig erkannt wird. Diese Gerätedefinitionen basieren auf der Logik, dass unabhängig von Geräteherstellern jeder Netzwerkgerätetyp eine eindeutige SNMP-Systemobjektidentifikation aufweist. Diese Systemobjekt-ID's sind hirarchisch aufgebaut und gewisse Teile der ID's weisen auf einen bestimmten Hersteller hin.
+<p>
+Zusätzlich zu diesem Modul ist für eine gute Gerätedefinitionsdatei ein SNMP-MIB-Browser hilfreich, welcher den Administrator beim Herausfinden der korrekten Objekt-ID's unterstützt. 
+<p>
+Zusätzlich bieten Gerätehersteller wie z.B. Cisco die Möglichkeit, auf Ihrer Homepage nach den korrekten SNMP-Objekt-ID's zu suchen und anhand von Dokumentationen deren Bedeutung zu überprüfen. Der Softwarehersteller ByteSphere stellt eine Datenbank mit SNMP-Objekt-ID's für unterschiedliche Hersteller zur Verfügung, was ebenfalls hilfreich sein kann.
+<p>
+Wenn man sicher ist, dass die erstellte Definitionsdatei korrekt ist, kann diese via Email an Remo Rickli gesendet werden, der diese dann ins nächste NeDi-Release integrieren wird (remo.rickli@psi.ch). Auf diese Weise können alle NeDi-Benutzer von der Arbeit profitieren.
+<p>
+<div class="code">
+Wichtig: Korrekte und gut geprüfte Definitionsdateien sind die Basis für 
+alle Informationen, welche NeDi dem Benutzer zur Verfügung stellt.
+</div>
+<h3>Tipp:</h3>
+Auf der NeDi-Webseite findet man auch ein Multimedia-Tutorial, welches das grundsätzliche Vorgehen und die Benutzung dieses Moduls erklärt.
+<p>
+<h2>Benutzung</h2>
+Im Normalfall gelangt man zu diesem Modul, wenn man im Modul {Geräte Liste} auf die Systemobjekt-ID eines unbekannten Gerätes klickt. Ist dies der Fall wird die IP-Adresse, die Systemobjekt-ID und die SNMP-Community bereits in den entsprechenden Textfeldern des Gerätedefinitionengenerators eingetragen. Alternativ kann man diese Werte auch manuell eintragen und mit dem Button <img src="../../img/16/brld.png"> das Formular aktualisieren.
+<p>
+Falls im NeDi-Verzeichnis "...\html\log" bereits ein Def-File mit derselben Systemobjekt-ID, wie im Gerätedefinitionengenerator angegeben, existiert, wird das Formular via dem Button <img src="../../img/16/brld.png"> automatisch mit den Werten aus dieser Datei abgefüllt. 
+<p>
+Dies vereinfacht das spätere Optimieren von existierenden Gerätedefinitionsdateien. Kopiert man eine Gerätedefinitionsdatei eines ähnlichen Gerätes aus dem NeDi-Verzeichnis "...\sysobj\" in das "...\html\log", kann diese Datei nach dem Umbennen auf die neue Systemobjekt-ID auch als Vorlage für eine neue Definitionsdatei verwendet werden. 
+
+<h3>Vorgehen</h3>
+Auf der linken Seite in den Balken [Generell], [Schnittstellen], [Module] und [RRD Graphen] findet man Symbole, welche beim Abfüllen der SNMP-Objekt-ID's behilflich sein können. Fährt man mit der Maus über diese Symbole, wird dessen Bedeutung in Form einer Sprechblase eingeblendet. Klickt man auf das passende Herstellersymbol, werden die zugehörigen Felder im Formular mit möglichen SNMP-Objekt-ID's abgefüllt. Die resultierenden Werte der Objekt-ID's könnten über die Symbole <img src="../../img/16/brgt.png"> <b>get</b> und <img src="../../img/16/bdwn.png"> <b>walk</b> geprüft werden. 
+
+<ul>
+<li> Es ist darauf zu achten, dass die genaue und eindeutige Gerätebezeichnung des Herstellers verwendet wird. 
+<li> Die Bedeutungen der Netzwerkgerätesymbole bezüglich Farbe und Symboltyp sind auf der NeDi-Webseite erklärt und müssen im Sinne einer einheitlichen Konvention befolgt werden.
+<li> Wird für ein Betriebssystem eines Netzwerkherstellers eine eigene Serie (Farbe) von Symbolen gewünscht, kann man sich mit diesem Wunsch an Remo Rickli wenden.
+<li> Einige Hersteller benutzen "VLAN community indexing" um von ihren Switches "Bridge forwarding" Informationen zu erhalten.
+<li> Einige Hersteller verwenden den doppelten Wert der Bandbreite einer Netzwerkschnittstelle, um den "Fullduplex" Status angezeigt zu erhalten. Dies kann mit dem Schlüsselwort "doublespeed" im Textfeld [IF Duplex] angegeben werden.
+<li> Die Textfelder [Alias Index], [Duplex Index] und [Vlan Index] sollen nur abgefüllt werden, wenn deren Werte sich von den Schnittstellen Indexes unterscheiden.
+</ul>
+
+<h2>Details</h2>
+<ul>
+<li> Zusätzliche Kommentare können am Anfang der Definitionsdatei angegeben werden. Diese müssen mit dem Kommentarzeichen "#" beginnen.
+<li> Verwendet man für die Kommentare den integrierten Editor in diesem Modul, werden weitere Eingaben oder Anpassungen an den SNMP-Objekt-ID Textfeldern unterbunden, um die bisherigen Eingaben zu schützen. 
+</ul>
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

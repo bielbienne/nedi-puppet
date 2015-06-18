@@ -1,0 +1,368 @@
+/* General Classes */
+body {
+	color: #000000;
+	font: 11px verdana, arial, sans-serif; 
+	background-repeat: repeat;
+	background-image: URL(bgcarbon.png);
+}
+
+td{
+	padding: 3px;
+}
+
+th{
+	padding: 4px;
+	font-weight: bold;
+}
+
+/* Headings */
+h1   {
+	margin: 10px auto;
+	width: 50%;
+	padding: 4px;
+	background-color: #444444;
+	border: 2px solid #000000;
+	color: #eeeeee;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+}
+
+h2   {
+	margin: 8px auto;
+	width: 40%;
+	padding: 4px;
+	background-color: #333333;
+	border: 1px solid #000000;
+	color: #dddddd; 
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+}
+
+h3   {
+	color: #cccccc;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h4   {
+	color: #ffaa88;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	width: 200px;
+	border: 1px solid #ffaa88;
+	margin-left: auto;
+  	margin-right: auto;
+	padding: 3px;
+	background-color: #663300;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+}
+
+h5   {
+	color: #aaff88;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	width: 200px;
+	border: 1px solid #aaff88;
+	margin-left: auto;
+  	margin-right: auto;
+	padding: 3px;
+	background-color: #336600;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+}
+
+/* Input Fields */
+select {
+	color: #662222;
+}
+
+input {
+	color: #662222;
+}
+
+textarea {
+	color: #662222;
+}
+
+/* Image Properties */
+img{
+	margin : 2px;
+	vertical-align: middle;
+	border: none;
+}
+
+img.bigbar{
+	height : 16px;
+	margin : 4px;
+	vertical-align: middle;
+	border: 1px solid #662222;
+}
+
+img.smallbar{
+	height : 6px;
+	margin : 1px;
+	vertical-align: middle;
+	border: 1px solid #662222;
+}
+
+/* Form Properties */
+:focus {background-color: #f0f0a0}
+
+/* Link Properties */
+:link {color: #aa0000;text-decoration: none;}
+:visited {color: #882200;text-decoration: none;}
+:link:focus, :visited:focus {color: #cc6600}
+:link:hover, :visited:hover {color: #ff4400}
+:link:active, :visited:active {color: #dd8800}
+
+/* Header table & Footer div*/
+#header{
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #660000;
+}
+
+#footer{
+	margin: 20px auto;
+	width:50%;
+	border: 1px solid #660000;
+	padding: 8px;
+	text-align: right;
+	font: 8px verdana, arial, serif;
+	color: #ee0000;
+}
+
+/* Actual Module */
+table.content{
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #660000;
+}
+
+td.content{
+	text-align: left;
+}
+
+/* Helper td */
+td.helper{
+	padding: 5px 10px;
+	vertical-align: top;
+}
+
+table.fixed{
+	table-layout:fixed;
+}
+
+table.full{
+	width: 100%;
+}
+
+/* Style for logs etc. */
+.textpad{
+	margin: 8px auto;
+	width: 70%;
+	padding: 8px;
+	border-spacing: 2px;
+	border: 2px solid #eecc44;
+	border-radius: 1em;
+	-moz-border-radius: 1em;
+	-webkit-border-radius: 1em;
+	-khtml-border-radius: 1em;
+}
+
+/* Font Properties */
+.code{
+	overflow: auto;
+	text-align: left;
+	padding: 10px;
+	font-family: monospace;
+	font: 11px Courier New, monospace;
+	white-space: pre;
+}
+
+/* Scrollable list container */
+.scroller{
+	background-color: #aaaaaa;
+	height:150px;
+	width:100%;
+	overflow: auto;
+}
+
+.red {color: red }
+.drd {color: darkred }
+.grn {color: green }
+.blu {color: blue }
+.prp {color: purple }
+.blk {color: black }
+
+.gry {color: grey }
+.dgy {color: dimgrey }
+.org {color: orange }
+.mrn {color: maroon }
+.sna {color: sienna }
+.sbu {color: steelblue }
+.olv {color: olive }
+
+/* Text Fields */
+.txta{background-color: #d0d0d0}
+.txtb{background-color: #c0c0c0}
+
+/* Image Fields */
+.imga{background-color: #f0f0f0}
+.imgb{background-color: #e6e6e6}
+
+/* Status Fields */
+.good{background-color: #44ff44}
+.noti{background-color: #4444ff}
+.warn{background-color: #ffff44}
+.alrm{background-color: #ff8866}
+.crit{background-color: #ff4444}
+.part{background-image:url('../img/dia.png')}
+
+/* Default Group Based Module Colors */
+.adm1{background-image: URL(bgruby.png)}
+.adm2{background-color: #bb2222}
+
+.net1{background-image: URL(bgruby.png)}
+.net2{background-color: #901010}
+
+.dsk1{background-image: URL(bgruby.png)}
+.dsk2{background-color: #901010}
+
+.mon1{background-image: URL(bgruby.png)}
+.mon2{background-color: #901010}
+
+.mgr1{background-image: URL(bgruby.png)}
+.mgr2{background-color: #901010}
+
+.oth1{background-image: URL(bgruby.png)}
+.oth2{background-color: #901010}
+
+.usr1{background-image: URL(bgruby.png)}
+.usr2{background-color: #901010}
+/* ThemeNMenu Style Sheet */
+
+.ThemeNMenu,.ThemeNSubMenuTable
+{
+	cursor:		default;
+	font-family:	verdana, arial, sans-serif;
+	font-size:	13px;
+
+	padding:	2px;
+	border:		0px;
+	white-space:	nowrap;
+}
+
+.ThemeNMenu
+{
+/*	background-color:	#F7F3EF; */
+}
+
+.ThemeNSubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:	100;
+	border:		0px;
+	padding:	0px;
+
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#454545, Direction=135, Strength=4);*/
+}
+
+.ThemeNSubMenuTable
+{
+	border:		1px solid #444444;
+	background-color:	#eeeeee;
+}
+
+.ThemeNSubMenuTable td
+{
+	white-space:	nowrap;
+	padding:	2px;
+}
+
+.ThemeNMainItem,.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItem,.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	padding-left:	6px;
+	padding-right:	6px;
+	white-space:	nowrap;
+}
+
+.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	color:		#888888;
+	background-color:	#ffffff;
+}
+
+.ThemeNMenuSplit
+{
+	height:		1px;
+	margin-top:	1px;
+	margin-bottom:	1px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #ADAA9C;
+}
+
+.ThemeNMenuVSplit
+{
+	width:		1px;
+	margin:		0px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-right:	1px solid #ADAA9C;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ThemeNMenuItem img.seq1
+{
+	display:	inline;
+}
+
+.ThemeNMenuItemHover seq2,
+.ThemeNMenuItemActive seq2
+{
+	display:	inline;
+}
+
+.ThemeNMenuItem .seq2,
+.ThemeNMenuItemHover .seq1,
+.ThemeNMenuItemActive .seq1
+{
+	display:	none;
+}

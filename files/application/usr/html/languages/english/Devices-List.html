@@ -1,0 +1,47 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Devices List
+</div>
+
+<h2>Introduction</h2>
+List devices, displaying database properties and even graphs for quick CPU, memory and temperature comparison.<p>
+
+<h2>Usage</h2>
+List devices by pressing the "Show" button. Use the "Columns" select box to add or remove the columns (hold down CTRL for multiple) you wish to see.
+
+The following filter methods are available to narrow down your search:
+<ol>
+<li>1 criteria matching a column within Condition A (leaving Operator at A only).
+<li>2 criterias like above, but logically combined with Operator.
+<li>Alternatively you can compare 2 columns directly by using a combination with "col" (To find devices where firstseen equals lastseen for example).
+</ol>
+
+General Notes:
+<ul>
+<li>Knowledge about regexp is very helpful when working with this module!
+<li>You can save searches in Bookmarks or use the notepad icon in the header to add it to the admin message.
+<li>The last map can be included via paint icon and a limit (default 200) can be chosen as well. This can enhance any printouts which can be generated
+with the print icon in the header. Click on the rows you may wish to highlight (double-click to remove) in the printout itself.
+<li>You can export the list as XLS by clicking on the the list icon in the header.
+<li>The resulting SQL query can be shown using the debug icon in the header (admin only). It links to Other-Export to generate CSV files or the likes.
+<li>The triangles in the top row allow for the list to be sorted accordingly. They won't be available on special columns containing realtime data for example.
+</ul>
+
+<h2>Details</h2>
+<ul>
+<li>Icon, IP address or sysobjid (if selected in column) provide quick shortcuts to Device-Status, the device's CLI or Defgen.
+<li>Unselecting the device column hides the icons to simply copy and paste the list as text. Alternatively you can export the list as XLS
+by clicking on the the list icon in the header.
+<li>The selected devices can be added to the monitoring if you click the Monitor button. Go to Monitor-Setup to configure them further. Once added to
+monitoring, syslog events and traps of this device are classified (they only get level 10, if the device is not monitored).
+</ul>
+<div id="footer">Remo Rickli 2013</div>
+</body>

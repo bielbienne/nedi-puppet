@@ -1,0 +1,15 @@
+<VirtualHost *:80>
+ ServerName <%= @hostname %>
+ RewriteEngine On
+ RewriteCond %{HTTPS} !=on
+ RewriteRule ^/?(.*) https://%{SERVER_NAME}/$1
+</VirtualHost>
+<VirtualHost *:443>
+  DocumentRoot /usr/local/nedi/html
+  ServerName <%= @hostname %>
+  SSLEngine on
+  SSLProtocol -ALL +SSLv3 +TLSv1
+  SSLCipherSuite ALL:!ADH:RC4+RSA:+HIGH:+MEDIUM:-LOW:-SSLv2:-EXP
+  SSLCertificateFile <%= @certlocation %>
+  SSLCertificateKeyFile <%= @privkeylocation %>
+</VirtualHost>

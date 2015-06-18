@@ -1,0 +1,56 @@
+# Definition for 1.3.6.1.4.1.6876.4.1 created by Defgen 1.8 on 25.Jun 2013 (admin)
+ 
+# General
+SNMPv	2HC
+Type	vmwESX
+Typoid	
+Sysdes	
+OS	ESX
+Icon	hvvw
+Size	0
+Bridge	
+ArpND	
+Dispro	
+Serial	
+Bimage	1.3.6.1.4.1.6876.1.4.0
+
+VLnams	
+VLnamx	
+Group	
+Mode	
+
+# Interfaces
+StartX	
+EndX	
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFpowr		
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	1.3.6.1.4.1.6876.2.1.1.3
+Moclas	
+Movalu	40
+Moslot	1.3.6.1.4.1.6876.2.1.1.2
+Modhw	1.3.6.1.4.1.6876.2.4.1.7
+Modsw	1.3.6.1.4.1.6876.2.1.1.4
+Modfw	1.3.6.1.4.1.6876.2.1.1.5
+Modser	1.3.6.1.4.1.6876.2.1.1.9
+Momodl	1.3.6.1.4.1.6876.2.1.1.6
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.6876.3.1.1.0
+Temp		
+MemCPU	1.3.6.1.4.1.6876.3.2.3.0	1024
+Custom		

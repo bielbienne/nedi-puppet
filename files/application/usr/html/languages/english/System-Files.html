@@ -1,0 +1,43 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Manage System Files
+
+</div>
+
+<h2>Introduction</h2>
+This modules provides 4 major features:
+<ol>
+<li> Edit/View system, device configuration and nedi log files.
+<li> Import SQL data or update NeDi files.
+<li> Manage html/log, map, foto and tftpboot files.
+<li> Delete "broken" RRDs which haven't been updated for more days than retire is set to in nedi.conf.
+</ol>
+
+<h2>Editor/Viewer</h2>
+<ul>
+<li> Simply choose the file you want to edit and click save, when you're done.
+<li> You can only edit files, which are writable by the webserver.
+<li> A confirmation dialog appears, when selecting another file after you've changed the current one.
+</ul>
+
+<h2>Import/Update</h2>
+<li> Upload a .sql.gz (packed) file which will replace the DB data. You can restore dumps created with System-Export for example
+<li> Upload an archive with alternative user icons (usr/0-99.jpg) or device panels (panel/devtype.jpg).
+<ul> Upload a nedi.tgz archive and choose whether you whish to backup your existing config (check for compatibilty!) or not
+</ul>
+
+<h2>Manage Files</h2>
+<ul> Upload files in the apropriate area. Files in html/log can be accessed directly by clicking on file name.
+<li> Delete files by clicking on <img src="../../img/16/bcnl.png">.
+</ul>
+
+<div id="footer">Remo Rickli 2013</div>
+</body>

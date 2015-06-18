@@ -1,0 +1,48 @@
+# Definition for other created by Defgen 1.0
+
+# General
+SNMPv	1
+Type	-
+OS	other
+Icon	
+Bridge	
+Serial	1.3.6.1.2.1.47.1.1.1.1.11.1
+ArpND	
+Dispro	
+Bimage	
+
+VLnams	
+Group	
+Mode	
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moname	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFdupl	
+IFduix	
+Halfdp	1
+Fulldp	2
+
+# RRD Graphing
+CPUutl	
+Temp	
+MemCPU	
+MemIO	

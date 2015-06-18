@@ -1,0 +1,56 @@
+# Definition for 1.3.6.1.4.1.266.1.3.27 created by Defgen 1.8 on 23.Sep 2012 (admin)
+
+# General
+SNMPv	1
+Type	Nexans-ES3
+Typoid	
+Sysdes	
+OS	other
+Icon	w2ad
+Size	1
+Bridge	normal
+ArpND	
+Dispro	LLDP
+Serial	1.3.6.1.4.1.266.20.1.5.0
+Bimage	1.3.6.1.4.1.266.20.1.9.0
+
+VLnams	1.3.6.1.4.1.266.20.4.1.1.3
+VLnamx	
+Group	
+Mode	
+
+# Interfaces
+StartX	
+EndX	
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.4.1.266.20.3.1.1.3
+IFalix	1.3.6.1.4.1.266.20.3.1.1.1
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	1.3.6.1.4.1.266.20.4.1.1.2
+IFvlix	1.3.6.1.4.1.266.20.4.1.1.1
+IFpowr	
+IFpwix	
+IFdupl	1.3.6.1.4.1.266.20.3.1.1.5
+IFduix	1.3.6.1.4.1.266.20.3.1.1.1
+Halfdp	7
+Fulldp	8
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	
+Temp	1.3.6.1.4.1.266.20.1.12.0	
+MemCPU		
+Custom		

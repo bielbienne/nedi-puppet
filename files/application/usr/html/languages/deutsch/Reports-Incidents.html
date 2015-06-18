@@ -1,0 +1,65 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Ereignis Reports
+</div>
+
+<h2>Einführung</h2>
+Dieses Modul zeigt eine Übersicht eingegangener Meldungen über Netzwerkgeräte an, welche nicht erreichbar sind (siehe Uptime Alert in der Datei nedi.conf). Weiter kann angezeigt werden, wie diese Ereignisse klassifiziert worden sind, welcher NeDi-Benutzer diese Klassifizierung  vorgenommen hat und innerhalb welcher Reaktionszeit dies geschehen ist. Eine Kalenderübersicht hift, diese Ereignisse richtig zuzuordnen.
+<h2>Benutzung</h2>
+Es können nach Wunsch im Feld [Auswahl] auch mehrere Reports auf einmal ausgewählt werden (Ctrl + Mausklick). Bei Bedarf kann die Limite der angezeigten Informationen via dem Drop Down Menü [Limite] angepasst werden. Optional kann man durch das Setzen des Häkchens im Feld [Alternativ] die Reihenfolge der ausgegebenen Informationen beeinflussen. Die Abfrage mit dem Button "Zeigen" starten.
+<p>
+Report &lt;Geräte&gt;
+<p>
+Dieser Report gibt Auskunft über die Anzahl der registrierten Ereignisse pro Netzwerkgerät.
+<ul>
+<li> In der Spalte [Geräte | Geräte] werden auf der linken Seite die Symbole der Netzwerkgeräte mit den Gerätenamen aufgelistet. Klickt man auf eines der Gerätesymbole, werden zu dem jeweiligen Gerät detaillierte Informationen im Modul {Geräte Status} angezeigt. In der mittleren Spalte werden die zugehörigen IP-Adressen der Netzwerkgeräte aufgelistet. Klickt man auf eine IP-Adresse, wird eine Telnetverbindung zum jeweiligen Gerät aufgebaut. In der rechten Spalte wird der Betriebssystemtyp angezeigt.
+<li> In der Spalte [Geräte | Kontakt] wird die eingetragene SNMP-Kontaktperson für die jeweiligen Netzwerkgeräte angezeigt.
+<li> In der Spalte [Geräte | Ereignisse] wird anhand von Balkengraphiken die Anzahl der registrierten Ereignisse pro Gerät angezeigt. Zusätzlich wird die Anzahl für jedes Netzwerkgerät als numerischer Wert angegeben und die Balkengraphik wird abhängig von der Anzahl der Ereignisse mit unterschiedlichen Farben dargestellt.
+</ul>
+Report &lt;Statistik Gruppen&gt;
+<p>
+Dieser Report gibt Auskunft über die Art der Ereignisse und wie häufig diese aufgetreten sind.
+<ul>
+<li> In der Spalte [Statistik Gruppen | Gruppen] werden auf der linken Seite die Symbole der Ereignisgruppen aufgelistet. In der rechten Spalte wird die Bezeichnung der Ereignissymbole angegeben.
+<li> In der Spalte [Statistik Gruppen | Anzahl] wird anhand von Balkengraphiken die Anzahl der registrierten Ereignisse pro Gruppe angezeigt. Zusätzlich wird die Anzahl für jede Gruppe als numerischer Wert angegeben und die Balkengraphik wird abhängig von der Anzahl der Ereignisse mit unterschiedlichen Farben dargestellt. Klickt man auf die Anzahl werden die zugehörigen Ereignisse im Modul {Monitoring Ereignisse} aufgelistet. 
+</ul>
+Report &lt;Statistik Benutzer&gt;
+<p>
+Dieser Report gibt Auskunft über die Anzahl der Ereignisse, welche durch die jeweiligen NeDi-Benutzer klassifiziert und bearbeitet wurden.
+<ul>
+<li> In der Spalte [Statistik Benutzer | Benutzer] werden die Symbole der jeweiligen NeDi Benutzer aufgelistet. 
+<li> In der Spalte [Statistik Benutzer | Ereignis Quittierung] wird anhand von Balkengraphiken die Anzahl der bearbeiteten Ereignisse durch den jeweiligen Benutzer angegeben. Zusätzlich wird die Anzahl für jeden Benutzer als numerischer Wert angegeben. 
+<li> In der Spalte [Statistik Benutzer | Quittierung Zeit] wird anhand von Balkengraphiken die kumulierte Reaktionszeit in Stunden für alle bearbeiteten Ereignisse angezeigt. Die Zeit in Stunden wird auch als numerischer Wert für jeden Benutzer angegeben.
+</ul>
+Report &lt;Kalender&gt;
+<p>
+Dieser Report zeigt einen Kalender des aktuellen Jahres und stellt Tage, an welchen Ereignisse registriert worden sind, mit entsprechenden Symbolen dar. Setzt man im Feld [Alternativ] das Häkchen, werden an den jeweilgen Tagen im Kalender die Ereignissymbole passend zu den Ereignissen angezeigt. Klickt man nun auf ein Ereignissymbol im Kalender, wird das jeweilige Ereignis im Modul {Monitoring Ereignisse} angezeigt.
+
+<h2>Bedeutung der Symbole</h2>
+Übersichtstabelle:
+
+<table>
+<tr><th>Symbol</th><th>Bedeutung</th><th></th><th>Symbol</th><th>Bedeutung</th></tr>
+<tr><td><img src="../../img/16/star.png"></td><td>Neu</td><td></td><td><img src="../../img/16/ugrp.png"></td><td>Andere</td></tr>
+<tr><td><img src="../../img/16/bbox.png"></td><td>Unbekannt</td><td></td><td><img src="../../img/16/home.png"></td><td>Infrastruktur</td></tr>
+<tr><td><img src="../../img/16/flas.png"></td><td>Stromausfall</td><td></td><td><img src="../../img/16/dril.png"></td><td>Bauarbeiten</td></tr>
+<tr><td><img src="../../img/16/ele.png"></td><td>Naturgewalt</td><td></td><td><img src="../../img/16/dev.png"></td><td>Equipment</td></tr>
+<tr><td><img src="../../img/16/batt.png"></td><td>Netzteil</td><td></td><td><img src="../../img/16/dev.png"></td><td>Chassis</td></tr>
+<tr><td><img src="../../img/16/pcm.png"></td><td>Modul</td><td></td><td><img src="../../img/16/cog.png"></td><td>Software</td></tr>
+<tr><td><img src="../../img/16/radr.png"></td><td>Verkehr</td><td></td><td><img src="../../img/16/user.png"></td><td>Menschen</td></tr>
+<tr><td><img src="../../img/16/flop.png"></td><td>Wartung</td><td></td><td><img src="../../img/16/conf.png"></td><td>Konfiguration</td></tr>
+<tr><td><img src="../../img/16/eyes.png"></td><td>Kunde</td><td></td><td><img src="../../img/16/hat.png"></td><td>Hacker Angriff</td></tr>
+</table>
+
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

@@ -1,0 +1,54 @@
+# Definition for 1.3.6.1.4.1.318.1.3.2.7 created by m.rufer
+#APC smart UPS 3000
+#OUI discovery needed: ouidev	AMERICAN\sPOWER\sCONVERSION
+#CPU=UPS output load in %
+#MemCPU=Input voltage
+#MemIO=Output voltage
+#temperature sensor
+
+# General
+SNMPv	2c
+Type	APC SmartUPS3000
+OS	other
+Icon	uprn
+Bridge	
+ArpND	
+Dispro	
+Serial	1.3.6.1.4.1.318.1.1.1.1.2.3.0
+Bimage	1.3.6.1.4.1.318.1.4.2.4.1.3.1
+
+VLnams	
+Group	
+Mode	
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFaddr	old
+IFalia	1.3.6.1.2.1.31.1.1.1.18
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	
+IFvlix	
+IFdupl	
+IFduix	
+Halfdp	1
+Fulldp	2
+
+# Modules
+Modesc	
+Moclas	
+Movalu	
+Moslot	
+Modhw	
+Modsw	
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.318.1.1.1.4.2.3.0
+Temp	1.3.6.1.4.1.318.1.1.1.2.2.2.0
+MemCPU	1.3.6.1.4.1.318.1.1.1.3.2.1.0
+MemIO	1.3.6.1.4.1.318.1.1.1.4.2.1.0

@@ -1,0 +1,310 @@
+/* General Classes */
+body {
+	font: 12px Courier New, monospace; 
+	background-color: #ffffff;
+	color: #000000;
+}
+
+td{
+	padding: 4px;
+}
+
+th{
+	padding: 6px;
+	font-weight: bold;
+}
+
+/* Headings */
+h1   {
+	color: #333333; 
+	font-size: 14px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2   {
+	color: #333333;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3   {
+	color: #000066;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h4   {
+	color: #660000;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h5   {
+	color: #006600;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+}
+
+/* Input Fields */
+select {
+	color: #444444;
+}
+
+input {
+	color: #444444;
+}
+
+textarea {
+	color: #444444;
+}
+
+/* Image Properties */
+img{
+	margin : 2px 4px;
+	vertical-align: middle;
+	border: none;
+}
+
+img.bigbar{
+	height : 20px;
+	margin : 4px;
+	vertical-align: middle;
+	border: 1px solid #333333;
+}
+
+img.smallbar{
+	height : 8px;
+	margin : 2px;
+	vertical-align: middle;
+	border: 1px solid #333333;
+}
+
+/* Form Properties */
+:focus {background-color: #d0ddf0}
+
+/* Link Properties */
+:link {color: #0044aa;text-decoration: none;}
+:visited {color: #003399;text-decoration: none;}
+:link:focus, :visited:focus {color: #cc7700}
+:link:hover, :visited:hover {color: #ff4400}
+:link:active, :visited:active {color: #0088dd}
+
+/* Header table & Footer div*/
+#header{
+	width: 100%;
+	border-spacing: 1px;
+	background-color: #aaaaaa;
+}
+
+#footer{
+	margin: 10px auto;
+	width: 90%;
+	border: 1px solid #aaaaaa;
+	padding: 8px;
+	text-align: right;
+	font-style: italic;
+}
+
+/* Actual Module */
+table.content{
+	width: 100%;
+	empty-cells:show;
+	border-spacing: 1px;
+	background-color: #aaaaaa;
+}
+
+/* Helper td */
+td.helper{
+	padding: 10px;
+	background-color: #fafafa;
+	vertical-align: top;
+}
+
+table.fixed{
+	table-layout:fixed;
+}
+
+table.full{
+	width: 100%;
+}
+
+/* Style for logs etc. */
+.textpad{
+	margin: 10px auto;
+	width: 70%;
+	padding: 10px;
+	border-spacing: 1px;
+	border: 2px solid #dddddd;
+	-webkit-box-shadow: 10px 10px 10px #666;
+	box-shadow:10px 10px 10px #666;
+}
+
+/* Font Properties */
+.code{
+	overflow: auto;
+	text-align: left;
+	padding: 10px;
+	font-family: monospace;
+	font: 11px Courier New, monospace;
+	white-space: pre;
+}
+
+/* Scrollable list container */
+.scroller{
+	background-color: #aaaaaa;
+	height:150px;
+	width:100%;
+	overflow: auto;
+}
+
+.red {color: red }
+.drd {color: darkred }
+.grn {color: green }
+.blu {color: blue }
+.prp {color: purple }
+.blk {color: black }
+
+.gry {color: grey }
+.dgy {color: dimgrey }
+.org {color: orange }
+.mrn {color: maroon }
+.sna {color: sienna }
+.sbu {color: steelblue }
+.olv {color: olive }
+
+/* Text Fields */
+.txta{background-color: #e0e0e0}
+.txtb{background-color: #d0d0d0}
+
+/* Image Fields */
+.imga{background-color: #f0f0f0}
+.imgb{background-color: #e6e6e6}
+
+/* Status Fields */
+.good{background-color: #00ff00}
+.noti{background-color: #0000ff}
+.warn{background-color: #ffff00}
+.alrm{background-color: #ff8800}
+.crit{background-color: #ff0000}
+.part{background-image:url('../img/dia.png')}
+
+/* Default Group Based Module Colors */
+.adm1, .net1, .dsk1, .mon1, .mgr1, .oth1, .usr1{
+	background-color: #dddddd;
+}
+.adm2, .net2, .dsk2, .mon2, .mgr2, .oth2, .usr2{
+	background-color: #eeeeee;
+}
+
+/* ThemeNMenu Style Sheet */
+
+.ThemeNMenu,.ThemeNSubMenuTable
+{
+	cursor:		default;
+	font-size:	13px;
+
+	padding:	2px;
+	border:		0px;
+	white-space:	nowrap;
+}
+
+.ThemeNMenu
+{
+/*	background-color:	#F7F3EF; */
+}
+
+.ThemeNSubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:	100;
+	border:		0px;
+	padding:	0px;
+
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#454545, Direction=135, Strength=4);*/
+}
+
+.ThemeNSubMenuTable
+{
+	border:		1px solid #444444;
+	background-color:	#eeeeee;
+}
+
+.ThemeNSubMenuTable td
+{
+	white-space:	nowrap;
+	padding:	2px;
+}
+
+.ThemeNMainItem,.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItem,.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	padding-left:	6px;
+	padding-right:	6px;
+	white-space:	nowrap;
+}
+
+.ThemeNMainItemHover,.ThemeNMainItemActive,
+.ThemeNMenuItemHover,.ThemeNMenuItemActive
+{
+	color:		#888888;
+	background-color:	#ffffff;
+}
+
+.ThemeNMenuSplit
+{
+	height:		1px;
+	margin-top:	1px;
+	margin-bottom:	1px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #ADAA9C;
+}
+
+.ThemeNMenuVSplit
+{
+	width:		1px;
+	margin:		0px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-right:	1px solid #ADAA9C;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ThemeNMenuItem img.seq1
+{
+	display:	inline;
+}
+
+.ThemeNMenuItemHover seq2,
+.ThemeNMenuItemActive seq2
+{
+	display:	inline;
+}
+
+.ThemeNMenuItem .seq2,
+.ThemeNMenuItemHover .seq1,
+.ThemeNMenuItemActive .seq1
+{
+	display:	none;
+}

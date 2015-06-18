@@ -1,0 +1,51 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Monitoring Events
+</div>
+
+<h2>Introduction</h2>
+Incoming discovery or syslog events and snmp traps are (if enabled) gathered here. Several filter options allow you to examine problems very efficiently. Use the arrow keys (beneath show) to page around in your selection.
+Conditions involving criterias (e.g. location or contact) from the devices table, cannot be used to delete events due to query restrictions!
+
+<h2>Usage</h2>
+List events by pressing the "Show" button or delete the displayed events by pressing "Delete".
+
+The following filter methods are available to narrow down your search:
+<ol>
+<li>1 criteria matching a column within Condition A (leaving Operator at A only).
+<li>2 criterias like above, but logically combined with Operator.
+<li>Alternatively you can compare 2 columns directly by using a combination with "col" (To find events where source is not equal to device for example).
+<li>In addition you can specify which event level you want to look at.
+<li>Click on the icons to get quick access to pre-defined message groups.
+<li>You can use < > to page back and forth within the filtered results.
+</ol>
+
+General Notes:
+<ul>
+<li>Knowledge about regexp is very helpful when working with this module!
+<li>You can save searches in Bookmarks or use the notepad icon in the header to add it to the admin message.
+<li>The last map can be included via paint icon and a limit (default 200) can be chosen as well. This can enhance any printouts which can be generated
+with the print icon in the header. Click on the rows you may wish to highlight (double-click to remove) in the printout itself.
+<li>You can export the list as XLS by clicking on the the list icon in the header.
+<li>The resulting SQL query can be shown using the debug icon in the header (admin only). It links to Other-Export to generate CSV files or the likes.
+<li>The triangles in the top row allow for the list to be sorted accordingly. They won't be available on special columns containing realtime data for example.
+</ul>
+
+
+<h2>Details</h2>
+<ul>
+<li>The class icon links dynamically, hover over it to learn more.
+<li>MAC and IP addresses provide direct links for further investigation (e.g. <img src="../../img/16/dril.png"> <img src="../../img/16/nods.png">)
+<li>The resulting SQL query can be shown using the cog icon, if logged in as admin. It links to Other-Export to generate CSV files or the likes.
+</ul>
+
+<div id="footer">Remo Rickli 2013</div>
+</body>

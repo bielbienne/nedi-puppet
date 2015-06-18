@@ -1,0 +1,56 @@
+# Definition for 1.3.6.1.4.1.388.14 created by Defgen 1.8 on 23.Sep 2012 (admin)
+
+# General
+SNMPv	2HC
+Type	Motorola-WS5100
+Typoid	
+Sysdes	
+OS	other
+Icon	wban
+Size	1
+Bridge	normal
+ArpND	
+Dispro	LLDP
+Serial	1.3.6.1.4.1.388.14.1.9.1.2.6.0
+Bimage	1.3.6.1.4.1.388.14.1.2.1.3.1.2.1
+
+VLnams	1.3.6.1.4.1.388.14.2.4.1.1.1.11.3
+VLnamx	
+Group	
+Mode	
+
+# Interfaces
+StartX	
+EndX	
+IFname	
+IFaddr	
+IFalia	
+IFalix	1.3.6.1.4.1.388.14.2.4.1.1.1.9.3
+InBcast	
+InDisc	
+OutDisc	
+IFvlan	1.3.6.1.4.1.388.14.2.4.1.1.1.11.3
+IFvlix	
+IFpowr	
+IFpwix	
+IFdupl	
+IFduix	
+Halfdp	
+Fulldp	
+
+# Modules
+Modesc	1.3.6.1.4.1.388.14.1.6.1.3.2.1.5
+Moclas	
+Movalu	
+Moslot	
+Modhw	1.3.6.1.4.1.388.14.1.6.1.3.2.1.4
+Modsw	1.3.6.1.4.1.388.14.1.6.1.3.2.1.3
+Modfw	
+Modser	
+Momodl	
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.388.14.1.6.1.4.2.0
+Temp	1.3.6.1.4.1.388.14.1.6.1.12.1.2.1.0	0.1
+MemCPU	1.3.6.1.4.1.388.14.1.6.1.15.3.0	
+Custom		

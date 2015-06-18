@@ -1,0 +1,101 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Topologie Karte
+</div>
+<h2>Einführung</h2>
+Dieses Modul ermöglicht das Erstellen einer graphischen Netzwerkdarstellung und ist daher sehr nützlich, um das Netzwerk zu dokumentieren. Das Erstellen der Netzwerkkarte basiert auf den Netzwerkgeräten konfigurierten SNMP-Standortinformationen. Obwohl die Symbole in den erstellten Netzwerkkarten interaktiv sind und auf weitere NeDi Module verweisen, liegt der Schwerpunkt klar beim Abbilden des Netzwerks.
+<p>
+<div class="code">
+Damit dieses Modul korrekt funktioniert, muss der Webserver folgende
+zusätzliche Kriterien erfüllen:
+<ul>
+<li> Auf dem Webserver muss die PHP-GD-Erweiterung aktiviert sein.
+</ul>
+Auf dem Webserver müssen folgenden MIME Types gesetzt sein, damit
+die Vektorgraphiken korrekt funktionieren:
+<ul>
+<li> Endung: .svg	MIME: image/svg+xml
+<li> Endung: .svgz	MIME: image/svg+xml
+</ul>
+Ausserdem müssen die SNMP-Standortangaben auf den Netzwerkgeräten korrekt
+konfiguriert worden sein und auf dem Client muss eventuell noch der freie 
+Adobe SVG Viewer installiert werden (Browser Plugin).
+</div>
+<p>
+Netzwerkkarten werden pro Benutzer erstellt und im NeDi-Verzeichnis ...html\log abgelegt (Schreibrechte für den Webserver erforderlich). Solange an einer erstellten Netzwerkkarte nichts verändert wird, wird die erstellte Netzwerkgraphik bei einem späteren Besuch dieses Moduls wieder gleich dargestellt, jedoch ohne interaktive Funktionen. 
+<p>
+Es besteht die Möglichkeit, Bandbreitengraphiken in die Links zu integrieren. Diese Graphiken werden als .png Dateien im NeDi-Verzeichnis ...html\log abgelegt. Diese .png Graphiken werden jeweils bei allen nachfolgenden Anpassungen an der Netzwerkkarte wieder überschrieben. Um also von einem bestimmten Zeitpunkt eine Netzwerkkarte zu haben, sollte die Karte manuell als .png Datei gespeichert werden (z.B. rechte Maustaste | Bild speichern unter). Alternativ kann natürlich auch einfach ein Screenshot gemacht werden. RRD's (Verkehrs/Fehlergraphiken) stehen bei Vektorgraphiken (SVG) nicht zur Verfügung.
+
+<h2>Benutzung</h2>
+<ul>
+<li>Auf der NeDi-Homepage findet man ein Multimedia-Tutorial, welches den Einstieg erleichtert.
+<li>Geographische Karten werden im Modul {Topologie Loced} konfiguriert.
+<li>Mit dem Button "SVG" kann eine Vektorzeichnung erstellt werden, welche anschliessend in andere Programme importiert werden kann.
+<li>Fährt man mit der Maus über die Felder und Symbole, wird eine kontextbasierte Hilfe eingeblendet.
+</ul>
+<p>
+Um eine Netzwerkkarte zu erstellen, muss nach dem Auswählen der nachfolgend beschriebenen Optionen der Button "PNG" oder "SVG" angeklickt werden.
+<p>
+Feld Image:
+<p>
+<ul>
+<li> Über das Drop Down Menü [Grösse] können die Abmessungen der Zeichnung anhand von vordefinierten Grössen festgelegt werden.
+<li> Via den Textfeldern [xy] können die Abmessungen der Netzwerkkarte selbst definiert werden.
+<li> Über die Auswahl [Tiefe] kann die Qualität und die Grösse der Netzwerkkarte beeinflusst werden. Der Wert "24bit" ist vordefiniert und sollte so belassen werden.
+</ul>
+<p>
+Feld Generell:
+<p>
+<ul>
+<li> Über das Textfeld [Titel] kann die Überschrift der Netzwerkkarte festgelegt werden.
+<li> Über das linke Drop Down Menü kann die Detailebene der Karte bestimmt werden. Damit ist die Unterscheidung von Regionen, Ländern, Gebäuden etc. gemeint. Zusätzlich kann über das rechte Drop Down Menü der Zeichnungsmodus festgelegt werden. Im Geo-Modus können vordefinierte geographische Karten aus dem Modul {Topologie Loced} aktiviert werden.
+<li> Die Textfelder [Offset] ermöglichen die Positionierung der Netzwerkkarte anzupassen. Es kann auch mit negativen Werten gearbeitet werden. Der Offset-Wert "@" ist zum Rotieren von mehreren Ortschaften gedacht!
+</ul>
+<p>
+Feld Layout:
+<p>
+<ul>
+<li> Über die Drop Down Menüs [Link] kann die Darstellung der Links angepasst werden. Es ist auch möglich, Verkehr, oder Fehler-Graphiken in die Links zu integrieren.
+<li> Über die Drop Down Menü [Point] können die verwendeteten Symbole ausgewählt werden. Über die zugehörigen Textfelder können die Links beinflusst werden.
+<li> Die Textfelder [Floor] ermöglichen es die Abmessungen der Stockwerke auf der Netzwerkkarte anzupassen. Es kann auch mit negativen Werten gearbeitet werden. Der Offset Wert "@" ist zum Rotieren von mehreren Gebäuden gedacht!
+</ul>
+<p>
+Feld Info:
+<p>
+<ul>
+<li> Setzt man das Häkchen [IF] werden die involvierten Schnittstellen für die jeweiligen Verbindungen angegeben.
+<li> Setzt man das Häkchen [IP] wird für die Netzwerkgeräte die zugehörige Management-IP-Adresse angezeigt.
+<li> Setzt man das Häkchen [LOC] wird für die Netzwerkgeräte der zugehörige Standort angezeigt.
+</ul>
+<p>
+Feld Filter:
+<p>
+<ul> 
+<li> Über das erste Drop Down Menü wird der Filter gesetzt.
+<li> Abhängig vom gewählten Filter kann über das Textfeld die Abfrage eingegrenzt werden. Wird im Textfeld nichts eingegeben, stellt NeDi die grösstmögliche Menge dar.
+<li> Das untere Drop Down Menü enthält vorgefertigte Filter. Es muss darauf geachtet werden, dass diese Filter zu den restlichen Angaben in diesem Feld [Filter] passen!
+</ul>
+<p>
+
+
+<h2>Details</h2>
+
+Wird eine Netzwerkkarte im "Geo" Modus erstellt, probiert NeDi automatisch die beste Karte zu finden. Dies ist in der Regel die Karte, welche am nächsten beim Standort liegt.
+<p>
+Für die "Geo" Funktion wird vorausgesetzt, dass im Modul {Topologie Loced} die Karten konfiguriert und die NeDi-spezifischen Koordinaten für die Standorte und Gebäude angegeben worden sind.
+<p>
+Angenommen, die Karten wurden wie in der Hilfe des Moduls {Topologie Loced} beschrieben in das ...html\log Verzeichnis kopiert und konfiguriert, wird NeDi nun z.B. beim Auswählen des Landes, die Städte auf der Landeskarte anzeigen. Wird nun eine Stadt angelickt, zeigt NeDi die entsprechende Stadtkarte mit den zugehörigen Gebäuden.
+<p>
+Sollten Verbindungen (z.B. zwischen Standorten) nicht angezeigt werden, können diese im Modul {Topologie Linked} manuell hinzugefügt oder angepasst werden.
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

@@ -1,0 +1,393 @@
+/* General Classes */
+body {
+	font: 12px "Trebuchet MS", Verdana, Helvetica, Arial,sans-serif;
+	background-color: #ffffff;
+}
+
+td{
+	padding: 5px;
+	color: #666666;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+th{
+	padding: 5px;
+	font-weight: bold;
+	color: #888888;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+/* Headings */
+h1   {
+	color: #888888; 
+	font-size: 18px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h2   {
+	color: #777777;
+	font-size: 16px;
+	font-weight: bold;
+	text-align: center;
+}
+
+h3   {
+	color: #666666;
+	font-size: 14px;
+	text-align: center;
+	font-weight: bold;
+}
+
+h4   {
+	color: #ffaa88;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	width: 200px;
+	border: 1px solid #ffccaa;
+	margin-left: auto;
+  	margin-right: auto;
+	padding: 3px;
+	background-color: #996633;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+
+h5   {
+	color: #aaff88;
+	font-size: 12px;
+	font-weight: bold;
+	text-align: center;
+	width: 200px;
+	border: 1px solid #ccffaa;
+	margin-left: auto;
+  	margin-right: auto;
+	padding: 3px;
+	background-color: #669933;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+
+/* Input Fields */
+select {
+	color: #666666;
+}
+
+input {
+	color: #666666;
+}
+
+textarea {
+	color: #666666;
+}
+
+/* Image Properties */
+img{
+	margin : 2px 4px;
+	vertical-align: middle;
+	border: none;
+}
+
+img.bigbar{
+	height : 16px;
+	margin : 4px;
+	vertical-align: middle;
+	border-radius: 68px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+	/* for IE */
+	filter:alpha(opacity=90);
+	/* CSS3 standard */
+	opacity:0.9;
+	/* for Mozilla */
+	-moz-opacity:0.9;
+}
+
+img.smallbar{
+	height : 10px;
+	margin : 2px;
+	vertical-align: middle;
+	border-radius: 4px;
+	-moz-border-radius: 4px;
+	-webkit-border-radius: 4px;
+	-khtml-border-radius: 4px;
+	/* for IE */
+	filter:alpha(opacity=90);
+	/* CSS3 standard */
+	opacity:0.9;
+	/* for Mozilla */
+	-moz-opacity:0.9;
+}
+
+/* Form Properties */
+:focus {background-color: #e0e0f0}
+
+/* Link Properties */
+:link {color: #0066aa;text-decoration: none;}
+:visited {color: #003366;text-decoration: none;}
+:link:focus, :visited:focus {color: #00cccc;}
+:link:hover, :visited:hover {color: #cc8800;background-color: #ffffcc;}
+:link:active, :visited:active {color: #dd9999;background-color: #eeeebb;}
+
+/* Header table & Footer div*/
+#header{
+	margin: 10px auto;
+	width: 92%;
+	padding: 1px;
+	border-spacing: 0px;
+	background-color: #f0f0f0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+#footer{
+	margin: 10px auto;
+	color: #444444;
+	width: 92%;
+	padding: 8px;
+	text-align: right;
+	font-style: italic;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+/* Actual Module */
+table.content{
+	width: 100%;
+	border-spacing: 0px;
+	background-color: #f0f0f0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+/* Helper td */
+td.helper{
+	padding: 10px;
+	vertical-align: top;
+}
+
+table.fixed{
+	table-layout:fixed;
+}
+
+table.full{
+	width: 100%;
+}
+
+/* Style for logs etc. */
+.textpad{
+	margin: 10px auto;
+	width: 70%;
+	padding: 16px;
+	border-spacing: 1px;
+	border: 2px solid #f0f0f0;
+	border-radius: 6px;
+	-moz-border-radius: 6px;
+	-webkit-border-radius: 6px;
+	-khtml-border-radius: 6px;
+}
+
+/* Font Properties */
+.code{
+	overflow: auto;
+	text-align: left;
+	padding: 10px;
+	font-family: monospace;
+	font: 11px Courier New, monospace;
+	white-space: pre;
+}
+
+/* Scrollable list container */
+.scroller{
+	background-color: #aaaaaa;
+	height:150px;
+	width:100%;
+	overflow: auto;
+}
+
+.red {color: red }
+.drd {color: darkred }
+.grn {color: green }
+.blu {color: blue }
+.prp {color: purple }
+.blk {color: black }
+
+.gry {color: grey }
+.dgy {color: dimgrey }
+.org {color: orange }
+.mrn {color: maroon }
+.sna {color: sienna }
+.sbu {color: steelblue }
+.olv {color: olive }
+
+/* Text Fields */
+.txta{background-color: #eaeaea}
+.txtb{background-color: #f6f6f6}
+
+/* Image Fields */
+.imga{background-color: #faf9f8}
+.imgb{background-color: #fcfbfa}
+
+/* Status Fields */
+.good{background-color: #c0ffa0}
+.noti{background-color: #a0c0ff}
+.warn{background-color: #ffeea0}
+.alrm{background-color: #ffcca0}
+.crit{background-color: #ffa0a0}
+.part{background-image:url('../img/dia.png')}
+
+/* Default Group Based Module Colors */
+.adm1{background-image: URL(gfad.png)}
+.adm2{background-image: URL(gfad2.png)}
+
+.net1{background-image: URL(gfad.png)}
+.net2{background-image: URL(gfad2.png)}
+
+.dsk1{background-image: URL(gfad.png)}
+.dsk2{background-image: URL(gfad2.png)}
+
+.mon1{background-image: URL(gfad.png)}
+.mon2{background-image: URL(gfad2.png)}
+
+.mgr1{background-image: URL(gfad.png)}
+.mgr2{background-image: URL(gfad2.png)}
+
+.oth1{background-image: URL(gfad.png)}
+.oth2{background-image: URL(gfad2.png)}
+
+.usr1{background-image: URL(gfad.png)}
+.usr2{background-image: URL(gfad2.png)}
+
+/* ThemeNMenu Style Sheet */
+
+.ThemeNMenu,.ThemeNSubMenuTable
+{
+	cursor:		default;
+	font-size:	13px;
+
+	padding:	2px;
+	border:		0px;
+	white-space:	nowrap;
+	opacity:		0.9;
+	filter:			alpha(opacity=90);
+	-moz-opacity:		0.9;
+	-khtml-opacity:		0.9
+}
+
+.ThemeNMenu
+{
+#	background-color:	#f0f0f0;
+}
+
+.ThemeNSubMenu
+{
+	position:	absolute;
+	visibility:	hidden;
+
+	/*
+	   Netscape/Mozilla renders borders by increasing
+	   their z-index.  The following line is necessary
+	   to cover any borders underneath
+	*/
+	z-index:	100;
+	border:		0px;
+	padding:	0px;
+
+	/*filter:progid:DXImageTransform.Microsoft.Shadow(color=#454545, Direction=135, Strength=4);*/
+}
+
+.ThemeNSubMenuTable
+{
+	border:		1px solid #ffffcc;
+	background-color:	#eeeeee;
+	border-radius: 5px;
+	-moz-border-radius: 5px;
+	-webkit-border-radius: 5px;
+	-khtml-border-radius: 5px;
+}
+
+.ThemeNSubMenuTable td
+{
+	color:			#444444;
+	white-space:		nowrap;
+	padding:		2px;
+}
+
+.ThemeNMainItem,.ThemeNMenuItem
+{
+	color:		#444444;
+	padding-left:	6px;
+	padding-right:	6px;
+	white-space:	nowrap;
+}
+
+.ThemeNMainItemActive,.ThemeNMenuItemActive,.ThemeNMainItemHover,.ThemeNMenuItemHover
+{
+	color:			#cc8800;
+	background-color:	#ffffcc;
+}
+
+.ThemeNMenuSplit
+{
+	height:		1px;
+	margin-top:	1px;
+	margin-bottom:	1px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-top:	1px solid #ADAA9C;
+}
+
+.ThemeNMenuVSplit
+{
+	width:		1px;
+	margin:		0px;
+	overflow:	hidden;
+	background-color:	inherit;
+	border-right:	1px solid #ADAA9C;
+}
+
+/* image shadow animation */
+
+/*
+	seq1:	image for normal
+	seq2:	image for hover and active
+
+	To use, in the icon field, input the following:
+	<img class="seq1" src="normal.gif" /><img class="seq2" src="hover.gif" />
+*/
+
+.ThemeNMenuItem img.seq1
+{
+	display:	inline;
+}
+
+.ThemeNMenuItemHover seq2,
+.ThemeNMenuItemActive seq2
+{
+	display:	inline;
+}
+
+.ThemeNMenuItem .seq2,
+.ThemeNMenuItemHover .seq1,
+.ThemeNMenuItemActive .seq1
+{
+	display:	none;
+}

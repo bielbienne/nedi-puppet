@@ -1,0 +1,30 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Database Export
+</div>
+
+<h2>Introduction</h2>
+Backup SQL tables, perform DB maintenance, export configurations as text files or other tables as CSV files. By default the complete DB structure including number of records is shown.
+
+<h2>Usage</h2>
+<h3>Export</h3>
+Use this part to generate CSV- files, download a configuration file archive or perform maintenance (some interesting queries are on the bottom of the selectbox).
+<h3>SQL Dump</h3>
+Select (hold down CTRL for multiple) tables to be exported in SQL format. The resulting file can be imported via System-Files, if Destination was set to Gzip.
+<h2>Details</h2>
+<ul>
+<li>Perform maintenance <img src="../../img/16/hat2.png"> <img src="../../img/16/dril.png">, delete all records with <img src="../../img/16/bcnl.png"> or quickly view (the first 1000) entries of a table by clicking on the <img src="../../img/16/eyes.png"> below them.
+<li>Export to plain destination for a CSV representation or HTML to view the output directly in the browser. <img src="../../img/16/abc.png"> changes IP addresses and timestamps in a human readable format and adds a timestamp to the archive name.
+<li>Bzip2 needs more resources, but generally creates smaller archives.
+<li>Depending on the amount of data you're dealing with, the module requires more memory or time to finish processing!
+</ul>
+<div id="footer">Remo Rickli 2013</div>
+</body>

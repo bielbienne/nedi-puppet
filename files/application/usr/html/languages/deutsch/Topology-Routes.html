@@ -1,0 +1,72 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Topologie Routes
+</div>
+<h2>Einführung</h2>
+Dieses Modul, ergänzt mit vielen nützlichen Informationen, ermöglicht das Verfolgen von Datenwegen im Netzwerk (Trace). Weiter ist es möglich, sich von jedem Layer3-Gerät die Routingtabelle anzeigen zu lassen.
+
+<h2>Benutzung</h2>
+
+Um sich im Netzwerk einen bestimmten Datenpfad anzeigen zu lassen, ist im Drop Down Menü [Quelle] das Ausgangssubnetz und über das Drop Down Menü [Ziel] das Zielsubnetz auszuwählen. Anschliessend kann die Abfrage mit dem Button "Trace" gestartet werden.
+<p>
+<ul> 
+<li> In der Spalte [Gerät] werden die Netzwerksymbole mit den Namen der involvierten L3-Netzwerkgeräte aufgelistet. Klickt man auf ein Netzwerksymbol, wird man zum Modul {Geräte Status} weitergeleitet und erhält detaillierte Informationen zu diesem Netzwerkgerät.
+<li> In der Spalte [Netzwerk] werden von den Netzwerkgeräten die IP-Adressen der L3-Schnittstellen angezeigt, welche in die Paketverfolgung involviert sind.
+<li> In der Spalte [Ziel] wird das Zielsubnetz angezeigt.
+<li> In der Spalte [Next Hop] wird die IP-Adresse des Nachbargerätes angezeigt, an welche die Daten auf den Weg zum Zielsubnetz weitergeleitet werden. 
+<li> In der Spalte [Metric] wird die "Metric" angezeigt, welche der Routingtabelle des jeweiligen Netzwerkgerätes für das Zielsubnetz entnommen wird. Die "Metric" wird von den Netzwerkgeräten verwendet, um den besten Weg zu einem Zielsubnetz zu bestimmen. Abhängig vom Gerätehersteller und dem verwendeten Routingprotokoll setzt sich der Wert für die "Metric" einer Route aus folgenden möglichen Kriterien zusammen: Bandbreite des Links, Verfügbarkeit des Links, Auslastung des Links, Anzahl Geräte bis zum Ziel etc. Die "Metric" ist nicht zu verwechseln mit der "Administrativen Distanz", welche ein Indikator für die Gewichtung der Routingprotokolle ist. Ein statischer Routeeintrag hat üblicherweise eine tiefere "Administrative Distanz" als Routingprotokolle und wird somit von den Netzwerkgeräten priorisiert!
+<li> In der Spalte [Protokoll] wird das Routingprotokoll angezeigt, welches die Route zum Zielsubnetz geliefert hat. Bei einer statisch eingetragene Route kann die "Metric" beim Erstellen des Routeeintrages frei gewählt werden.  
+</ul>
+
+Übersicht über die Routingprotokolle:
+
+<table>
+<tr><th>Symbol</th><th>Routing Protokoll</th><th>Protokoll Typ</th><th></th><th>Symbol</th><th>Routing Protokoll</th><th>Protokoll Typ</th></tr>
+<tr><td><img src="../../img/16/fogr.png"></td><td>local</td><td>Static</td><td></td><td><img src="../../img/16/fogy.png"></td><td>(E)IGRP</td><td>Hybrid</td></tr>
+<tr><td><img src="../../img/16/foor.png"></td><td>OSPF</td><td>Link State</td><td></td><td><img src="../../img/16/ford.png"></td><td>BGP</td><td>Path Vector</td></tr>
+<tr><td><img src="../../img/16/fobl.png"></td><td>IS-IS</td><td>Link State</td><td></td><td><img src="../../img/16/fobl.png"></td><td>ES-IS</td><td> - </td></tr>
+<tr><td><img src="../../img/16/fovi.png"></td><td>RIP</td><td>Distance Vector</td><td></td>
+</table>
+<p>
+Weitere Symbole:
+
+<table>
+<tr><th>Symbol</th><th>Bedeutung</th><th></th><th>Symbol</th><th>Bedeutung</th></tr>
+<tr><td><img src="../../img/16/fobl.png"></td><td>EGP</td><td></td><td><img src="../../img/16/fobl.png"></td><td>ICMP</td></tr>
+<tr><td><img src="../../img/16/fobl.png"></td><td>Hello</td><td></td><td><img src="../../img/16/fobl.png"></td><td>GGP</td></tr>
+<tr><td><img src="../../img/16/fobl.png"></td><td>NetMgmt</td><td></td>
+</table>
+<p>
+<hr>
+<p>
+Um sich die Routingtabelle eines Layer3-Netzwerkgerätes anzeigen zu lassen, kann im Feld [Router] das entsprechende L3-Gerät über das Drop Down Menü ausgewählt werden. Die Abfrage mit dem Button "Zeigen" starten.
+<p>
+<ul> 
+<li> In der Spalte [Ziel] auf der linken Seite weisen die Symbole auf die Bedeutung des Netzwerkbereichs hin.
+<blockquote>Die Bedeutung der Symbole für die Netzwerkbereiche:</blockquote>
+<blockquote><img src="../../img/16/bup.png"> Default Route</blockquote>
+<blockquote><img src="../../img/16/bblf.png"> 10.0.0.0/8 (Subnetz für private Nutzung aus dem A Klasse Bereich)</blockquote>
+<blockquote><img src="../../img/16/bbrt.png"> 172.16.0.0/12 (Subnetz für private Nutzung aus dem B Klasse Bereich)</blockquote>
+<blockquote><img src="../../img/16/bbdn.png"> 192.168.0.0/16 (Subnetz für private Nutzung aus dem C Klasse Bereich)</blockquote>
+<blockquote><img src="../../img/16/brgt.png"> Öffentliches registriertes Subnetz, wird im Internet geroutet.</blockquote>
+<li> In der Spalte [Ziel] auf der rechten Seite wird das Zielsubnetz angezeigt. Klickt man auf das Zielsubnetz wird man zum Modul {Topologie Karte} weitergeleitet, wo der zugehörige Standort zu diesem Subnetz angezeigt wird.
+<li> In der Spalte [Next Hop] wird für entfernte Subnetze die IP-Adresse des Nachbargerätes angezeigt, an welche die Daten auf den Weg zum Zielsubnetz weitergeleitet werden. Klickt man auf den Namen des L3-Netzwerkgerätes neben dem Zielsubnetz, wird dessen Routingtabelle in diesem Modul angezeigt. Bei direkt verbundenen Subnetzen ist die angezeigte IP-Adresse lokal auf dem abgefragten Netzwerkgerät konfiguriert und üblicherweise der Default-Gateway für Endgeräte im jeweiligen Subnetz.
+<li> In der Spalte [Schnittstelle] wird die zugehörige Layer3-Netzwerkschnittstelle angezeigt, über welche das jeweilige Subnetz erreicht werden kann.
+<li> In der Spalte [Bandbreite] wird die verfügbare Bandbreite dieser Verbindung angezeigt. Diese kann automatisch ausgehandelt oder fix konfiguriert worden sein.
+<li> In der Spalte [Metric] wird die "Metric" angezeigt, welche der Routingtabelle des abgefragten Netzwerkgerätes für das Zielsubnetz entnommen wird. 
+<li> In der Spalte [Protokoll] wird das Routingprotokoll angezeigt, welches die Route zum Zielsubnetz geliefert hat.
+<li> In der Spalte [Alter] wird die Zeit in Sekunden angezeigt, seit welcher eine Route bereits aktiv ist. Statische Routeeinträge, welche auf nicht direkt verbundene Subnetze verweisen, werden in kurzen Intervallen immer wieder neu eingelesen (z.B. alle 60 Sekunden).
+</ul>
+
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

@@ -1,0 +1,64 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Monitoring Reports
+</div>
+
+<h2>Einführung</h2>
+Dieses Modul erlaubt Auswertungen bezüglich der Geräte- und Standortverfügbarkeit, zeigt Statistiken zu eingegangenen Meldungen an und zeigt auf, wie lange die überwachten Netzwerkgeräte bereits laufen.
+<h2>Benutzung</h2>
+Es können im Feld [Auswahl] nach Wunsch mehrere Reports auf einmal ausgewählt werden (Ctrl + Mausklick). Bei Bedarf kann die Limite der angezeigten Informationen via dem Drop Down Menü [Limite] angepasst werden. Optional kann man durch das Setzen des Häkchens im Feld [Alternativ] die Reihenfolge der ausgegebenen Informationen beeinflussen. Die Abfrage mit dem Button "Zeigen" starten.
+<p>
+Report &lt;Geräte Verfügbarkeit&gt;
+<p>
+Dieser Report gibt Auskunft über die Verfügbarkeit der Netzwerkgeräte.
+<ul>
+<li> In der Spalte [Geräte Verfügbarkeit| Geräte] werden auf der linken Seite die Symbole der Netzwerkgeräte mit den Gerätenamen aufgelistet. Klickt man auf eines der Gerätesymbole, werden zu dem jeweiligen Gerät detaillierte Informationen im Modul {Geräte Status} angezeigt. In der rechten Spalte werden die zugehörigen IP-Adressen der Netzwerkgeräte aufgelistet. Klickt man auf eine IP-Adresse, wird eine Telnetverbindung zum jeweiligen Gerät aufgebaut.
+<li> In der Spalte [Geräte Verfügbarkeit| Kontakt] wird die eingetragene SNMP-Kontaktperson für die jeweiligen Netzwerkgeräte angezeigt.
+<li> In der Spalte [Geräte Verfügbarkeit| Verfügbarkeit] wird anhand von Balkengraphiken die Verfügbarkeit angezeigt. Zusätzlich wird die prozentuale Verfügbarkeit für jedes Netzwerkgerät als numerischer Wert angegeben und die Balkengraphik abhängig von der Verfügbarkeit mit unterschiedlichen Farben dargestellt.
+</ul>
+<p>
+Report &lt;Standort Verfügbarkeit&gt;
+<p>
+Dieser Report gibt Auskunft über die Verfügbarkeit der Standorte.
+<ul>
+<li> In der Spalte [Standort Verfügbarkeit| Stadt] werden die Symbole der Standorte mit den den Städtenamen aufgelistet. Klickt man auf eines der Standortsymbole, wird dieser Standort im Modul {Netzwerküberwachung} angezeigt. 
+<li> In der Spalte [Standort Verfügbarkeit| Gebäude] werden die Symbole der Standorte mit den den Gebäudenamen aufgelistet. Klickt man auf eines der Standortsymbole, werden die Netzwerkgeräte in diesem Gebäude im Modul {Netzwerküberwachung} angezeigt. 
+<li> In der Spalte [Standort Verfügbarkeit| Verfügbarkeit] wird anhand von Balkengraphiken die Verfügbarkeit angezeigt. Zusätzlich wird die prozentuale Verfügbarkeit für jeden Standort als numerischer Wert angegeben und die Balkengraphik abhängig von der Verfügbarkeit mit unterschiedlichen Farben dargestellt.
+</ul>
+<p>
+Report &lt;Statistik Meldungen&gt;
+<p>
+Dieser Report gibt Auskunft über eingegangene Meldungen und deren Ursprung.
+<p>
+<div class="code">
+Damit bei diesem Report die Symbole der Netzwerkgeräte dargestellt werden,
+muss die Absender-IP-Adresse mit der Haupt-IP-Adresse des Gerätes über-
+einstimmen. Um dies sicherzustellen, muss dies auf den jeweiligen Netzwerk-
+geräten konfiguriert werden (logging source interface).
+Andernfalls wird von NeDi dieses Symbol verwendet werden:   <img src="../../img/32/cubs.png">
+</div>
+<ul>
+<li> In der Spalte [Statistik Meldungen| Quelle] werden die Symbole für die Netzwerkgeräte und der jeweilige Gerätename angezeigt. Klickt man auf ein Symbol, werden zu diesem Gerät detaillierte Informationen im Modul {Geräte Status} ausgegeben.
+<li> In der Spalte [Statistik Meldungen| Kontakt] werden die SNMP-Kontaktinformationen angezeigt, welche auf den jeweiligen Netzwerkgeräten konfiguriert worden sind.
+<li> In der Spalte [Statistik Meldungen| Meldungen] wird anhand von Balkengraphiken die Menge der eingegangenen Meldungen pro Gerät angezeigt. Diese Graphiken werden pro Meldungstyp dargestellt (Alarm, Warnung, Info etc.) und zusätzlich wird die Anzahl der eingegangenen Meldungen als numerischer Wert angegeben. Klickt man auf diese Anzahl, werden die zugehörigen Meldungen dieses Typs im Modul {Monitoring Meldungen} angezeigt.  
+</ul>
+Report &lt;Laufzeit Statistik&gt;
+<p>
+Dieser Report gibt Auskunft darüber, wie viele Tage die überwachten Netzwerkgeräte seit dem letzen Neustart ihren Dienst verrichtet haben.
+<ul>
+<li> In der Spalte [Laufzeit Statistik| Geräte] werden auf der linken Seite die Symbole der Netzwerkgeräte mit den den Gerätenamen aufgelistet. Klickt man auf eines der Gerätesymbole, werden zu dem jeweiligen Gerät detaillierte Informationen im Modul {Geräte Status} angezeigt. In der rechten Spalte werden die zugehörigen IP-Adressen der Netzwerkgeräte aufgelistet. Klickt man auf eine IP-Adresse, wird eine Telnetverbindung zum jeweiligen Gerät aufgebaut.
+<li> In der Spalte [Laufzeit Statistik| Kontakt] wird die eingetragene SNMP-Kontaktperson für die jeweiligen Netzwerkgeräte angezeigt.
+<li> In der Spalte [Laufzeit Statistik| Laufzeit] wird anhand von Balkengraphiken die Laufzeit in Tagen abgebildet. Zusätzlich wird die Laufzeit für jedes Netzwerkgerät als numerischer Wert angegeben. 
+</ul>
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+

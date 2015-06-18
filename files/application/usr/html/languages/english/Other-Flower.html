@@ -1,0 +1,42 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Flower Openflows
+</div>
+
+<h2 class="warn">WARNING, this is still experimental!</h2>
+
+<h2>Introduction</h2>
+Openflow is a standard, which allows for a controller to directly manage flowtables on switches. This forms the foundation of Software
+Defined Networking (SDN) and can be used to build firefwalls, loadbalancers and a lot more that we can't even think of, yet.
+<p>
+This module makes it easy to create and remove static flows on such an Openflow controller (right now Floodlight is supported and tested).
+
+<h2>Usage</h2>
+<ul>
+<li>Set the name or IP address of your controller in the $flc variable at the top of the php code or simply call it with Other-Flower.php?flc=CONTROLLER
+<li>All switches managed by the controller show up with their flows in a list on the bottom part.
+<li>Hovering over icons and input fields reveal their purpose.
+<li>If Flower is enabled in nedi.conf, you'll see its icon in Nodes-List's MAC and IP address fields, which lets you quickly add new flows based on them
+</ul>
+
+<h2>Details</h2>
+<h3>Pushing Flows</h3>
+<ol>
+<li>To push a new flow, enter a name for it and a priority if desired.
+<li>Define the filter to match packets based on ingress port, source/dest MAC or IP address or UDP/TCP ports. You'll need to add 0x800 as Ethertype and 6 as
+protocol, if you wish to match TCP packets for example.
+<li>Now set an action to take, which can be a destination interface, vlan and even modifying MAC or IP address or port. If you don't specify an action, the 
+matching packet will be dropped.
+<li>Select the switches from the list below, where you want to install the flow on and click Add.
+</ol>
+
+<div id="footer">Remo Rickli 2013</div>
+</body>

@@ -1,0 +1,53 @@
+# Definition for 1.3.6.1.4.1.9.1.825 created by Defgen 1.8 on 15.May 2013 (admin)
+
+# General
+SNMPv	2HC
+Type	ME-3400G-2CS-A
+Typoid	
+Sysdes	
+OS	IOS
+Icon	w3bp
+Bridge	VLX
+Dispro	CDP
+Serial	1.3.6.1.4.1.9.5.1.2.19.0
+Bimage	1.3.6.1.4.1.9.2.1.73.0
+
+CfgChg	1.3.6.1.4.1.9.9.43.1.1.1.0
+CfgWrt	1.3.6.1.4.1.9.9.43.1.1.3.0
+VLnams	1.3.6.1.4.1.9.9.46.1.3.1.1.4.1
+VLnamx	
+VTPdom	1.3.6.1.4.1.9.9.46.1.2.1.1.2.1
+VTPmod	1.3.6.1.4.1.9.9.46.1.2.1.1.3.1
+
+# Interfaces
+IFname	1.3.6.1.2.1.31.1.1.1.1
+IFalia	
+IFalix	
+InBcast	1.3.6.1.2.1.31.1.1.1.3
+InDisc	1.3.6.1.2.1.2.2.1.13
+OutDisc	1.3.6.1.2.1.2.2.1.19
+IFvlan	1.3.6.1.4.1.9.9.68.1.2.2.1.2
+IFvlix	
+IFpowr	
+IFpwix	
+IFdupl	1.3.6.1.4.1.9.5.1.4.1.1.1011
+IFduix	1.3.6.1.4.1.9.5.1.4.1.1.11
+Halfdp	1
+Fulldp	2
+
+# Modules
+Modesc	1.3.6.1.2.1.47.1.1.1.1.2
+Moclas	1.3.6.1.2.1.47.1.1.1.1.5
+Movalu	9
+Moslot	1.3.6.1.2.1.47.1.1.1.1.7
+Modhw	1.3.6.1.2.1.47.1.1.1.1.8
+Modsw	1.3.6.1.2.1.47.1.1.1.1.9
+Modfw	1.3.6.1.2.1.47.1.1.1.1.10
+Modser	1.3.6.1.2.1.47.1.1.1.1.11
+Momodl	1.3.6.1.2.1.47.1.1.1.1.13
+
+# RRD Graphing
+CPUutl	1.3.6.1.4.1.9.9.109.1.1.1.1.8.1
+Temp		
+MemCPU	1.3.6.1.4.1.9.9.48.1.1.1.6.1	
+Custom		

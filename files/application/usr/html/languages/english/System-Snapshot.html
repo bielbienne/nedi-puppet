@@ -1,0 +1,44 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Help</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+System Snapshots
+
+</div>
+
+<h2>Introduction</h2>
+This modules lets you take a snapshot of the current database. This may be very helpful during a network migration for example.
+It also lets you go back in time and find nodes or network topologies, which changed since...
+<p>
+In addition you could create a snapshot and import a NeDi database from a completely different network for review, without affecting your "real" data.
+
+<h2>Adding</h2>
+<ul>
+<li> Type a suffix to identify your snapshot. By default a timestamp is filled in.
+<li> Provide DB admin user (usually root) and password.
+<li> Click add button to copy the current database to the snapshot (might take a while).
+</ul>
+
+<h2>Activating</h2>
+<ul>
+<li> The database used in the current session is indicated by <img src="../../img/16/walk.png">.
+<li> Click on <img src="../../img/16/bcls.png"> in the snapshot list to activate either the main database or a snapshot.
+<li> The <img src="../../img/nedi-n.png"> logo on the top left is replaced by <img src="../../img/16/foto.png" class="warn"> to remind you, that you're working in a snapshot now. Hover over it to reveal which one.
+<li> Volume and rrdgraphs are turned off as well to avoid any confusion until you select the main database again (usually 'nedi').
+<li> You can manipulate data in a snapshot, but it won't have an effect on the current database, since the discovery keeps using the main database.
+</ul>
+
+<h2>Deleting</h2>
+<ul>
+<li> Click on <img src="../../img/16/bcnl.png"> to delete a snapshot (only shown on inactive snapshots).
+<li> After confirmation the snapshot will be deleted and its diskspace freed up.
+</ul>
+
+<div id="footer">Remo Rickli 2013</div>
+</body>

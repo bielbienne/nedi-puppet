@@ -1,0 +1,53 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN">
+<html>
+<head>
+<title>NeDi Hilfe</title>
+<meta http-equiv="Content-Type" content="text/html;charset=iso-8859-1">
+<link href="style.css" type="text/css" rel="stylesheet">
+<link rel="shortcut icon" href="../../img/favicon.ico">
+</head>
+<body>
+<div id="header">
+Lokation Editor
+</div>
+<h2>Einführung</h2>
+In diesem Modul können Firmenstandorte geographischen Karten zugewiesen werden. Diese Karten müssen vorgängig im NeDi-Verzeichnis ...html\log abgelegt worden sein. Die Weltkarte "map-top.png" befindet sich bereits in diesem Verzeichnis und ist in der NeDi-Distribution enthalten.
+Weitere Karten im ".png" Format können durch den NeDi-Administrator hinzugefügt werden. 
+
+<h2>Beispiel</h2>
+
+Angenommen eine Firma hat in der Schweiz 4 Standorte d.h. Zürich, Bern, Basel und Chur. Somit soll der Standort Schweiz auf der Weltkarte und die erwähnten Städte auf einer Schweizerkarte ersichtlich sein. Für jede Stadt soll zusätzlich eine Stadtkarte verwendet werden.
+<p>
+Zu diesem Zweck müssten folgende Karten erstellt und in das ...html\log Verzeichnis kopiert werden. 
+Die Namenskonvention der Karten muss natürlich entsprechend für die eigenen Standorte adaptiert werden und den konfigurierten Standorten auf den Netzwerkgeräten entsprechen. 
+Die vorgegebenen Namen der Standorte, die in diesem Modul angezeigt werden, wurden via SNMP von den Netzwerkgeräten übernommen!
+<p>
+<ul> 
+<li> map-top.png (für den Bereich Region)
+<li> map-Switzerland.png (für den Bereich City)
+<li> map-Switzerland-Zurich.png (für den Bereich Building)
+<li> map-Switzerland-Bern.png (für den Bereich Building)
+<li> map-Switzerland-Basel.png (für den Bereich Building)
+<li> map-Switzerland-Chur.png (für den Bereich Building)
+</ul>
+<p>
+Sind die Karten erstellt und im Verzeichnis ...html\log abgelegt worden, kann mit der Konfiguration begonnen werden:
+<p>
+<ul>
+<li> Im Feld [Region] den Eintrag "Switzerland" auswählen. Anschliessend auf der Weltkarte den ungefähren Standort der Schweiz markieren und mit dem Button "Hinzufügen" übernehmen.
+<li> Im Feld [City] werden nun die Namen der Städte angezeigt. Nun z.B. die Stadt Chur auswählen. Es wird die Schweizerkarte angezeigt. Durch einen Klick auf der Karte den Standort "Chur" markieren. Die gesetzten Koordinaten wieder mit dem Button "Hinzufügen" speichern.
+<li> Im Feld [Building] werden nun die Gebäudenamen von Chur angzeigt. Sobald ein Gebäude ausgewählt worden ist, wird die Stadtkarte von Chur angezeigt. Nun den Standort des Gebäudes auf der Karte markieren und erneut mit dem Button "Hinzufügen" die Einstellung speichern.
+</ul>
+<p>
+Sollten sich in Chur z.B. noch weitere Gebäude befinden, können diese analog zu den gezeigten Arbeitsschritten konfiguriert werden. Dies gilt ebenso für die verbleibenden Städte Zurich, Bern und Basel.
+<p>
+Im Textfeld [Kommentar] kann zu jedem Standort eine kurze Information hinterlegt werden. Dies kann auch noch nachträglich mit dem Button "Aktualisierung" gemacht werden.
+<p>
+Mit dem Button "Löschen" wird der aktuelle Standort auf der Karte gelöscht.
+
+<h4>Hinweis!</h4>
+Die Koordinatenfelder werden durch das Setzen eines Standortes auf der Karte automatisch abgefüllt. Diese Werte sind NeDi-spezifisch und haben nichts mit geographischen Koordinaten zu tun!
+
+<div id="footer">Marco Rauchenstein 2008</div>
+</body>
+
